@@ -1,6 +1,7 @@
 # Bronco Hacks Website
 
-## This project is currently in development. It will be used to in Fall 2024 to display info about an upcoming hackathon + info about previous hackathons.
+## This is the source code for the Bronco Hacks Website. 
+# The website is used to display info about the upcoming hackathons @ California State Polytechnic University, Pomona as well as some info about previous hackathons.
 
 ### Current Developers Working on the Project
 
