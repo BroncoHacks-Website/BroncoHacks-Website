@@ -13,7 +13,7 @@ import "./styles/Profile.css"; /* temporary just so it visually looks fine */
 
 function App() {
   return (
-    <BrowserRouter basename='/Static-Site/'>
+    <BrowserRouter basename='/BroncoHacks-Website/'>
       <NavBar className="navbar" />
       <Routes>
           <Route path="/" element={<Home/>}/>

@@ -1,6 +1,6 @@
 {
-  "homepage": "https://BroncoHacks-Website.github.io/Static-Site",
-  "name": "static-site",
+  "homepage": "https://BroncoHacks-Website.github.io/BroncoHacks-Website",
+  "name": "BroncoHacks-Website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
