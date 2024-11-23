@@ -13,8 +13,8 @@ import "./styles/Profile.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/BroncoHacks-Website/">
-      {/* <BrowserRouter> */}
+    // <BrowserRouter basename="/BroncoHacks-Website/">
+      <BrowserRouter basename="/">
       <NavBar className="navbar" />
       <Routes>
         <Route path="/" element={<Home />} />
