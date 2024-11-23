@@ -9,12 +9,12 @@ import Sponsors from "./Pages/Sponsors.jsx";
 import AboutUs from "./Pages/About.jsx";
 import Footer from "./Components/Footer.jsx";
 import Error from "./Pages/Error.jsx";
-import "./styles/Profile.css"; /* temporary just so it visually looks fine */
+import "./styles/Profile.css";
 
 function App() {
   return (
-    // <BrowserRouter basename='/BroncoHacks-Website/'>
-    <BrowserRouter>
+    <BrowserRouter basename="/BroncoHacks-Website/">
+      {/* <BrowserRouter> */}
       <NavBar className="navbar" />
       <Routes>
         <Route path="/" element={<Home />} />
