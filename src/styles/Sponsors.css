@@ -211,8 +211,6 @@ ul {
   justify-content: space-evenly;
   list-style-type: none;
   overflow: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
 
 ul li a img {
