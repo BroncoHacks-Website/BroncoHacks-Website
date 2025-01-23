@@ -1,6 +1,7 @@
 import "/src/styles/About.css";
-import Winners from "../Components/WinnerCard";
 import Script from "../Assets/Profile/icon/script.png";
+import BroncoHacks2024Winners from "../Components/BroncoHacks2024Winners";
+import MiniHack from "../Components/MiniHack";
 
 function About() {
   return (
@@ -35,7 +36,7 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://yt3.googleusercontent.com/ytc/AIdro_mX4aIKbf6Z1RWWcYliFYLyR3zqGr6-uBpxyz7tz65jX-M=s176-c-k-c0x00ffffff-no-rj" />
+                  <img src="https://pbs.twimg.com/profile_images/846356145555980292/hZ7Z5n0X_400x400.jpg" />
                 </a>
               </li>
             </ul>
@@ -79,31 +80,24 @@ function About() {
             </ul>
           </div>
           <div className="about-container-right">
-            <h2>Cal Poly Pomona's Official Hackathon</h2>
+            <h2>Cal Poly Pomona's Student Led Hackathon Committee</h2>
             <p>
-              Created by students for students. This 24-hour hackathon event
-              hosted on Cal Poly Pomona's own campus. Hackers will compete in
-              teams of 2-4 in either mobile development, web development, or
-              cybersecurity. We welcome students of all skill levels to compete!
-              This event is completely free to enter and food will be provided
-              as well.{" "}
+              BroncoHacks is a student-led organization with the intended goal
+              of bringing hackathon culuture to CPP and the surrounding area.
+              Since its establishment in 2023, BroncoHacks has held "MiniHack",
+              a 6 hour hackathon intended for beginners every fall, as well as
+              BroncoHacks a 24 hour in person hackathon every Spring. Our
+              upcoming event is BroncoHacks 2025, another 24 hour hackathon that
+              is open to all colleges and is completely free of entry!
             </p>
             {/* additional paragraph, unsure what info to add */}
             <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
           </div>
         </div>
         <div className="line"></div>
-        <Winners />
+        <BroncoHacks2024Winners />
+        <div className="line"></div>
+        <MiniHack />
       </div>
     </div>
   );
