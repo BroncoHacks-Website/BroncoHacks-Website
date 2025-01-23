@@ -24,18 +24,17 @@ function MiniHack() {
       <p>
         Mini Hack is targeted towards incoming students who have never coded
         outside of the classroom before. The goal of "minihacks" are to have all
-        of the hackers complete a task before leaving the hackathon:{" "}
+        of the hackers complete a task before leaving the hackathon.{" "}
         <b>
           In 2023, this was utilizing the new OpenAI API, to create a python
           chatbot that would be able to remember past conversations. In 2024,
           this was having the teams come up with an app idea utilizing the
-          spoonacular Food API
+          spoonacular Food API.
         </b>{" "}
         Students who attended this MiniHack were provided resource material on
         the basics of python, basics of calling an API, and the basics of
         starting a web page. With the help of the BroncoHacks Staff, the
-        majority of the participants were able to complete the task, even with
-        most of the students having minimal coding experience.
+        majority of the participants were able to complete the task.
       </p>
       <div className="slideshow">
         <Slideshow slides={slidesMH} />

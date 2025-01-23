@@ -86,7 +86,7 @@ const BroncoHacks2024Winners = () => {
 
   return (
     <div className="winner-container">
-      <h1 className="main-title">Spring 2024 BroncoHacks & Winners</h1>
+      <h1 className="main-title">BroncoHacks & Previous Winners</h1>
       <p>
         BroncoHacks 2024 took place from February 2nd 2024 - February 3rd 2024.
         There were over 130 participants across two categories: Web Development

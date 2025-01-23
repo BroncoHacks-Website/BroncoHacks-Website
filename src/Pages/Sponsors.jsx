@@ -57,21 +57,87 @@ function Sponsors() {
     <div className="sponsors-container">
       <div className="our-sponsors">
         <div className="cloud-banner">
-          <div className="cloud-text">
-            <h1>Become A Sponsor Today</h1>
-          </div>
           <img
             src={checkeredFlag}
             className="checkered-flag left"
             alt="Checkered Flag"
           />
+          <div className="cloud-text">
+            <h1>Become A Sponsor Today</h1>
+          </div>
           <img
             src={checkeredFlag}
             className="checkered-flag right"
             alt="Checkered Flag"
           />
         </div>
-
+        <div className="interested-container">
+          <h1>Interested in Sponsoring?</h1>
+          <h3>
+            Email @cppbroncohacks@gmail.com for sponsorship oppurtunities.
+          </h3>
+          <h3>-----or-----</h3>
+          <h3>Sponsor directly to any of the clubs below.</h3>
+        </div>
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/cppcss/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://ugc.production.linktr.ee/12da207a-6379-4d6a-b8ff-1b8fbbca1ad4_CFD8FBB7-FFEE-4DA9-A2FE-3C667A69CAE3.png?io=true&size=avatar-v3_0" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/gdsccpp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://ugc.production.linktr.ee/4p5hpFASIaaOcaWE6AdQ_tBDmCVo0020fsjeY?io=true&size=avatar-v3_0" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/cppgamedev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://pbs.twimg.com/profile_images/846356145555980292/hZ7Z5n0X_400x400.jpg" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/calpolyfast/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://cdn.campsite.bio/eyJidWNrZXQiOiJjYW1wc2l0ZS1iaW8tc3RvcmFnZSIsImtleSI6IkNhbFBvbHlGQVNULzk2ZmQ2OGFhLWM4ODEtNGZmYi05YjhjLWEwODliZWNiOWQyMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMH19fQ==" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/cppmissa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://ugc.production.linktr.ee/8csxebyRR9O3Fi4MdE0K_1BZQDBzEFM9N4Ig3?io=true&size=avatar-v3_0" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/cppshecodes/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://ugc.production.linktr.ee/b48bd9b5-4286-4b02-85ae-fbecf3904472_Logo--Clear.png?io=true&size=avatar-v3_0" />
+            </a>
+          </li>
+        </ul>
+        <div className="sponsor-container">
+          <button className="sponsor-button">Previous Sponsors</button>
+        </div>
         <div className="logo-row">
           {sponsorLogos.map((logo) => {
             // Find the sponsor object in sponsorsData with the matching name
@@ -170,7 +236,7 @@ function Sponsors() {
         <button className="sponsor-button" onClick={handleClick}>
           Sponsor Package
         </button>
-        {isOpen && <img src={sponsorPackage}></img>}
+        <img src={sponsorPackage}></img>
       </div>
     </div>
   );
