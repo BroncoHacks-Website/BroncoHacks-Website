@@ -46,20 +46,29 @@ function Countdown(props) {
   return (
     <>
       <div className="cd-container" role="timer" tabIndex="0">
-        <h2 className="cd-title">BroncoHacks is starting in</h2>
+        <h2 className="cd-title">BroncoHacks 2025 is starting in</h2>
         <div className="cd-time-wrapper">
-          <h1 className="cd-days">{createLeadingZero(days)}</h1><span className="cd-semicolon">:</span>
-          <h1>{createLeadingZero(hours)}</h1><span className="cd-semicolon">:</span>
-          <h1>{createLeadingZero(minutes)}</h1><span className="cd-semicolon-seconds">:</span>
+          <h1 className="cd-days">{createLeadingZero(days)}</h1>
+          <span className="cd-semicolon">:</span>
+          <h1>{createLeadingZero(hours)}</h1>
+          <span className="cd-semicolon">:</span>
+          <h1>{createLeadingZero(minutes)}</h1>
+          <span className="cd-semicolon-seconds">:</span>
           <h1 className="cd-seconds">{createLeadingZero(seconds)}</h1>
         </div>
         <div className="cd-txt-wrapper">
-
-          <span className="cd-txt-days"><h3>Days</h3></span>
-          <span className="cd-txt-hours"><h3>Hours</h3></span>
-          <span className="cd-txt-minutes"><h3>Minutes</h3></span>
-          <span className="cd-txt-seconds"><h3>Seconds</h3></span>
-
+          <span className="cd-txt-days">
+            <h3>Days</h3>
+          </span>
+          <span className="cd-txt-hours">
+            <h3>Hours</h3>
+          </span>
+          <span className="cd-txt-minutes">
+            <h3>Minutes</h3>
+          </span>
+          <span className="cd-txt-seconds">
+            <h3>Seconds</h3>
+          </span>
         </div>
       </div>
     </>
@@ -71,4 +80,3 @@ Countdown.propTypes = {
 };
 
 export default Countdown;
-

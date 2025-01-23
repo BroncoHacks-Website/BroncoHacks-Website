@@ -4,16 +4,16 @@ import DescriptionBox from "../Components/DescriptionBox";
 import Countdown from "../Components/Countdown";
 import "/src/styles/Home.css";
 
-import Food1 from "../Assets/EventPhotos/Food1.jpg";
-import Judge1 from "../Assets/EventPhotos/Judge1.jpg";
-import Judge2 from "../Assets/EventPhotos/Judge2.jpg";
-import Overview1 from "../Assets/EventPhotos/Overview1.jpg";
-import Overview2 from "../Assets/EventPhotos/Overview2.jpg";
-import Overview3 from "../Assets/EventPhotos/Overview3.jpg";
-import Overview4 from "../Assets/EventPhotos/Overview4.jpg";
-import Overview5 from "../Assets/EventPhotos/Overview5.jpg";
-import Overview6 from "../Assets/EventPhotos/Overview6.jpg";
-import Winners1 from "../Assets/EventPhotos/Winners1.jpg";
+import Food1 from "../Assets/BroncoHacks2024Photos/Food1.jpg";
+import Judge1 from "../Assets/BroncoHacks2024Photos/Judge1.jpg";
+import Judge2 from "../Assets/BroncoHacks2024Photos/Judge2.jpg";
+import Overview1 from "../Assets/BroncoHacks2024Photos/Overview1.jpg";
+import Overview2 from "../Assets/BroncoHacks2024Photos/Overview2.jpg";
+import Overview3 from "../Assets/BroncoHacks2024Photos/Overview3.jpg";
+import Overview4 from "../Assets/BroncoHacks2024Photos/Overview4.jpg";
+import Overview5 from "../Assets/BroncoHacks2024Photos/Overview5.jpg";
+import Overview6 from "../Assets/BroncoHacks2024Photos/Overview6.jpg";
+import Winners1 from "../Assets/BroncoHacks2024Photos/Winners1.jpg";
 
 function Home() {
   const slidesData = [
@@ -40,7 +40,7 @@ function Home() {
             <Slideshow slides={slidesData} />
           </div>
         </div>
-        <Countdown deadline="October, 31, 2024" />
+        <Countdown deadline="April, 18, 2025" />
       </div>
     </>
   );

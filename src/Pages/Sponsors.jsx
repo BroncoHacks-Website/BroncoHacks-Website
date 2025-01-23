@@ -1,8 +1,8 @@
-import * as React from 'react';
-import '../styles/Sponsors.css';
+import * as React from "react";
+import "../styles/Sponsors.css";
 import checkeredFlag from "../Assets/Design/checkeredflag.png";
 import sponsorsData from "../Assets/Sponsors/sponsors.json";
-import sponsorPackage from "../Assets/Sponsors/sponsorship.pdf"
+import sponsorPackage from "../Assets/Sponsors/sponsorship.png";
 
 // Import the image files
 // import adobe from "../Assets/Sponsors/adobe.png";
@@ -17,7 +17,6 @@ import mlh from "../Assets/Sponsors/mlh.png";
 // import openai from "../Assets/Sponsors/openai.png";
 
 function Sponsors() {
-
   const [hoveredLogo, setHoveredLogo] = React.useState(null);
 
   const handleLogoHover = (logo) => {
@@ -44,7 +43,10 @@ function Sponsors() {
   //   { id: 9, logo: openai, text: "OpenAI" },
   // ];
 
-  const sponsorLogos = [{id: 1, logo: avanade, text: "Avanade"}, {id: 2, logo: mlh, text: "MLH"}]
+  const sponsorLogos = [
+    { id: 1, logo: avanade, text: "Avanade" },
+    { id: 2, logo: mlh, text: "MLH" },
+  ];
 
   const [isOpen, setOpen] = React.useState(false);
   const handleClick = () => {
@@ -54,21 +56,35 @@ function Sponsors() {
   return (
     <div className="sponsors-container">
       <div className="our-sponsors">
-
         <div className="cloud-banner">
           <div className="cloud-text">
-            <h1>Become A Sponsor Today</h1>    
+            <h1>Become A Sponsor Today</h1>
           </div>
-          <img src={checkeredFlag} className="checkered-flag left" alt="Checkered Flag" />
-          <img src={checkeredFlag} className="checkered-flag right" alt="Checkered Flag" />
+          <img
+            src={checkeredFlag}
+            className="checkered-flag left"
+            alt="Checkered Flag"
+          />
+          <img
+            src={checkeredFlag}
+            className="checkered-flag right"
+            alt="Checkered Flag"
+          />
         </div>
 
         <div className="logo-row">
           {sponsorLogos.map((logo) => {
             // Find the sponsor object in sponsorsData with the matching name
-            const sponsor = sponsorsData.find((sponsor) => sponsor.name === logo.text);
+            const sponsor = sponsorsData.find(
+              (sponsor) => sponsor.name === logo.text
+            );
             return (
-              <div key={logo.id} className="logo-wrapper" onMouseEnter={() => handleLogoHover(logo)} onMouseLeave={handleLogoLeave}>
+              <div
+                key={logo.id}
+                className="logo-wrapper"
+                onMouseEnter={() => handleLogoHover(logo)}
+                onMouseLeave={handleLogoLeave}
+              >
                 <img src={logo.logo} alt={logo.text} />
                 {hoveredLogo && hoveredLogo.id === logo.id && (
                   <div className="company-info">
@@ -77,9 +93,19 @@ function Sponsors() {
                       {/* Check if sponsor is found before accessing its properties */}
                       {sponsor && (
                         <>
-                          <p className="sponsor-description">{sponsor.description}</p>
+                          <p className="sponsor-description">
+                            {sponsor.description}
+                          </p>
                           <p className="contact-info">{sponsor.email}</p>
-                          <p className="website-info"><a href={sponsor.website} target="_blank" rel="noopener noreferrer">{sponsor.website}</a></p>
+                          <p className="website-info">
+                            <a
+                              href={sponsor.website}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {sponsor.website}
+                            </a>
+                          </p>
                         </>
                       )}
                     </span>
@@ -89,7 +115,6 @@ function Sponsors() {
             );
           })}
         </div>
-
 
         {/* <div className="logo-row">
           {sponsorLogos2.map((logo) => {
@@ -142,26 +167,10 @@ function Sponsors() {
         </div> */}
       </div>
       <div className="sponsor-container">
-        <button
-            className="sponsor-button"
-            onClick={handleClick}
-        >
+        <button className="sponsor-button" onClick={handleClick}>
           Sponsor Package
         </button>
-        {
-            isOpen &&
-            <iframe
-                src={sponsorPackage}
-                width="80%"
-                height="740px"
-                style=
-                    {{
-                      margin: '15px auto 0',
-                      display: 'block'
-                    }}
-                title="Sponsor Package"
-            />
-        }
+        {isOpen && <img src={sponsorPackage}></img>}
       </div>
     </div>
   );
