@@ -13,6 +13,7 @@
 .our-sponsors {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   /* background-image: url('/src/Assets/Design/racetrack-background.png');
     background-size: cover;
     background-position: center;
@@ -23,11 +24,16 @@
 
 /* cloud banner styling */
 .cloud-banner {
-  position: absolute;
-  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
   background-image: url("/src/Assets/Design/cloud1.png");
-  background-size: cover;
-  height: 360px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
   width: auto;
   animation: floatCloud 3s ease-in-out infinite alternate;
 }
@@ -47,18 +53,19 @@
 .checkered-flag {
   position: absolute;
   top: 45%;
-  width: 220px;
-  height: auto;
+  width: 20%;
+  height: 50%;
+  width: auto;
   transform: translateY(-50%);
 }
 
 .checkered-flag.left {
-  left: -80px; /* Adjust the distance from the left edge */
+  margin-right: 40%;
   transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
 }
 
 .checkered-flag.right {
-  right: -80px; /* Adjust the distance from the right edge */
+  margin-left: 40%;
 }
 
 /* cloud text styling */
@@ -134,23 +141,6 @@
   cursor: pointer;
 }
 
-/* CSS for the first logo row */
-.logo-row:nth-child(2) {
-  margin-top: 590px; /* Add spacing between rows */
-  /* margin-left: 400px; */
-}
-
-/* CSS for the second logo row */
-.logo-row:nth-child(3) {
-  margin-top: 700px; /* Add spacing between rows */
-  margin-left: -975px;
-}
-
-/* CSS for the third logo row */
-.logo-row:nth-child(4) {
-  margin-top: 700px; /* Add spacing between rows */
-}
-
 /* Adjust logo size */
 .logo-row img {
   max-width: 150px; /* Adjust the max-width of the logo */
@@ -176,6 +166,59 @@
   100% {
     transform: translateX(0);
   }
+}
+
+.interested-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  box-shadow: 0 1px 3px gray;
+  padding: 1em;
+  margin: 1em auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+  font-size: 1.5em;
+  color: white;
+  background-color: #72dbbb;
+  pointer-events: none;
+  border: black;
+  border-radius: 1rem;
+}
+
+.interested-container h1 {
+  font-family: "Snacker", sans-serif;
+  background-image: linear-gradient(
+    45deg,
+    #002afd 0%,
+    #6a20ff 50%,
+    #b70290 100%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.interested-container h3 {
+  font-family: "Snacker", sans-serif;
+  text-wrap: wrap;
+  color: blacl;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  overflow: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+ul li a img {
+  border-radius: 50%;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 /* Position company info tooltip */
@@ -245,6 +288,12 @@
   font-weight: bold;
 }
 
+.prev-sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sponsor-container {
   display: flex;
   padding: 20px 50px;
@@ -261,6 +310,7 @@
 }
 
 .sponsor-button {
+  width: 50%;
   display: inline-block;
   border-radius: 15px;
   box-shadow: 0 7px #999;
@@ -270,6 +320,7 @@
   font-weight: bold;
   color: white;
   background-color: #72dbbb;
+  pointer-events: none;
 }
 
 .sponsor-button:hover {
@@ -284,4 +335,225 @@
 .logo-wrapper:hover .company-info {
   visibility: visible; /* Show on hover */
   opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 50%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 45%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 45%;
+  }
+
+  .cloud-text h1 {
+    padding: 15%;
+    font-size: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Snacker", sans-serif;
+  }
+}
+
+@media (max-width: 750px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 55%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 55%;
+  }
+
+  .cloud-text h1 {
+    padding: 15%;
+    font-size: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Snacker", sans-serif;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 55%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 55%;
+  }
+
+  .cloud-text h1 {
+    padding: 15%;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Snacker", sans-serif;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 60%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 60%;
+  }
+
+  .cloud-text h1 {
+    padding: 15%;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Snacker", sans-serif;
+  }
+
+  ul li a img {
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 70%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 70%;
+  }
+
+  .cloud-text h1 {
+    padding: 15%;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Snacker", sans-serif;
+  }
+}
+
+@media (max-width: 400px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 75%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 75%;
+  }
+
+  .cloud-text h1 {
+    padding: 15%;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Snacker", sans-serif;
+  }
+}
+
+@media (max-width: 400px) {
+  .checkered-flag {
+    position: absolute;
+    top: 45%;
+    width: 20%;
+    height: 50%;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .checkered-flag.left {
+    margin-right: 80%;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally */
+  }
+
+  .checkered-flag.right {
+    margin-left: 80%;
+  }
+
+  .cloud-text h1 {
+    padding: 15%;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Snacker", sans-serif;
+  }
 }
