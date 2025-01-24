@@ -41,6 +41,7 @@ function Home() {
           </div>
         </div>
         <Countdown deadline="April, 18, 2025" />
+        <div>BroncoHacks 2025!</div>
       </div>
     </>
   );
