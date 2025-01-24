@@ -2,6 +2,7 @@ import "/src/styles/About.css";
 import Script from "../Assets/Profile/icon/script.png";
 import BroncoHacks2024Winners from "../Components/BroncoHacks2024Winners";
 import MiniHack from "../Components/MiniHack";
+import Avanade from "../Components/Avanade";
 
 function About() {
   return (
@@ -98,6 +99,8 @@ function About() {
         <BroncoHacks2024Winners />
         <div className="line"></div>
         <MiniHack />
+        <div className="line"></div>
+        <Avanade />
       </div>
     </div>
   );
