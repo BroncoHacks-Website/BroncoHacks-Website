@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import NavBar from "./Components/NavBar.jsx";
 import Home from "./Pages/Home.jsx";
@@ -14,7 +15,7 @@ import "./styles/Profile.css";
 function App() {
   return (
     // <BrowserRouter basename="/BroncoHacks-Website/">
-      <BrowserRouter>
+    <BrowserRouter>
       <NavBar className="navbar" />
       <Routes>
         <Route path="/" element={<Home />} />
