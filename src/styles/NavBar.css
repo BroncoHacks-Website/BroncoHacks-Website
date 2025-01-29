@@ -23,7 +23,7 @@
   width: 100;
   object-fit: contain;
   overflow: hidden;
-  margin: 0 0.5rem 0 1rem;
+  margin: 0 0.5rem 0 2rem;
 }
 
 .navbar-header h1 {
@@ -91,6 +91,14 @@
 }
 
 @media all and (max-width: 1200px) {
+  .navbar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 3rem;
+  }
+
   .navbar-links {
     display: none;
   }
