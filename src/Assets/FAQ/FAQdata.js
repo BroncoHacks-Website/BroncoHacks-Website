@@ -1,5 +1,10 @@
 const faqs = [
   {
+    question: "What is the max/min Team Size?",
+    answer:
+      "Team sizes will range from 2-4 people and can be organized amongst themselves. Additionally, if you would like to join a team but have no one in mind, we will be forming teams the day of for all the participants looking for teams",
+  },
+  {
     question: "Do I Need to Have Experience in Programming?",
     answer:
       "Our MiniHack events are created with the assumption that you are new to programming and are looking to learn new things. The BroncoHack events in the spring are competitions and operate under the assumption that you have some programming experience, but it is still completely possible to participate without programing knowledge",
@@ -17,11 +22,6 @@ const faqs = [
     question: "Will meals be provided?",
     answer:
       "Food will be completely free! There will be 4 free meals provided for each participant.",
-  },
-  {
-    question: "How Will Teams Be Organized?",
-    answer:
-      "Team sizes will range from 2-4 people and can be organized amongst themselves. Additionally, if you would like to join a team but have no one in mind, we will be forming teams the day of for all the participants looking for teams",
   },
   {
     question: "Will I Need To Stay There The Whole Time?",
