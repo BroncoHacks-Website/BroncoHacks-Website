@@ -91,16 +91,12 @@
 }
 
 @media all and (max-width: 1200px) {
-  .navbar-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    margin-left: 3rem;
-  }
-
   .navbar-links {
     display: none;
+  }
+
+  .dropdown-item {
+    font-size: xx-small;
   }
 
   .dropdown-item-container {
@@ -120,7 +116,7 @@
     background-color: white;
     border-radius: 8px;
     padding: 10px 15px;
-    width: 200px;
+    width: 30vh;
     text-align: center;
   }
 
