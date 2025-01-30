@@ -4,7 +4,7 @@ import { useState } from "react";
 import "/src/styles/MeetTheTeam.css";
 
 function MeetTheTeam() {
-  const [selectedRole, setSelectedRole] = useState("All"); // Initially show all profiles
+  const [selectedRole, setSelectedRole] = useState("Primary Organizer"); // Initially show all profiles
 
   const selectTeam = (role) => {
     setSelectedRole(role);
@@ -19,12 +19,17 @@ function MeetTheTeam() {
             <h1 className="mtt-title">Meet the Team</h1>
           </div>
           <div className="role-buttons">
-            <button onClick={() => selectTeam("All")}>All</button>
+            {/* <button onClick={() => selectTeam("All")}>All</button> */}
             <button onClick={() => selectTeam("Primary Organizer")}>
               Primary Organizers
             </button>
+            <button
+              onClick={() => selectTeam("BroncoHacks 2024-2025 Committee")}
+            >
+              Broncohacks 2024-2025 Committee
+            </button>
             <button onClick={() => selectTeam("Project Manager")}>
-              Project Manager
+              Project Managers
             </button>
             <button onClick={() => selectTeam("Website Developer")}>
               Website Developers

@@ -21,9 +21,10 @@ function DescriptionBox() {
           <img className="db-mascot" src={BroncoMascot} alt="Bronco Mascot" />
           <span className="db-filler"></span>
           <h4>
-            A student led hackathon organization for Cal Poly Pomona,
-            responsible for events such as MiniHack 2023/2024 and BroncoHacks
-            2024/2025
+            BroncoHacks 2025 is a 24 hour, in person hackathon thats coming to
+            Cal Poly Pomona from April 18-19! Registration opens up on March
+            2nd. All schools are welcomed but each team requires at least 1
+            person from CPP
           </h4>
         </div>
       </div>
