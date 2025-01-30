@@ -131,7 +131,7 @@ function Sponsors() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://ugc.production.linktr.ee/b48bd9b5-4286-4b02-85ae-fbecf3904472_Logo--Clear.png?io=true&size=avatar-v3_0" />
+              <img src="https://media.licdn.com/dms/image/v2/D560BAQGWIzMbNT4ZJA/company-logo_200_200/company-logo_200_200/0/1728451419126/cpp_shecodes_logo?e=2147483647&v=beta&t=5MgLg-ipCr66gvnhl3TsGGEtl9qcyk6zPJ629Da0dAY" />
             </a>
           </li>
         </ul>
