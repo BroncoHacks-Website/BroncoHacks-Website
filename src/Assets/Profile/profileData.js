@@ -21,61 +21,87 @@ import LeslyIbarra from "./team/LeslyIbarra.jpg";
 import GiselleAvila from "./team/GiselleAvila.png";
 // import JoshuaVejendla from "./team/JoshuaVejendla.jpeg";
 
+import MeganBee from "./team/MeganBee.jpeg";
+import ErikaLedesma from "./team/ErikaLedesma.jpeg";
+import TonyTong from "./team/TonyTong.jpeg";
+import BradKim from "./team/BradKim.jpeg";
+import JaydenNguyen from "./team/JaydenNguyen.jpeg";
+import StephaniePocci from "./team/StephaniePocci.jpeg";
+import JohnnyFok from "./team/JohnnyFok.jpeg";
+import KeerthiSreeram from "./team/KeerthiSreeram.jpg";
+
 export const profileData = [
   // Organizers && Project Managers
   {
     id: 0,
     name: "Daniel Pasion",
-    role: ["Primary Organizer", "BroncoHacks 2023-2024 Committee"],
+    role: [
+      "Primary Organizer",
+      "BroncoHacks 2023-2024 Committee",
+      "Project Manager",
+      "BroncoHacks 2024-2025 Committee",
+    ],
     picture: DanielPasion,
     linkedin: "https://www.linkedin.com/in/daniel-pasion-9b364a1b7/",
   },
   {
     id: 1,
     name: "Chris Ji-Chek Lo",
-    role: ["Primary Organizer", "BroncoHacks 2023-2024 Committee"],
+    role: ["BroncoHacks 2023-2024 Committee", "Project Manager"],
     picture: ChrisJLo,
     linkedin: "https://www.linkedin.com/in/christopher-j-lo/",
   },
   {
     id: 2,
     name: "Justin Nguyen",
-    role: ["Primary Organizer", "BroncoHacks 2023-2024 Committee"],
+    role: [
+      "Primary Organizer",
+      "Project Manager",
+      "BroncoHacks 2023-2024 Committee",
+      "BroncoHacks 2024-2025 Committee",
+    ],
     picture: JustinNguyen,
     linkedin: "https://www.linkedin.com/in/justin-mn/",
   },
   {
     id: 3,
     name: "Amar Gandhi",
-    role: ["Primary Organizer", "BroncoHacks 2023-2024 Committee"],
+    role: ["BroncoHacks 2023-2024 Committee"],
     picture: AmarGandhi,
     linkedin: "https://www.linkedin.com/in/acgandhi/",
   },
   {
     id: 4,
     name: "Phu Troung",
-    role: ["Primary Organizer", "BroncoHacks 2023-2024 Committee"],
+    role: ["BroncoHacks 2023-2024 Committee"],
     picture: PhuTruong,
     linkedin: "https://www.linkedin.com/in/phuntruong/",
   },
   {
     id: 5,
     name: "Michael Wu",
-    role: ["Website Developer", "Project Manager"],
+    role: [
+      "Website Developer",
+      "Project Manager",
+      "BroncoHacks 2024-2025 Committee",
+    ],
     picture: MichaelWu,
     linkedin: "https://www.linkedin.com/in/michael-ml-wu/",
   },
   {
     id: 6,
     name: "UyenNghi Nguyen",
-    role: ["Primary Organizer", "BroncoHacks 2023-2024 Committee"],
+    role: [
+      "BroncoHacks 2023-2024 Committee",
+      "BroncoHacks 2024-2025 Committee",
+    ],
     picture: user,
     linkedin: "https://www.linkedin.com/",
   },
   {
     id: 7,
     name: "Alex Eckert",
-    role: ["Primary Organizer", "BroncoHacks 2023-2024 Committee"],
+    role: ["BroncoHacks 2023-2024 Committee"],
     picture: AlexEckert,
     linkedin: "https://www.linkedin.com/in/alexander-eckert-07b424257/",
   },
@@ -156,7 +182,10 @@ export const profileData = [
   {
     id: 18,
     name: "Aidan Sanders",
-    role: ["BroncoHacks 2023-2024 Committee"],
+    role: [
+      "BroncoHacks 2023-2024 Committee",
+      "BroncoHacks 2024-2025 Committee",
+    ],
     picture: user,
     linkedin: "https://www.linkedin.com/in/aidan-sanders-756548276/",
   },
@@ -173,6 +202,65 @@ export const profileData = [
     role: ["BroncoHacks 2023-2024 Committee"],
     picture: user,
     linkedin: "https://www.linkedin.com",
+  },
+  // BroncoHacks 2024-2025 Committee
+  {
+    id: 21,
+    name: "Tony Tong",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: TonyTong,
+    linkedin: "https://www.linkedin.com/in/tony-tong-699631240/",
+  },
+  {
+    id: 22,
+    name: "Megan Bee",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: MeganBee,
+    linkedin: "https://www.linkedin.com/in/megan-bee/",
+  },
+  {
+    id: 23,
+    name: "Erika Ledesma",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: ErikaLedesma,
+    linkedin: "https://www.linkedin.com/in/erika-jasmine-ledesma/",
+  },
+  {
+    id: 24,
+    name: "Brad Kim",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: BradKim,
+    linkedin: "https://www.linkedin.com/in/bradjkim/",
+  },
+  {
+    id: 25,
+    name: "Jayden Nguyen",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: JaydenNguyen,
+    linkedin: "https://www.linkedin.com/in/jaydenvinhnguyen/",
+  },
+
+  {
+    id: 26,
+    name: "Stephanie Pocci",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: StephaniePocci,
+    linkedin: "https://www.linkedin.com/in/stephanie-pocci/",
+  },
+
+  {
+    id: 27,
+    name: "Johnny Fok",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: JohnnyFok,
+    linkedin: "https://www.linkedin.com/in/johnnyfok/",
+  },
+  {
+    id: 28,
+    name: "Keerthi Sreeram",
+    role: ["BroncoHacks 2024-2025 Committee"],
+    picture: KeerthiSreeram,
+    linkedin: "https://www.linkedin.com/in/keerthi-sreeram/",
   },
 ];
 

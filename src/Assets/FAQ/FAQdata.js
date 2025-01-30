@@ -1,6 +1,6 @@
 const faqs = [
   {
-    question: "What is the max/min Team Size?",
+    question: "What is the Max/Min Team Size?",
     answer:
       "Team sizes will range from 2-4 people and can be organized amongst themselves. Additionally, if you would like to join a team but have no one in mind, we will be forming teams the day of for all the participants looking for teams",
   },
@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Can non-CPP Students Participate?",
     answer:
-      "Varies from event to event but BroncoHacks2025 WILL be open to students from other schools",
+      "BroncoHacks2025 will be open to students from other schools as long as one member from your team is a current CPP Student",
   },
   {
     question: "Will meals be provided?",

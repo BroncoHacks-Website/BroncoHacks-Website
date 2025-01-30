@@ -118,11 +118,11 @@ function Sponsors() {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/cppmissa/"
+              href="https://www.instagram.com/cppdsai/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://ugc.production.linktr.ee/8csxebyRR9O3Fi4MdE0K_1BZQDBzEFM9N4Ig3?io=true&size=avatar-v3_0" />
+              <img src="https://cppdsai.com/assets/img/Without%20Background.png" />
             </a>
           </li>
           <li>
