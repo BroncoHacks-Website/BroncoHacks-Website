@@ -12,7 +12,7 @@ export const data = {
         title: "Professor Benchmark",
         description: "Rate My Professor alternative that scraped class data for better insights",
         team: "Alan and the Chipmunks",
-        members: ["Alan Le", "Jesse Chu", "Ava Vazquez", "Alex Machorro"],
+        members: ["Alan Le", "Jesse Chu", "Ava Vazquez"],
         imagePath: webdev1st
       },
       {
