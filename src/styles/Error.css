@@ -1,3 +1,5 @@
+/* Error.css */
+
 .error-container {
     display: flex;
     flex-direction: column;
@@ -34,10 +36,12 @@
   .error-title {
     font-size: 6rem; 
     color: black; 
+    font-family: Verdana, sans-serif;
   }
   .error-phrase{
     font-size: 2rem;
     color: black;
     font-weight: bold;
+    font-family: Verdana, sans-serif;
   }
   
