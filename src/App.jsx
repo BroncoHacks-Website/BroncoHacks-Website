@@ -24,7 +24,7 @@ function App() {
         <Route path="/Team" element={<MeetTheTeam />} />
         <Route path="/Sponsors" element={<Sponsors />} />
         <Route path="/Schedule" element={<Schedule />} />
-        <Route path="/Error" element={<Error />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
