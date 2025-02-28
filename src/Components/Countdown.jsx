@@ -3,20 +3,19 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 /*
-Requires deadline to be passed on as a parameter
+Requires deadline and title to be passed on as parameters
 Example:
 let deadline = "October, 31, 2024";
-<Countdown deadline={deadline} />
+<Countdown deadline={deadline} title="BroncoHacks 2025 is starting in" />
 or 
-<Countdown deadline="October, 31, 2024" />
+<Countdown deadline="October, 31, 2024" title="BroncoHacks 2025 is starting in " />
 */
 
-function Countdown(props) {
+function Countdown({ deadline, title }) {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  const deadline = props.deadline;
 
   const createLeadingZero = (num) => {
     return num < 10 ? "0" + num : num;
@@ -46,7 +45,7 @@ function Countdown(props) {
   return (
     <>
       <div className="cd-container" role="timer" tabIndex="0">
-        <h2 className="cd-title">BroncoHacks 2025 is starting in</h2>
+        <h2 className="cd-title">{title}</h2>
         <div className="cd-time-wrapper">
           <h1 className="cd-days">{createLeadingZero(days)}</h1>
           <span className="cd-semicolon">:</span>
