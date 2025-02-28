@@ -32,6 +32,7 @@ function Home() {
   return (
     <>
       <div className="home-featured-container">
+      <Countdown deadline="March, 4, 2025" title="Applications for BroncoHacks 2025 Open In" />
         <div className="home-featured-row">
           <div className="description-box">
             <DescriptionBox />
@@ -40,7 +41,7 @@ function Home() {
             <Slideshow slides={slidesData} />
           </div>
         </div>
-        <Countdown deadline="April, 18, 2025" />
+        <Countdown deadline="April, 18, 2025" title="BroncoHacks 2025 is starting in"/>
       </div>
     </>
   );
