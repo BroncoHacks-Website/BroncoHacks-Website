@@ -24,6 +24,11 @@ const faqs = [
       "Food will be completely free! There will be 4 free meals provided for each participant.",
   },
   {
+    question: "Can new grads participate?",
+    answer:
+      "Students who graduated specifically in 2024 AND were alumni of CPP are allowed to participate granted they still fulfill the at least 1 CPP member rule.",
+  },
+  {
     question: "Will I Need To Stay There The Whole Time?",
     answer:
       "You are not required to stay the full time. However, in order to qualify you must have at least one team member present on the day when you present your project to the judges.",
