@@ -14,6 +14,8 @@ import Overview4 from "../Assets/BroncoHacks2024Photos/Overview4.jpg";
 import Overview5 from "../Assets/BroncoHacks2024Photos/Overview5.jpg";
 import Overview6 from "../Assets/BroncoHacks2024Photos/Overview6.jpg";
 import Winners1 from "../Assets/BroncoHacks2024Photos/Winners1.jpg";
+import Banner1 from "../Assets/BroncoHacks_Banner1.png";
+import Banner2 from "../Assets/BroncoHacks_Banner_ScreenWidth.png";
 
 function Home() {
   const slidesData = [
@@ -32,7 +34,18 @@ function Home() {
   return (
     <>
       <div className="home-featured-container">
+<<<<<<< HEAD
       <Countdown deadline="March, 4, 2025" title="Applications for BroncoHacks 2025 Open In" />
+=======
+
+        <div className="banner-container">
+          <img src={Banner2} className="broncohacks_banner"></img>
+          <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank"></a>
+        </div>
+        {/* <img src={Banner2} className="broncohacks_banner"></img> */}
+
+        
+>>>>>>> origin/main
         <div className="home-featured-row">
           <div className="description-box">
             <DescriptionBox />
