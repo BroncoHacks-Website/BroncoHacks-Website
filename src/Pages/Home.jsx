@@ -15,7 +15,7 @@ import Overview5 from "../Assets/BroncoHacks2024Photos/Overview5.jpg";
 import Overview6 from "../Assets/BroncoHacks2024Photos/Overview6.jpg";
 import Winners1 from "../Assets/BroncoHacks2024Photos/Winners1.jpg";
 import Banner1 from "../Assets/BroncoHacks_Banner1.png";
-import Banner2 from "../Assets/BroncoHacks_Banner2.png";
+import Banner2 from "../Assets/BroncoHacks_Banner_ScreenWidth.png";
 
 function Home() {
   const slidesData = [
@@ -36,7 +36,7 @@ function Home() {
       <div className="home-featured-container">
 
         <div className="banner-container">
-          <img src={Banner1} className="broncohacks_banner"></img>
+          <img src={Banner2} className="broncohacks_banner"></img>
           <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank"></a>
         </div>
         {/* <img src={Banner2} className="broncohacks_banner"></img> */}
