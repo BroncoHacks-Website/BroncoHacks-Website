@@ -134,6 +134,24 @@ function Sponsors() {
               <img src="https://media.licdn.com/dms/image/v2/D560BAQGWIzMbNT4ZJA/company-logo_200_200/company-logo_200_200/0/1728451419126/cpp_shecodes_logo?e=2147483647&v=beta&t=5MgLg-ipCr66gvnhl3TsGGEtl9qcyk6zPJ629Da0dAY" />
             </a>
           </li>
+          <li>
+              <a
+                href="https://www.instagram.com/cpp.sea/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/298273847_801180221039525_1382602391056985971_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=111&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=Lo1WCxn9b7wQ7kNvgFd0ZkY&_nc_zt=24&_nc_ht=scontent-lax3-2.cdninstagram.com&oh=00_AYAJCQftm4qL6N15R4b6sSf6Ef2yCuZLPzp1gcjJWY8ykw&oe=67CD5312" />
+              </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/calpolyswift/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/43985336_2167935469918009_5693803784568832_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=103&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=pro0mu5HS6oQ7kNvgE-UGrL&_nc_zt=24&_nc_ht=scontent-lax3-2.cdninstagram.com&oh=00_AYCsZ-9IOLNxq0j0hmBN_oSfLCgZ9ckChFEAd-Nxa0CIPQ&oe=67CD47DA" />
+                </a>
+              </li>
         </ul>
         <div className="sponsor-container">
           <button className="sponsor-button">Previous Sponsors</button>
