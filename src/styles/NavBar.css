@@ -54,14 +54,13 @@
   margin: 0 1rem;
 }
 
-.navbar-links li:hover {
-  text-decoration: underline;
-  background-color: #e5e5e5;
-}
-
 .navbar-links h1 {
   color: black;
   text-decoration: unde;
+}
+
+.navbar-links h1:hover {
+  color: #61dab5;
 }
 
 .navbar-links button {
@@ -145,7 +144,7 @@
   }
 
   .dropdown-menu ul li:hover {
-    background-color: #b0b0b0;
+    /* background-color: #b0b0b0; */
     cursor: pointer;
     border-radius: 10px;
   }
