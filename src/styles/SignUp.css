@@ -1,0 +1,13 @@
+
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url('../Assets/Skibidi.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 36px;
+  }
