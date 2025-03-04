@@ -34,18 +34,6 @@ function Home() {
   return (
     <>
       <div className="home-featured-container">
-<<<<<<< HEAD
-      <Countdown deadline="March, 4, 2025" title="Applications for BroncoHacks 2025 Open In" />
-=======
-
-        <div className="banner-container">
-          <img src={Banner2} className="broncohacks_banner"></img>
-          <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank"></a>
-        </div>
-        {/* <img src={Banner2} className="broncohacks_banner"></img> */}
-
-        
->>>>>>> origin/main
         <div className="home-featured-row">
           <div className="description-box">
             <DescriptionBox />
