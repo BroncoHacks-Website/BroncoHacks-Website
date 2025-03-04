@@ -54,11 +54,6 @@
   margin: 0 1rem;
 }
 
-.navbar-links li:hover {
-  /* text-decoration: underline; */
-  /* background-color: #e5e5e5; */
-}
-
 .navbar-links h1 {
   color: black;
   text-decoration: unde;
