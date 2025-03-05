@@ -81,7 +81,7 @@ function About() {
             </ul>
           </div>
           <div className="about-container-right">
-            <h2>Cal Poly Pomona's Student Led Hackathon Committee</h2>
+            <h2>Cal Poly Pomona's Student-Led Hackathon Committee</h2>
             <p>
               BroncoHacks is a student-led organization with the intended goal
               of bringing hackathon culuture to CPP and the surrounding area.

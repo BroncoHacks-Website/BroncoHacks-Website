@@ -8,7 +8,7 @@ function Avanade() {
   const slidesMH = [{ url: HawkTuah1 }, { url: Podium1 }, { url: Speech1 }];
   return (
     <div className="winner-container">
-      <h1 className="main-title">Avanade AI For a Better Future</h1>
+      <h1 className="main-title" id="avanade-hackathon-title">Avanade AI For a Better Future</h1>
       <p>
         The BroncoHacks committee assisted Avanade in Spring 2024 with bringing
         AI For a Better Future to life at Cal Poly Pomona. The committee was

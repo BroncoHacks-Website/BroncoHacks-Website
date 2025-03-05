@@ -1,11 +1,11 @@
 .db-container {
   position: relative;
   width: 464px;
-  height: 250px;
+  height: auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 3px gray;
-  padding: 1em;
+  padding: 1.25em;
   margin: 1em auto;
 }
 
@@ -37,7 +37,7 @@
 
 .db-mascot {
   position: absolute;
-  height: 8em;
+  height: 8.5em;
   bottom: 0;
   left: 0;
 }

@@ -1,4 +1,5 @@
 import Slideshow from "/src/Components/Slideshow.jsx";
+import "../styles/PastEvents.css";
 
 import Overview1 from "../Assets/MiniHackPhotos/Overview1.jpg";
 import Overview2 from "../Assets/MiniHackPhotos/Overview2.jpg";
@@ -20,7 +21,7 @@ function MiniHack() {
   ];
   return (
     <div className="winner-container">
-      <h1 className="main-title">Mini Hack 2023 & 2024</h1>
+      <h1 className="main-title" id="minihack-title">Mini Hack 2023 & 2024</h1>
       <p>
         Mini Hack is targeted towards incoming students who have never coded
         outside of the classroom before. The goal of "minihacks" are to have all
