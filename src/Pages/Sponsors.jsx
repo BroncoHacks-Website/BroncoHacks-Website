@@ -77,7 +77,7 @@ function Sponsors() {
             Email @cppbroncohacks@gmail.com for sponsorship oppurtunities.
           </h3>
           <h3>-----or-----</h3>
-          <h3>Sponsor directly to any of the clubs below.</h3>
+          <h3>Sponsor directly to any of these clubs below.</h3>
         </div>
         <ul>
           <li>
