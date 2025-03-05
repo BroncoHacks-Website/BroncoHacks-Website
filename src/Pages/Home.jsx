@@ -16,10 +16,9 @@ import Overview5 from "../Assets/BroncoHacks2024Photos/Overview5.jpg";
 import Overview6 from "../Assets/BroncoHacks2024Photos/Overview6.jpg";
 import Winners1 from "../Assets/BroncoHacks2024Photos/Winners1.jpg";
 import Banner from "../Assets/BroncoHacks_Banner_ScreenWidth_2.png";
-import ClickableBanner from "../Assets/ClickableBanner.png"
+import ClickableBanner from "../Assets/ClickableBanner.png";
 
 function Home() {
-
   const [mouseHover, setMouseHover] = useState(false);
 
   const slidesData = [
@@ -38,9 +37,8 @@ function Home() {
   return (
     <>
       <div className="home-featured-container">
-
         <div className="banner-container">
-          { mouseHover ? (
+          {mouseHover ? (
             <img src={ClickableBanner} className="broncohacks_banner"></img>
           ) : (
             <img src={Banner} className="broncohacks_banner"></img>
@@ -48,13 +46,24 @@ function Home() {
 
           {/* <img src={Banner1} className="broncohacks_banner"></img> */}
           {/* <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank" onMouseEnter={() => setMouseHover(true)} onMouseLeave={() => setMouseHover(false)} style={{ cursor: mouseHover ? `url(${bruh}), auto` : "pointer" }}> */}
-          <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank" onMouseEnter={() => setMouseHover(true)} onMouseLeave={() => setMouseHover(false)}> 
-            </a>
+          <a
+            href="https://broncohacksportal.org/"
+            className="sign-up-link"
+            target="_blank"
+            onMouseEnter={() => setMouseHover(true)}
+            onMouseLeave={() => setMouseHover(false)}
+          ></a>
         </div>
         {/* <img src={Banner2} className="broncohacks_banner"></img> */}
 
-        <a className="register-button" href="https://broncohacksportal.org/" target="_blank">Register Now!</a>
-        
+        <a
+          className="register-button"
+          href="https://broncohacksportal.org/"
+          target="_blank"
+        >
+          Register Now!
+        </a>
+
         <div className="home-featured-row">
           <div className="description-box">
             <DescriptionBox />
@@ -63,7 +72,10 @@ function Home() {
             <Slideshow slides={slidesData} />
           </div>
         </div>
-        <Countdown deadline="April, 18, 2025" title="BroncoHacks 2025 is starting in"/>
+        <Countdown
+          deadline="April, 18, 2025"
+          title="BroncoHacks 2025 is starting in"
+        />
       </div>
     </>
   );

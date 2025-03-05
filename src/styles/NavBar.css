@@ -94,7 +94,7 @@
   display: none;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1300px) {
   .navbar-links {
     display: none;
   }
