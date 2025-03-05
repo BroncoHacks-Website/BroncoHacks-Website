@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="navbar">
       <Link className="navbar-header" to="/">
         <img src={BroncoHacksLogo} alt="" />
-        <h1>BRONCO HACKS</h1>
+        <h1>BroncoHacks</h1>
       </Link>
 
       <ul className="navbar-links">

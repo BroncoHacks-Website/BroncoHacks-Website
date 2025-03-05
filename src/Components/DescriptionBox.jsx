@@ -14,7 +14,7 @@ function DescriptionBox() {
           />
           <span className="db-title">
             <h1>BroncoHacks</h1>
-            <h2>California Polytechnic State University, Pomona</h2>
+            <h2>California State Polytechnic University, Pomona</h2>
           </span>
         </div>
         <div className="db-content-wrapper">
