@@ -11,13 +11,15 @@ footer {
   width: 100%;
   padding: 1rem 0;
   box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: #97D8C4;
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -25,7 +27,8 @@ img {
 }
 
 img.broncohackslogo {
-  height: 10rem;
+  height: 6rem;
+  border-radius: 50%;
 }
 
 h3 {
@@ -60,7 +63,26 @@ h3 {
 
 .footer-content ul li {
   display: inline-block;
-  margin: 0.8rem;
+  margin: 0.8rem 0.4rem;
+}
+
+.socials_img {
+  height: 3rem;
+}
+
+#email_link {
+  color:rgb(4, 60, 105);
+  font-size: 0.8rem;
+}
+
+#socials-header {
+  color: white;
+}
+
+#rights_reserved_text {
+  position: absolute;
+  bottom: 0;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -89,5 +111,6 @@ h3 {
 
   img.broncohackslogo {
     height: 6.5rem;
+    border-radius: 50%;
   }
 }
