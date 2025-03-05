@@ -50,12 +50,13 @@ const Navbar = () => {
             <h1>Schedule</h1>
           </Link>
         </li> */}
-        {/* <Link
+        <a
           className="apply-button"
-          to={isAuthenticated ? "/profile" : "/login"}
+          href="https://broncohacksportal.org/"
+          target="_blank"
         >
-          <button>{isAuthenticated ? <h1>PROFILE</h1> : <h1>APPLY</h1>}</button>
-        </Link> */}
+          <button>{<h1>APPLY</h1>}</button>
+        </a>
       </ul>
 
       <div className="hamburger">
@@ -118,6 +119,13 @@ const Navbar = () => {
             >
               <li className="dropdown-item">FAQ</li>
             </Link>
+            <a
+              href="https://broncohacksportal.org/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <li className="dropdown-item">Apply</li>
+            </a>
             {/* <Link
               className="navLinks"
               to="/schedule"
