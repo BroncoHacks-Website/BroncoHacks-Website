@@ -119,7 +119,11 @@ const Navbar = () => {
             >
               <li className="dropdown-item">FAQ</li>
             </Link>
-            <a href="https://broncohacksportal.org/" target="_blank">
+            <a
+              href="https://broncohacksportal.org/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <li className="dropdown-item">Apply</li>
             </a>
             {/* <Link
