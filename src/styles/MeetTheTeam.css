@@ -18,6 +18,7 @@
 
 .mtt-title-container {
   background-image: url("/cloud1.png");
+  padding: 1rem;
   height: 15rem;
   background-size: contain;
   background-repeat: no-repeat;
@@ -35,7 +36,7 @@
 }
 
 .mtt-title {
-  font-size: 2.5rem;
+  /* font-size: 2rem; */
   font-weight: bold;
   color: #000000;
   text-align: center;
@@ -129,7 +130,7 @@
   display: inline-block;
   border-radius: 20px;
   background-color: #72dbbb;
-  box-shadow: 0 10px #666;
+  box-shadow: 0 0.3rem #666;
   transition: background-color 0.2s;
 }
 
@@ -138,13 +139,13 @@
 }
 
 .role-buttons button:active {
-  background-color: #3e8e41;
+  background-color: #59b398;
   box-shadow: 0 5x #666;
   transform: translateY(4px);
 }
 
 .role-buttons button:focus {
-  background-color: #3e8e41;
+  background-color: #59b398;
   box-shadow: 0 5x #666;
   transform: translateY(4px);
 }

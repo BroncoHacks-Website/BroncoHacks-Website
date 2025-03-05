@@ -17,11 +17,25 @@
   margin-bottom: 32px;
 }
 
+#broncohacks2024-title {
+  color: gold;
+}
+
+#minihack-title {
+  color: rgb(37, 105, 252);
+}
+
+#avanade-hackathon-title {
+  color: rgb(255, 169, 9);
+}
+
+
 .category-title {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 16px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .navigation-container {

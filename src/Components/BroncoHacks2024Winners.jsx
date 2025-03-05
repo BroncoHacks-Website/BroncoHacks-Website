@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import data from "../Assets/Profile/BroncoHacks2024Winners.js";
-import "../styles/BroncoHacks2024Winners.css";
+import "../styles/PastEvents.css";
 import Slideshow from "/src/Components/Slideshow.jsx";
 
 import Food1 from "../Assets/BroncoHacks2024Photos/Food1.jpg";
@@ -86,7 +86,7 @@ const BroncoHacks2024Winners = () => {
 
   return (
     <div className="winner-container">
-      <h1 className="main-title">BroncoHacks & Previous Winners</h1>
+      <h1 className="main-title" id="broncohacks2024-title">BroncoHacks & Previous Winners</h1>
       <p>
         BroncoHacks 2024 took place from February 2nd 2024 - February 3rd 2024.
         There were over 130 participants across two categories: Web Development

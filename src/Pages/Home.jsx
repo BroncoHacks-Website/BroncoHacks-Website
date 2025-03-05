@@ -3,6 +3,7 @@ import Slideshow from "/src/Components/Slideshow.jsx";
 import DescriptionBox from "../Components/DescriptionBox";
 import Countdown from "../Components/Countdown";
 import "/src/styles/Home.css";
+import { useState } from "react";
 
 import Food1 from "../Assets/BroncoHacks2024Photos/Food1.jpg";
 import Judge1 from "../Assets/BroncoHacks2024Photos/Judge1.jpg";
@@ -14,10 +15,13 @@ import Overview4 from "../Assets/BroncoHacks2024Photos/Overview4.jpg";
 import Overview5 from "../Assets/BroncoHacks2024Photos/Overview5.jpg";
 import Overview6 from "../Assets/BroncoHacks2024Photos/Overview6.jpg";
 import Winners1 from "../Assets/BroncoHacks2024Photos/Winners1.jpg";
-import Banner1 from "../Assets/BroncoHacks_Banner1.png";
-import Banner2 from "../Assets/BroncoHacks_Banner_ScreenWidth.png";
+import Banner from "../Assets/BroncoHacks_Banner_ScreenWidth_2.png";
+import ClickableBanner from "../Assets/ClickableBanner.png"
 
 function Home() {
+
+  const [mouseHover, setMouseHover] = useState(false);
+
   const slidesData = [
     { url: Food1 },
     { url: Judge1 },
@@ -36,11 +40,20 @@ function Home() {
       <div className="home-featured-container">
 
         <div className="banner-container">
-          <img src={Banner2} className="broncohacks_banner"></img>
-          <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank"></a>
+          { mouseHover ? (
+            <img src={ClickableBanner} className="broncohacks_banner"></img>
+          ) : (
+            <img src={Banner} className="broncohacks_banner"></img>
+          )}
+
+          {/* <img src={Banner1} className="broncohacks_banner"></img> */}
+          {/* <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank" onMouseEnter={() => setMouseHover(true)} onMouseLeave={() => setMouseHover(false)} style={{ cursor: mouseHover ? `url(${bruh}), auto` : "pointer" }}> */}
+          <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank" onMouseEnter={() => setMouseHover(true)} onMouseLeave={() => setMouseHover(false)}> 
+            </a>
         </div>
         {/* <img src={Banner2} className="broncohacks_banner"></img> */}
 
+        <a className="register-button" href="https://broncohacksportal.org/" target="_blank">Register Now!</a>
         
         <div className="home-featured-row">
           <div className="description-box">
