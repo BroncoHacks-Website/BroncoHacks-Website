@@ -1,99 +1,101 @@
 /* ---- Main Content ---- */
 .home-featured-container {
-    /* padding: 4rem 0; */
-    background-image: url('/src/Assets/Design/racetrack-background.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* padding: 4rem 0; */
+  background-image: url("/src/Assets/Design/racetrack-background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-featured-row {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
 
 /* ---- Banner ---- */
 .banner-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .broncohacks_banner {
-    position: relative;
-    /* width: 90%; */
-    width: 100%;
-    height: 100%;
-    /* margin-bottom: 3em; */
-    /* border: 0.5rem solid #97D8C4; */
-    border-bottom: 0.5rem solid #97D8C4;
-    /* border-radius: 0.625rem; */
-    z-index: 0;
+  position: relative;
+  /* width: 90%; */
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 3em; */
+  /* border: 0.5rem solid #97D8C4; */
+  border-bottom: 0.5rem solid #97d8c4;
+  /* border-radius: 0.625rem; */
+  z-index: 0;
 }
 
-
 .sign-up-link {
-    position: absolute;
-    width: 25%;
-    height: 35%;
-    /* border: 0.2rem solid black; */
-    top: 40%;
-    left: 37%;
-    z-index: 1;
+  position: absolute;
+  width: 25%;
+  height: 35%;
+  /* border: 0.2rem solid black; */
+  top: 40%;
+  left: 37%;
+  z-index: 1;
 }
 
 .floating-text {
-    position: fixed; /* Keeps it at cursor position */
-    transform: translate(10px, -25px); /* Offset the text slightly from the cursor */
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 6px 10px;
-    border-radius: 4px;
-    font-size: 14px;
-    pointer-events: none; /* Ensures text doesn’t interfere with hover detection */
-    white-space: nowrap;
-    transition: opacity 0.1s ease-in-out;
+  position: fixed; /* Keeps it at cursor position */
+  transform: translate(
+    10px,
+    -25px
+  ); /* Offset the text slightly from the cursor */
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none; /* Ensures text doesn’t interfere with hover detection */
+  white-space: nowrap;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .register-button {
-    width: 18%;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 2rem 0;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 20px;
-    background-color: #72dbbb;
-    box-shadow: 0 0.2rem #666;
-    transition: transform 0.2s ease-in-out, background-color 0.2s;
+  width: 18%;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 2rem 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #72dbbb;
+  box-shadow: 0 0.2rem #666;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
 }
 
 .register-button:hover {
-    transform: scale(1.1); /* Enlarges the button by 10% without affecting layout */
-    background-color: #68ceaf;
+  transform: scale(
+    1.1
+  ); /* Enlarges the button by 10% without affecting layout */
+  background-color: #68ceaf;
 }
-
-
 
 /* ---- Slideshow ---- */
 .slides {
-    position: left;
+  position: left;
 }
 
 /* .containerStyles {
@@ -106,31 +108,31 @@
 } */
 
 .home-map {
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .map-wrapper {
-    outline: 0.313rem solid #97D8C4;
-    border-radius: 0.625rem;
-    outline-width: 0.35rem;
+  outline: 0.313rem solid #97d8c4;
+  border-radius: 0.625rem;
+  outline-width: 0.35rem;
 }
 
 /* ---- Media Queries ---- */
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {    
-    .home-featured-row1 {
-        display: flex;
-        column-gap: 3em;
-        align-items: center;
-        justify-content: center;
-    }
+@media only screen and (min-width: 992px) {
+  .home-featured-row1 {
+    display: flex;
+    column-gap: 3em;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1200px) {
-    .home-featured-row {
-        flex-direction: column;
-    }
+  .home-featured-row {
+    flex-direction: column;
+  }
 }
