@@ -47,7 +47,7 @@ function Home() {
           {/* <img src={Banner1} className="broncohacks_banner"></img> */}
           {/* <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank" onMouseEnter={() => setMouseHover(true)} onMouseLeave={() => setMouseHover(false)} style={{ cursor: mouseHover ? `url(${bruh}), auto` : "pointer" }}> */}
           <a
-            href="https://broncohacksportal.org/"
+            href="https://forms.gle/hCHs4uMwd6zyNXbNA"
             className="sign-up-link"
             target="_blank"
             onMouseEnter={() => setMouseHover(true)}
@@ -58,11 +58,16 @@ function Home() {
 
         <a
           className="register-button"
-          href="https://broncohacksportal.org/"
+          href="https://forms.gle/hCHs4uMwd6zyNXbNA"
           target="_blank"
         >
           Register Now!
         </a>
+
+        <Countdown
+          deadline="April, 18, 2025"
+          title="BroncoHacks 2025 is starting in"
+        />
 
         <div className="home-featured-row">
           <div className="description-box">
@@ -72,10 +77,6 @@ function Home() {
             <Slideshow slides={slidesData} />
           </div>
         </div>
-        <Countdown
-          deadline="April, 18, 2025"
-          title="BroncoHacks 2025 is starting in"
-        />
       </div>
     </>
   );

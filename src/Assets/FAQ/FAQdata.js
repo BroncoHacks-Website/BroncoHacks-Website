@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Can non-CPP Students Participate?",
     answer:
-      "BroncoHacks2025 will be open to students from other schools as long as one member from your team is a current CPP Student",
+      "BroncoHacks2025 welcomes all schools as long as they are current students. For new grads, only 2024 new grads from CPP are allowed.",
   },
   {
     question: "Will meals be provided?",
@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Can new grads participate?",
     answer:
-      "Students who graduated specifically in 2024 AND were alumni of CPP are allowed to participate granted they still fulfill the at least 1 CPP member rule.",
+      "Students who graduated specifically in 2024 AND were alumni of CPP are allowed to participate.",
   },
   {
     question: "Will I Need To Stay There The Whole Time?",
