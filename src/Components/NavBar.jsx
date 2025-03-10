@@ -52,7 +52,7 @@ const Navbar = () => {
         </li> */}
         <a
           className="apply-button"
-          href="https://forms.gle/hCHs4uMwd6zyNXbNA"
+          href="https://www.broncohacksportal.org/"
           target="_blank"
         >
           <button>{<h1>APPLY</h1>}</button>

@@ -47,7 +47,7 @@ function Home() {
           {/* <img src={Banner1} className="broncohacks_banner"></img> */}
           {/* <a href="https://broncohacksportal.org/" class="sign-up-link" target="_blank" onMouseEnter={() => setMouseHover(true)} onMouseLeave={() => setMouseHover(false)} style={{ cursor: mouseHover ? `url(${bruh}), auto` : "pointer" }}> */}
           <a
-            href="https://forms.gle/hCHs4uMwd6zyNXbNA"
+            href="https://www.broncohacksportal.org/"
             className="sign-up-link"
             target="_blank"
             onMouseEnter={() => setMouseHover(true)}
@@ -58,7 +58,7 @@ function Home() {
 
         <a
           className="register-button"
-          href="https://forms.gle/hCHs4uMwd6zyNXbNA"
+          href="https://www.broncohacksportal.org/"
           target="_blank"
         >
           Register Now!
