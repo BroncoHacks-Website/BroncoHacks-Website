@@ -42,7 +42,7 @@
 
 /* Title styling */
 .faq-title-container {
-  background-image: url("/cloud1.png");
+  background-image: url("src/Assets/cloud1.png");
   height: 10.25rem;
   background-size: contain;
   background-repeat: no-repeat;

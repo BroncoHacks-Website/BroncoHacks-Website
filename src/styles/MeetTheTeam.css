@@ -17,7 +17,7 @@
 }
 
 .mtt-title-container {
-  background-image: url("/cloud1.png");
+  background-image: url("/src/Assets/cloud1.png");
   padding: 1rem;
   height: 15rem;
   background-size: contain;
