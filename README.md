@@ -12,4 +12,4 @@ Welcome to the source code for the Bronco Hacks Website! The website is used to 
 
 To run and test the site locally, clone the repository and run<br/>
 `npm install` to install dependencies, and<br/>
-`npm run dev` to run the development server
+`npm run dev` to run the development server.
