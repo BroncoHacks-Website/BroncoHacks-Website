@@ -58,5 +58,17 @@
     "description": "An artificial intelligence research laboratory.", 
     "email": "contact@openai.com", 
     "website": "https://www.openai.com"
+  },
+  { 
+    "name": "Arc", 
+    "description": "A privacy-focused web browser.", 
+    "email": "support@arc.net", 
+    "website": "https://arc.net/campus/cpp?fbclid=PAZXh0bgNhZW0CMTEAAaY7vqTcPwxfQcMNzpAfOVuSzIOd2Kj1V1XmaWYr9rtmFykM0g4toa0HaGM_aem_4-sWGw29GuO4TjsfcOLeWw"
+  },
+  { 
+    "name": "Netscout", 
+    "description": "A provider of cybersecurity and network performance solutions.", 
+    "email": "info@netscout.com", 
+    "website": "https://www.netscout.com"
   }
 ]

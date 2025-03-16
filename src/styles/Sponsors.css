@@ -152,7 +152,7 @@
 .logo-wrapper {
   position: relative;
   display: inline-block;
-  margin: 10px;
+  margin: 20px;
   animation: floatLogo 5s ease-in-out infinite alternate;
 }
 
@@ -219,6 +219,12 @@ ul li a img {
   max-height: 100px;
 }
 
+.logo-wrapper img {
+  width: auto;
+  height: 100px;
+  object-fit: contain; 
+}
+
 /* Position company info tooltip */
 .logo-row:nth-child(2) .company-info {
   position: absolute;
@@ -257,6 +263,8 @@ ul li a img {
 .company-info {
   bottom: auto; /* Reset the bottom position */
   top: 100%; /* Position the popup slightly below the logo */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .company-info span {
@@ -314,7 +322,8 @@ ul li a img {
   box-shadow: 0 7px #999;
   padding: 5px 10px;
   font-size: 35px;
-  font-family: "Snacker", sans-serif;
+  font-family: sans-serif;
+  /*font-family: "Snacker", sans-serif;*/
   font-weight: bold;
   color: white;
   background-color: #72dbbb;

@@ -9,6 +9,8 @@ import sponsorPackage from "../Assets/Sponsors/sponsorship.png";
 // import att from "../Assets/Sponsors/att.png";
 import avanade from "../Assets/Sponsors/avanade.png";
 import mlh from "../Assets/Sponsors/mlh.png";
+import arc from "../Assets/Sponsors/arc.png";
+import netscout from "../Assets/Sponsors/netscout.png";
 // import grubhub from "../Assets/Sponsors/grubhub.png";
 // import google from "../Assets/Sponsors/google.png";
 // import npm from "../Assets/Sponsors/npm.png";
@@ -46,7 +48,11 @@ function Sponsors() {
   const sponsorLogos = [
     { id: 1, logo: avanade, text: "Avanade" },
     { id: 2, logo: mlh, text: "MLH" },
+    { id: 3, logo: arc, text: "Arc"},
   ];
+  const sponsorLogos2 = [
+    { id: 1, logo: netscout, text: "Netscout"},
+  ]
 
   const [isOpen, setOpen] = React.useState(false);
   const handleClick = () => {
@@ -135,6 +141,52 @@ function Sponsors() {
             </a>
           </li>
         </ul>
+        <div className="sponsor-container">
+          <button className="sponsor-button">BroncoHacks 2025 Sponsors</button>
+        </div>
+        <div className="logo-row">
+          {sponsorLogos2.map((logo) => {
+            // Find the sponsor object in sponsorsData with the matching name
+            const sponsor = sponsorsData.find(
+              (sponsor) => sponsor.name === logo.text
+            );
+            return (
+              <div
+                key={logo.id}
+                className="logo-wrapper"
+                onMouseEnter={() => handleLogoHover(logo)}
+                onMouseLeave={handleLogoLeave}
+              >
+                <img src={logo.logo} alt={logo.text} />
+                {hoveredLogo && hoveredLogo.id === logo.id && (
+                  <div className="company-info">
+                    <span>
+                      <h2 className="company-title">{logo.text}</h2>
+                      {/* Check if sponsor is found before accessing its properties */}
+                      {sponsor && (
+                        <>
+                          <p className="sponsor-description">
+                            {sponsor.description}
+                          </p>
+                          <p className="contact-info">{sponsor.email}</p>
+                          <p className="website-info">
+                            <a
+                              href={sponsor.website}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {sponsor.website}
+                            </a>
+                          </p>
+                        </>
+                      )}
+                    </span>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
         <div className="sponsor-container">
           <button className="sponsor-button">Previous Sponsors</button>
         </div>
