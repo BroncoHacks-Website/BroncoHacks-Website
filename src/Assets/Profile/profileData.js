@@ -30,6 +30,8 @@ import StephaniePocci from "./team/StephaniePocci.jpeg";
 import JohnnyFok from "./team/JohnnyFok.jpeg";
 import KeerthiSreeram from "./team/KeerthiSreeram.jpg";
 
+import MohammadHussain from "./team/MohammadHussain.jpeg";
+
 export const profileData = [
   // Organizers && Project Managers
   {
@@ -261,6 +263,13 @@ export const profileData = [
     role: ["BroncoHacks 2024-2025 Committee"],
     picture: KeerthiSreeram,
     linkedin: "https://www.linkedin.com/in/keerthi-sreeram/",
+  },
+  {
+    id: 0,
+    name: "Mohammad Husain",
+    role: ["Primary Organizer"],
+    picture: MohammadHussain,
+    linkedin: "https://www.linkedin.com/in/mohammad-iftekhar-husain-5205a84/",
   },
 ];
 

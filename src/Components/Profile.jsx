@@ -3,7 +3,11 @@ import "../styles/Profile.css"; /* temporary just so it visually looks fine */
 import linkedin from "../Assets/Profile/icon/linkedin-small.png";
 
 function Profile(props) {
-const person = props.person;
+  const person = props.person;
+
+  if (person.name === "Mohammad Husain") {
+    person.role = ["Faculty Advisor"];
+  }
 
   return (
     <div className="profile">
@@ -13,21 +17,17 @@ const person = props.person;
         alt={"Picture of " + person.name}
       />
       <div className="profile-body">
-        <div className="name">
-          {person.name}
-        </div>
+        <div className="name">{person.name}</div>
         <div className="roles">
-          {person.role.map((role, index) => ( 
-            <div key={index} className="role">{role}</div>
+          {person.role.map((role, index) => (
+            <div key={index} className="role">
+              {role}
+            </div>
           ))}
         </div>
       </div>
       <a href={person.linkedin} target="_blank" rel="noopener noreferrer">
-        <img
-          className="linkedin-picture"
-          src={linkedin}
-          alt="LinkedIn"
-        />
+        <img className="linkedin-picture" src={linkedin} alt="LinkedIn" />
       </a>
     </div>
   );
