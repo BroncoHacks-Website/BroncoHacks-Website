@@ -22,7 +22,7 @@ import GiselleAvila from "./team/GiselleAvila.png";
 // import JoshuaVejendla from "./team/JoshuaVejendla.jpeg";
 
 import MeganBee from "./team/MeganBee.jpeg";
-import ErikaLedesma from "./team/ErikaLedesma.jpeg";
+import ErikaLedesma from "./team/ErikaLedesma.jpg";
 import TonyTong from "./team/TonyTong.jpeg";
 import BradKim from "./team/BradKim.jpeg";
 import JaydenNguyen from "./team/JaydenNguyen.jpeg";
