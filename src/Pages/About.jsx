@@ -14,7 +14,7 @@ function About() {
         <div className="about-container-items">
           <div className="about-container-clubs">
             <h2>In Association With</h2>
-            <ul>
+            <ul>  
               <li>
                 <a
                   href="https://www.instagram.com/cppcss/"
