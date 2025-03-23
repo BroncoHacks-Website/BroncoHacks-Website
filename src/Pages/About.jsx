@@ -9,12 +9,16 @@ import swift_logo from "../Assets/Clubs/cpp_swift_logo.jpg";
 function About() {
   return (
     <div className="about-page-container">
+
+      <div className="about-title-container">
+        <h1 className="about-title">About Us</h1>
+      </div>
+
       <div className="about-container">
-        <h1>About Us</h1>
         <div className="about-container-items">
           <div className="about-container-clubs">
             <h2>In Association With</h2>
-            <ul>
+            <ul>  
               <li>
                 <a
                   href="https://www.instagram.com/cppcss/"

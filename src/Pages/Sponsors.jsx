@@ -1,265 +1,142 @@
-import * as React from "react";
+import { useState } from "react";
 import "../styles/Sponsors.css";
 import checkeredFlag from "../Assets/Design/checkeredflag.png";
-import sponsorsData from "../Assets/Sponsors/sponsors.json";
-import sponsorPackage from "../Assets/Sponsors/sponsorship.png";
 
-// Import the image files
-// import adobe from "../Assets/Sponsors/adobe.png";
-// import att from "../Assets/Sponsors/att.png";
 import avanade from "../Assets/Sponsors/avanade.png";
 import mlh from "../Assets/Sponsors/mlh.png";
-// import grubhub from "../Assets/Sponsors/grubhub.png";
-// import google from "../Assets/Sponsors/google.png";
-// import npm from "../Assets/Sponsors/npm.png";
-// import react from "../Assets/Sponsors/react.png";
-// import tesla from "../Assets/Sponsors/tesla.png";
-// import openai from "../Assets/Sponsors/openai.png";
+import grubhub from "../Assets/Sponsors/grubhub.png";
+import google from "../Assets/Sponsors/google.png";
+import npm from "../Assets/Sponsors/npm.png";
+import react from "../Assets/Sponsors/react.png";
+import tesla from "../Assets/Sponsors/tesla.png";
+import openai from "../Assets/Sponsors/openai.png";
+import sponsorPackage from "../Assets/Sponsors/BroncoHacks2025_SponsorshipPackages.pdf";
+import sponsorProspectus from "../Assets/Sponsors/BroncoHacks 2025 Sponsorship Prospectus Website Ver.pdf"
+import netscout from "../Assets/Sponsors/netscout.png";
+import arc from "../Assets/Sponsors/arc.webp";
+import redbull from "../Assets/Sponsors/redbull.jpg"
+
+import css_logo from "../Assets/Clubs/CSS_LOGO.png";
+import ds_ai_logo from "../Assets/Clubs/ds_ai_logo.png";
+import fast_logo from "../Assets/Clubs/fast_logo.png";
+import game_dev_logo from "../Assets/Clubs/game_dev.jpg";
+import gdg_logo from "../Assets/Clubs/gdg_logo.webp";
+import shecodes_logo from "../Assets/Clubs/shecodes_logo.png";
+import wit_logo from "../Assets/Clubs/wit_logo.webp";
+import cpp_swift_logo from "../Assets/Clubs/cpp_swift_logo.jpg";
 import sea_logo from "../Assets/Clubs/cpp_sea_logo.jpg";
-import swift_logo from "../Assets/Clubs/cpp_swift_logo.jpg";
+
 
 function Sponsors() {
-  const [hoveredLogo, setHoveredLogo] = React.useState(null);
 
-  const handleLogoHover = (logo) => {
-    setHoveredLogo(logo);
-  };
+  const [hoveredSponsor, setHoveredSponsor] = useState(null);
 
-  const handleLogoLeave = () => {
-    setHoveredLogo(null);
-  };
-
-  // const sponsorLogos = [
-  //   { id: 1, logo: react, text: "React" },
-  //   { id: 2, logo: tesla, text: "Tesla" },
-  //   { id: 3, logo: adobe, text: "Adobe" },
-  // ];
-  // const sponsorLogos2 = [
-  //   { id: 4, logo: avanade, text: "Avanade" },
-  //   { id: 5, logo: google, text: "Google" },
-  //   { id: 6, logo: npm, text: "npm" },
-  // ];
-  // const sponsorLogos3 = [
-  //   { id: 7, logo: att, text: "AT&T" },
-  //   { id: 8, logo: grubhub, text: "Grubhub" },
-  //   { id: 9, logo: openai, text: "OpenAI" },
-  // ];
-
-  const sponsorLogos = [
-    { id: 1, logo: avanade, text: "Avanade" },
-    { id: 2, logo: mlh, text: "MLH" },
+  const sponsors = [
+    { name: "Netscout", "contact": "+1-978-614-4000", "website": "https://www.netscout.com/", img: netscout, description: "A leader in network performance and cybersecurity solutions." },
+    { name: "Avanade", "contact": "TA-PR@avanade.com", "website": "https://www.avanade.com/en", img: avanade, description: "Providing digital and cloud services, business solutions, and design-led experiences." },
+    { name: "Arc", "website": "https://arc.net/", img: arc, description: "Global employment platform that connects developers with companies." },
+    { name: "Redbull", "contact": "customerservice@redbullshopus.com", "website": "https://www.redbullshopus.com/", img: redbull, description: "Red Bull gives you wings! A leader in the energy drink industry." },
+    { name: "MLH", "contact": "hi@mlh.io", "website": "https://mlh.io/", img: mlh, description: "Major League Hacking (MLH) powers 300+ student hackathons yearly, fostering innovation, community, and coding skills worldwide" }
   ];
 
-  const [isOpen, setOpen] = React.useState(false);
-  const handleClick = () => {
-    setOpen(!isOpen);
-  };
+  const previusSponsors = [
+    { name: "Avanade", "contact": "TA-PR@avanade.com", "website": "https://www.avanade.com/en", img: avanade, description: "Providing digital and cloud services, business solutions, and design-led experiences." },
+    { name: "MLH", "contact": "hi@mlh.io", "website": "https://mlh.io/", img: mlh, description: "Major League Hacking (MLH) powers 300+ student hackathons yearly, fostering innovation, community, and coding skills worldwide" }
+  ]
+
 
   return (
-    <div className="sponsors-container">
-      <div className="our-sponsors">
-        <div className="cloud-banner">
-          <img
-            src={checkeredFlag}
-            className="checkered-flag left"
-            alt="Checkered Flag"
-          />
-          <div className="cloud-text">
-            <h1>Become A Sponsor Today</h1>
-          </div>
-          <img
-            src={checkeredFlag}
-            className="checkered-flag right"
-            alt="Checkered Flag"
-          />
-        </div>
-        <div className="interested-container">
-          <h1>Interested in Sponsoring?</h1>
-          <h3>
-            Email @cppbroncohacks@gmail.com for sponsorship oppurtunities.
-          </h3>
-          <h3>-----or-----</h3>
-          <h3>Sponsor directly to any of these clubs below.</h3>
-        </div>
-        <ul>
-          <li>
-            <a
-              href="https://www.instagram.com/cppcss/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://ugc.production.linktr.ee/12da207a-6379-4d6a-b8ff-1b8fbbca1ad4_CFD8FBB7-FFEE-4DA9-A2FE-3C667A69CAE3.png?io=true&size=avatar-v3_0" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/gdsccpp/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://ugc.production.linktr.ee/4p5hpFASIaaOcaWE6AdQ_tBDmCVo0020fsjeY?io=true&size=avatar-v3_0" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/cppgamedev/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://pbs.twimg.com/profile_images/846356145555980292/hZ7Z5n0X_400x400.jpg" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/calpolyfast/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://cdn.campsite.bio/eyJidWNrZXQiOiJjYW1wc2l0ZS1iaW8tc3RvcmFnZSIsImtleSI6IkNhbFBvbHlGQVNULzk2ZmQ2OGFhLWM4ODEtNGZmYi05YjhjLWEwODliZWNiOWQyMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMH19fQ==" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/cppdsai/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://cppdsai.com/assets/img/Without%20Background.png" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/cppshecodes/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://media.licdn.com/dms/image/v2/D560BAQGWIzMbNT4ZJA/company-logo_200_200/company-logo_200_200/0/1728451419126/cpp_shecodes_logo?e=2147483647&v=beta&t=5MgLg-ipCr66gvnhl3TsGGEtl9qcyk6zPJ629Da0dAY" />
-            </a>
-          </li>
-          <li>
-              <a
-                href="https://www.instagram.com/cpp.sea/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={sea_logo} />
-              </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/calpolyswift/?hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={swift_logo} />
-                </a>
-              </li>
-        </ul>
-        <div className="sponsor-container">
-          <button className="sponsor-button">Previous Sponsors</button>
-        </div>
-        <div className="logo-row">
-          {sponsorLogos.map((logo) => {
-            // Find the sponsor object in sponsorsData with the matching name
-            const sponsor = sponsorsData.find(
-              (sponsor) => sponsor.name === logo.text
-            );
-            return (
-              <div
-                key={logo.id}
-                className="logo-wrapper"
-                onMouseEnter={() => handleLogoHover(logo)}
-                onMouseLeave={handleLogoLeave}
-              >
-                <img src={logo.logo} alt={logo.text} />
-                {hoveredLogo && hoveredLogo.id === logo.id && (
-                  <div className="company-info">
-                    <span>
-                      <h2 className="company-title">{logo.text}</h2>
-                      {/* Check if sponsor is found before accessing its properties */}
-                      {sponsor && (
-                        <>
-                          <p className="sponsor-description">
-                            {sponsor.description}
-                          </p>
-                          <p className="contact-info">{sponsor.email}</p>
-                          <p className="website-info">
-                            <a
-                              href={sponsor.website}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {sponsor.website}
-                            </a>
-                          </p>
-                        </>
-                      )}
-                    </span>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+    
+    <div className="sponsors-page-container ">
+      <head><meta name="viewport" content="width=device-width, initial-scale=1"/></head>
+
+      {/* cloud banner */}
+      <div className="cloud-banner">
+        
+        <div className="cloud-text-container">
+          <img src={checkeredFlag} className="checkered-flag left" alt="Checkered Flag" />
+          <h1>Our Sponsors</h1>
+          <img src={checkeredFlag} className="checkered-flag right" alt="Checkered Flag" />
         </div>
 
-        {/* <div className="logo-row">
-          {sponsorLogos2.map((logo) => {
-            const sponsor = sponsorsData.find((sponsor) => sponsor.name === logo.text);
-            return (
-              <div key={logo.id} className="logo-wrapper" onMouseEnter={() => handleLogoHover(logo)} onMouseLeave={handleLogoLeave}>
-                <img src={logo.logo} alt={logo.text} />
-                {hoveredLogo && hoveredLogo.id === logo.id && (
-                  <div className="company-info">
-                    <span>
-                      <h2 className="company-title">{logo.text}</h2>
-                      {sponsor && (
-                        <>
-                          <p className="sponsor-description">{sponsor.description}</p>
-                          <p className="contact-info">{sponsor.email}</p>
-                          <p className="website-info"><a href={sponsor.website} target="_blank" rel="noopener noreferrer">{sponsor.website}</a></p>
-                        </>
-                      )}
-                    </span>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="logo-row">
-          {sponsorLogos3.map((logo) => {
-            const sponsor = sponsorsData.find((sponsor) => sponsor.name === logo.text);
-            return (
-              <div key={logo.id} className="logo-wrapper" onMouseEnter={() => handleLogoHover(logo)} onMouseLeave={handleLogoLeave}>
-                <img src={logo.logo} alt={logo.text} />
-                {hoveredLogo && hoveredLogo.id === logo.id && (
-                  <div className="company-info">
-                    <span>
-                      <h2 className="company-title">{logo.text}</h2>
-                      {sponsor && (
-                        <>
-                          <p className="sponsor-description">{sponsor.description}</p>
-                          <p className="contact-info">{sponsor.email}</p>
-                          <p className="website-info"><a href={sponsor.website} target="_blank" rel="noopener noreferrer">{sponsor.website}</a></p>
-                        </>
-                      )}
-                    </span>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div> */}
       </div>
-      <div className="sponsor-container">
-        <button className="sponsor-button" onClick={handleClick}>
-          Sponsor Package
-        </button>
-        <img src={sponsorPackage}></img>
+
+      <div className="sponsors-container">
+        {sponsors.map((sponsor, index) => (
+            <div 
+              key={index} 
+              className="sponsor-image-wrapper"
+              onMouseEnter={() => setHoveredSponsor(index)}
+              onMouseLeave={() => setHoveredSponsor(null)}
+            >
+              <a href={sponsor.website} target="_blank">
+                <img src={sponsor.img} className="sponsor-image" alt={sponsor.name} />
+              </a> 
+              {hoveredSponsor === index && (
+                <div className="sponsor-description">
+                  <h2 className="company-title">{sponsor.name}</h2>
+                  {sponsor.description}
+                  <p className="contact-info">{sponsor.contact}</p>
+                </div>
+              )}
+            </div>
+          ))}
+
+      </div>
+
+      <div className="previous-sponsors-title">
+        Previous Sponsors        
+      </div>
+
+      <div className="previous-sponsors-container">
+        {previusSponsors.map((sponsor, index) => (
+              <div 
+                key={index} 
+                className="sponsor-image-wrapper"
+                onMouseEnter={() => setHoveredSponsor(index)}
+                onMouseLeave={() => setHoveredSponsor(null)}
+              >
+                <a href={sponsor.website} target="_blank">
+                  <img src={sponsor.img} className="sponsor-image" alt={sponsor.name} />
+                </a> 
+                {hoveredSponsor === index && (
+                    <div className="sponsor-description">
+                      <h2 className="company-title">{sponsor.name}</h2>
+                      {sponsor.description}
+                      <p className="contact-info">{sponsor.contact}</p>
+                    </div>
+                )}
+              </div>
+            ))}
+      </div>
+
+      <div className="previous-sponsors-title">
+        Sponsorship Prospectus       
+      </div>
+
+      <iframe src={sponsorProspectus} className="sponsor-packages" />
+
+      <div className="sponsor-us-container">
+        <h1>Interested in Sponsoring?</h1>
+        <h3>Email <a href="mailto:cppbroncohacks@gmail.com" target="_blank" className="broncohacks-email-link">cppbroncohacks@gmail.com</a> for sponsorship opportunities</h3>
+        <h3>or</h3>
+        <h3>Reach out to any of these clubs below!</h3>
+      </div>
+
+      <div className="clubs-container">
+        <a href="https://www.instagram.com/cppdsai/?hl=en" target="_blank"><img src={ds_ai_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cppgamedev/?hl=en" target="_blank"><img src={game_dev_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cppshecodes/?hl=en" target="_blank"><img src={shecodes_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cppcss/?hl=en" target="_blank"><img src={css_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/gdgcpp/?hl=en" target="_blank"><img src={gdg_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/calpolyfast/?hl=en" target="_blank"><img src={fast_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/calpolyswift/?hl=en" target="_blank"><img src={cpp_swift_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cpp.sea/?hl=en" target="_blank"><img src={sea_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/calpolywit/?hl=en" target="_blank"><img src={wit_logo} className="club-logo"></img></a>
       </div>
     </div>
-  );
+  )
+
 }
 
 export default Sponsors;
