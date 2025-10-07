@@ -16,15 +16,16 @@ import netscout from "../Assets/Sponsors/netscout.png";
 import arc from "../Assets/Sponsors/arc.webp";
 import redbull from "../Assets/Sponsors/redbull.jpg"
 
-import css_logo from "../Assets/Clubs/CSS_LOGO.png";
-import ds_ai_logo from "../Assets/Clubs/ds_ai_logo.png";
-import fast_logo from "../Assets/Clubs/fast_logo.png";
-import game_dev_logo from "../Assets/Clubs/game_dev.jpg";
-import gdg_logo from "../Assets/Clubs/gdg_logo.webp";
-import shecodes_logo from "../Assets/Clubs/shecodes_logo.png";
-import wit_logo from "../Assets/Clubs/wit_logo.webp";
-import cpp_swift_logo from "../Assets/Clubs/cpp_swift_logo.jpg";
-import sea_logo from "../Assets/Clubs/cpp_sea_logo.jpg";
+import css_logo from "../Assets/Clubs/cpp_css_logo.png";
+import gdg_logo from "../Assets/Clubs/cpp_gdg_logo.png";
+import gamedev_logo from "../Assets/Clubs/cpp_game_dev_logo.png";
+import fast_logo from "../Assets/Clubs/cpp_fast_logo.png";
+import dsai_logo from "../Assets/Clubs/cpp_ds_ai_logo.png";
+import shecodes_logo from "../Assets/Clubs/cpp_shecodes_logo.png";
+// import script_logo from "../Assets/Clubs/cpp_script_logo.png";
+import sea_logo from "../Assets/Clubs/cpp_sea_logo.png";
+import swift_logo from "../Assets/Clubs/cpp_swift_logo.png";
+import wit_logo from "../Assets/Clubs/cpp_wit_logo.png";
 
 
 function Sponsors() {
@@ -124,15 +125,16 @@ function Sponsors() {
       </div>
 
       <div className="clubs-container">
-        <a href="https://www.instagram.com/cppdsai/?hl=en" target="_blank"><img src={ds_ai_logo} className="club-logo"></img></a>
-        <a href="https://www.instagram.com/cppgamedev/?hl=en" target="_blank"><img src={game_dev_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cppdsai/?hl=en" target="_blank"><img src={dsai_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cppgamedev/?hl=en" target="_blank"><img src={gamedev_logo} className="club-logo"></img></a>
         <a href="https://www.instagram.com/cppshecodes/?hl=en" target="_blank"><img src={shecodes_logo} className="club-logo"></img></a>
-        <a href="https://www.instagram.com/cppcss/?hl=en" target="_blank"><img src={css_logo} className="club-logo"></img></a>
         <a href="https://www.instagram.com/gdgcpp/?hl=en" target="_blank"><img src={gdg_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cppcss/?hl=en" target="_blank"><img src={css_logo} className="club-logo"></img></a>
         <a href="https://www.instagram.com/calpolyfast/?hl=en" target="_blank"><img src={fast_logo} className="club-logo"></img></a>
-        <a href="https://www.instagram.com/calpolyswift/?hl=en" target="_blank"><img src={cpp_swift_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/calpolyswift/?hl=en" target="_blank"><img src={swift_logo} className="club-logo"></img></a>
         <a href="https://www.instagram.com/cpp.sea/?hl=en" target="_blank"><img src={sea_logo} className="club-logo"></img></a>
         <a href="https://www.instagram.com/calpolywit/?hl=en" target="_blank"><img src={wit_logo} className="club-logo"></img></a>
+        {/* <a href="https://www.instagram.com/cppscript/?hl=en" target="_blank"><img src={script_logo} className="club-logo"></img></a> */}
       </div>
     </div>
   )
