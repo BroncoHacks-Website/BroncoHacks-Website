@@ -88,7 +88,17 @@
 .schedule {
     margin: 20px 30px;
     background-color: #ffffff;
-    overflow: auto;
+    overflow: hidden; /* hide overflow when closed */
+    max-height: 0; /* collapsed */
+    opacity: 0;
+    transition: max-height 350ms ease, opacity 300ms ease, margin 300ms ease;
+    will-change: max-height, opacity;
+}
+
+.schedule.open {
+    max-height: 400px; /* large enough for content; adjust if needed */
+    opacity: 1;
+    overflow: auto; /* allow scrolling when open */
 }
 
 .schedule p {

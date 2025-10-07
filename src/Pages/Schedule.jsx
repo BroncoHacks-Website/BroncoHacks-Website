@@ -12,7 +12,7 @@ function Schedule() {
 
       <div className="schedule-container">
         <div className="basic-info">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" width={125} height={125} loading="lazy" decoding="async" />
           <div className="title">
             <h1>BroncoHacks 2025</h1>
             <div className="location-details">
