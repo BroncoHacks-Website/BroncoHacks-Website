@@ -1,6 +1,6 @@
 import "/src/styles/About.css";
 import Script from "../Assets/Profile/icon/script.png";
-import BroncoHacks2024Winners from "../Components/BroncoHacks2024Winners";
+import BroncoHacks2025Winners from "../Components/BroncoHacks2025Winners";
 import MiniHack from "../Components/MiniHack";
 import Avanade from "../Components/Avanade";
 import sea_logo from "../Assets/Clubs/cpp_sea_logo.jpg";
@@ -112,7 +112,7 @@ function About() {
               Since its establishment in 2023, BroncoHacks has held "MiniHack",
               a 6 hour hackathon intended for beginners every fall, as well as
               BroncoHacks a 24 hour in person hackathon every Spring. Our
-              upcoming event is BroncoHacks 2025, another 24 hour hackathon that
+              upcoming event is BroncoHacks 2026, another 24 hour hackathon that
               is open to all colleges and is completely free of entry!
             </p>
             {/* additional paragraph, unsure what info to add */}
@@ -120,7 +120,7 @@ function About() {
           </div>
         </div>
         <div className="line"></div>
-        <BroncoHacks2024Winners />
+        <BroncoHacks2025Winners />
         <div className="line"></div>
         <MiniHack />
         <div className="line"></div>

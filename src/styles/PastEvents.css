@@ -93,7 +93,19 @@
 }
 
 .third {
-  color: brown;
+  color: #CE8946;
+}
+
+.fourth {
+  color: rgb(104, 104, 104);
+}
+
+.fifth {
+  color: rgb(104, 104, 104);
+}
+
+.category {
+  color: rgb(86, 127, 141);
 }
 
 .pic-placeholder {

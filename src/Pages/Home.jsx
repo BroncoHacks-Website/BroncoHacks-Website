@@ -65,8 +65,8 @@ function Home() {
         </a>
 
         <Countdown
-          deadline="April, 18, 2025"
-          title="BroncoHacks 2025 is starting in"
+          deadline="April, 17, 2026"
+          title="BroncoHacks 2026 TBD"
         />
 
         <div className="home-featured-row">
