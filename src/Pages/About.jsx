@@ -3,8 +3,18 @@ import Script from "../Assets/Profile/icon/script.png";
 import BroncoHacks2025Winners from "../Components/BroncoHacks2025Winners";
 import MiniHack from "../Components/MiniHack";
 import Avanade from "../Components/Avanade";
-import sea_logo from "../Assets/Clubs/cpp_sea_logo.jpg";
-import swift_logo from "../Assets/Clubs/cpp_swift_logo.jpg";
+
+import css_logo from "../Assets/Clubs/cpp_css_logo.png";
+import gdg_logo from "../Assets/Clubs/cpp_gdg_logo.png";
+import gamedev_logo from "../Assets/Clubs/cpp_game_dev_logo.png";
+import fast_logo from "../Assets/Clubs/cpp_fast_logo.png";
+import dsai_logo from "../Assets/Clubs/cpp_ds_ai_logo.png";
+import shecodes_logo from "../Assets/Clubs/cpp_shecodes_logo.png";
+import script_logo from "../Assets/Clubs/cpp_script_logo.png";
+import sea_logo from "../Assets/Clubs/cpp_sea_logo.png";
+import swift_logo from "../Assets/Clubs/cpp_swift_logo.png";
+import wit_logo from "../Assets/Clubs/cpp_wit_logo.png";
+
 
 function About() {
   return (
@@ -25,7 +35,7 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://ugc.production.linktr.ee/12da207a-6379-4d6a-b8ff-1b8fbbca1ad4_CFD8FBB7-FFEE-4DA9-A2FE-3C667A69CAE3.png?io=true&size=avatar-v3_0" />
+                  <img src={css_logo} />
                 </a>
               </li>
               <li>
@@ -34,7 +44,7 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://ugc.production.linktr.ee/4p5hpFASIaaOcaWE6AdQ_tBDmCVo0020fsjeY?io=true&size=avatar-v3_0" />
+                  <img src={gdg_logo} />
                 </a>
               </li>
               <li>
@@ -43,7 +53,7 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://pbs.twimg.com/profile_images/846356145555980292/hZ7Z5n0X_400x400.jpg" />
+                  <img src={gamedev_logo} />
                 </a>
               </li>
               <li>
@@ -52,7 +62,7 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://cdn.campsite.bio/eyJidWNrZXQiOiJjYW1wc2l0ZS1iaW8tc3RvcmFnZSIsImtleSI6IkNhbFBvbHlGQVNULzk2ZmQ2OGFhLWM4ODEtNGZmYi05YjhjLWEwODliZWNiOWQyMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMH19fQ==" />
+                  <img src={fast_logo} />
                 </a>
               </li>
             </ul>
@@ -63,7 +73,7 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://cppdsai.com/assets/img/Without%20Background.png" />
+                  <img src={dsai_logo} />
                 </a>
               </li>
               <li>
@@ -72,21 +82,30 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="https://media.licdn.com/dms/image/v2/D560BAQGWIzMbNT4ZJA/company-logo_200_200/company-logo_200_200/0/1728451419126/cpp_shecodes_logo?e=2147483647&v=beta&t=5MgLg-ipCr66gvnhl3TsGGEtl9qcyk6zPJ629Da0dAY" />
+                  <img src={shecodes_logo} />
                 </a>
               </li>
               <li>
+                <a
+                  href="https://www.instagram.com/calpolywit/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={wit_logo} />
+                </a>
+              </li>
+              {/* <li>
                 <a
                   href="https://www.instagram.com/calpolyscript/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={Script} />
+                  <img src={script_logo} />
                 </a>
-              </li>
-              <li>
+              </li> */}
+              <li> 
                 <a
-                  href="https://www.instagram.com/cpp.sea/?hl=en"
+                  href="https://www.instagram.com/cpp.sea/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -95,7 +114,7 @@ function About() {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/calpolyswift/?hl=en"
+                  href="https://www.instagram.com/calpolyswift/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
