@@ -15,8 +15,8 @@ function BH2025() {
           <div className="title">
             <h1>BroncoHacks 2025</h1>
             <div className="location-details">
-              <p>Date: April 18-19th 2025</p>
-              <p>Building: Building 163</p>
+              <p>Date: April 17-18th 2026</p>
+              <p>Building: TBD</p>
               <p>Room: See Various Locations Below</p>
             </div>
           </div>

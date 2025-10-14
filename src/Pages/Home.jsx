@@ -5,16 +5,13 @@ import Countdown from "../Components/Countdown";
 import "/src/styles/Home.css";
 import { useState } from "react";
 
-import Food1 from "../Assets/BroncoHacks2024Photos/Food1.jpg";
-import Judge1 from "../Assets/BroncoHacks2024Photos/Judge1.jpg";
-import Judge2 from "../Assets/BroncoHacks2024Photos/Judge2.jpg";
-import Overview1 from "../Assets/BroncoHacks2024Photos/Overview1.jpg";
-import Overview2 from "../Assets/BroncoHacks2024Photos/Overview2.jpg";
-import Overview3 from "../Assets/BroncoHacks2024Photos/Overview3.jpg";
-import Overview4 from "../Assets/BroncoHacks2024Photos/Overview4.jpg";
-import Overview5 from "../Assets/BroncoHacks2024Photos/Overview5.jpg";
-import Overview6 from "../Assets/BroncoHacks2024Photos/Overview6.jpg";
-import Winners1 from "../Assets/BroncoHacks2024Photos/Winners1.jpg";
+import Overview1 from "../Assets/BroncoHacks2025Photos/overview1.jpg";
+import Overview2 from "../Assets/BroncoHacks2025Photos/overview2.jpg";
+import Overview3 from "../Assets/BroncoHacks2025Photos/overview3.jpg";
+import Overview4 from "../Assets/BroncoHacks2025Photos/overview4.jpg";
+import Overview5 from "../Assets/BroncoHacks2025Photos/overview5.jpg";
+import Overview6 from "../Assets/BroncoHacks2025Photos/overview6.jpg";
+import judges from "../Assets/BroncoHacks2025Photos/judges.jpg";
 import Banner from "../Assets/BroncoHacks_Banner_ScreenWidth_2.png";
 import ClickableBanner from "../Assets/ClickableBanner.png";
 
@@ -22,16 +19,13 @@ function Home() {
   const [mouseHover, setMouseHover] = useState(false);
 
   const slidesData = [
-    { url: Food1 },
-    { url: Judge1 },
-    { url: Judge2 },
-    { url: Overview1 },
-    { url: Overview2 },
-    { url: Overview3 },
-    { url: Overview4 },
-    { url: Overview5 },
-    { url: Overview6 },
-    { url: Winners1 },
+      { url: judges },
+      { url: Overview1 },
+      { url: Overview2 },
+      { url: Overview3 },
+      { url: Overview4 },
+      { url: Overview5 },
+      { url: Overview6 },
   ];
 
   return (
@@ -65,8 +59,8 @@ function Home() {
         </a>
 
         <Countdown
-          deadline="April, 18, 2025"
-          title="BroncoHacks 2025 is starting in"
+          deadline="April, 17, 2026"
+          title="BroncoHacks 2026 TBD"
         />
 
         <div className="home-featured-row">
