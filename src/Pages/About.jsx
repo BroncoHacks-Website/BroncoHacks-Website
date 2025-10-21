@@ -1,5 +1,5 @@
 import "/src/styles/About.css";
-import Script from "../Assets/Profile/icon/script.png";
+// import Script from "../Assets/Profile/icon/script.png";
 import BroncoHacks2025Winners from "../Components/BroncoHacks2025Winners";
 import MiniHack from "../Components/MiniHack";
 import Avanade from "../Components/Avanade";
@@ -10,7 +10,7 @@ import gamedev_logo from "../Assets/Clubs/cpp_game_dev_logo.png";
 import fast_logo from "../Assets/Clubs/cpp_fast_logo.png";
 import dsai_logo from "../Assets/Clubs/cpp_ds_ai_logo.png";
 import shecodes_logo from "../Assets/Clubs/cpp_shecodes_logo.png";
-import script_logo from "../Assets/Clubs/cpp_script_logo.png";
+// import script_logo from "../Assets/Clubs/cpp_script_logo.png";
 import sea_logo from "../Assets/Clubs/cpp_sea_logo.png";
 import swift_logo from "../Assets/Clubs/cpp_swift_logo.png";
 import wit_logo from "../Assets/Clubs/cpp_wit_logo.png";
