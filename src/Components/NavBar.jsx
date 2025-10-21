@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link className="link" to="/Team">
-            <h1>Meet The Team</h1>
+            <h1>Team</h1>
           </Link>
         </li>
         <li>
@@ -99,7 +99,7 @@ const Navbar = () => {
                 setOpen(!open);
               }}
             >
-              <li className="dropdown-item">Meet The Team</li>
+              <li className="dropdown-item">Team</li>
             </Link>
             <Link
               className="navLinks"
