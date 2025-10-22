@@ -84,6 +84,7 @@ export const profileData = [
       "Website Developer",
       "Project Manager",
       "BroncoHacks 2024-2025 Committee",
+      "BroncoHacks 2025-2026 Committee",
     ],
     picture: MichaelWu,
     linkedin: "https://www.linkedin.com/in/michael-ml-wu/",
@@ -207,7 +208,10 @@ export const profileData = [
   {
     id: 21,
     name: "Tony Tong",
-    role: ["BroncoHacks 2024-2025 Committee"],
+    role: [
+      "BroncoHacks 2024-2025 Committee",
+      "BroncoHacks 2025-2026 Committee",
+    ],
     picture: TonyTong,
     linkedin: "https://www.linkedin.com/in/tony-tong-699631240/",
   },
@@ -235,7 +239,10 @@ export const profileData = [
   {
     id: 25,
     name: "Jayden Nguyen",
-    role: ["BroncoHacks 2024-2025 Committee"],
+    role: [
+      "BroncoHacks 2024-2025 Committee",
+      "BroncoHacks 2025-2026 Committee",
+    ],
     picture: JaydenNguyen,
     linkedin: "https://www.linkedin.com/in/jaydenvinhnguyen/",
   },

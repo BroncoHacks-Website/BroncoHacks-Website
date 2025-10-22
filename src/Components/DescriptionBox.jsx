@@ -21,10 +21,10 @@ function DescriptionBox() {
           <img className="db-mascot" src={BroncoMascot} alt="Bronco Mascot" />
           <span className="db-filler"></span>
           <h4>
-            BroncoHacks 2025 is a 24 hour, in person hackathon thats coming to
+            BroncoHacks 2026 is a 24 hour, in-person hackathon that's coming to
             Cal Poly Pomona from April 18-19! Registration opens up on March
-            2nd. All schools are welcomed but each team requires at least 1
-            person from CPP
+            2nd. Students from all schools are welcome but each team requires at least 1
+            person from CPP.
           </h4>
         </div>
       </div>

@@ -116,6 +116,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
+  max-width: 90%;
 }
 
 .role-buttons button {
