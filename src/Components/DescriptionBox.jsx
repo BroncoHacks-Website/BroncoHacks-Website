@@ -22,9 +22,8 @@ function DescriptionBox() {
           <span className="db-filler"></span>
           <h4>
             BroncoHacks 2026 is a 24 hour, in-person hackathon that's coming to
-            Cal Poly Pomona from April 18-19! Registration opens up on March
-            2nd. Students from all schools are welcome but each team requires at least 1
-            person from CPP.
+            Cal Poly Pomona in April! More details will be released in March.
+            Students from all schools are welcome!
           </h4>
         </div>
       </div>
