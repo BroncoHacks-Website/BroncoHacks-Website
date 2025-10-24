@@ -23,9 +23,10 @@ function MeetTheTeam() {
             <button onClick={() => selectTeam("Primary Organizer")}>
               Primary Organizers
             </button>
-            <button
-              onClick={() => selectTeam("BroncoHacks 2024-2025 Committee")}
-            >
+            <button onClick={() => selectTeam("BroncoHacks 2025-2026 Committee")}>
+              Broncohacks 2025-2026 Committee
+            </button>
+            <button onClick={() => selectTeam("BroncoHacks 2024-2025 Committee")}>
               Broncohacks 2024-2025 Committee
             </button>
             <button onClick={() => selectTeam("Project Manager")}>
