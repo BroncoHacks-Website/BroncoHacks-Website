@@ -1,16 +1,16 @@
 const faqs = [
   {
-    question: "What is a Hackathon?",
+    question: "What is a hackathon?",
     answer: 
       "A hackathon is an event where students 'hack' together and create an app, website, game, etc. in a limited time environment. There is no malicious hacking."
   },
   {
-    question: "What is the Max/Min Team Size?",
+    question: "What is the max/min team size?",
     answer:
       "Team sizes will range from 2-4 people and hackers can be organized amongst themselves. Additionally, if you would like to join a team but have no one in mind, we will be forming teams the day of for all participants looking for teams.",
   },
   {
-    question: "Do I Need to Have Experience in Programming?",
+    question: "Do I need to have experience in programming?",
     answer:
       "Our MiniHack events are created with the assumption that you are new to programming and are looking to learn new things. The BroncoHack events in the spring are competitions and operate under the assumption that you have some programming experience, but it is still completely possible to participate without programming knowledge.",
   },
