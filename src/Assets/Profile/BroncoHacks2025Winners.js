@@ -15,17 +15,8 @@ import winner5 from '../WinnersPhotos/Winner_5.jpg';
 
 
 export const data = {
-    "Best in Category": [
-      {
-        category: "Best UI/UX",
-        place: 0,
-        title: "Thought Garden",
-        description: "Mindfulness journaling app visualizing emotions as gardens",
-        team: "Hack Attack",
-        members: ["Idenia Ayala", "Paulene Mendoza Morrison", "Areesha Imtiaz", "Jeannette Ruiz"],
-        imagePath: bestUIUX
-      },
-      {
+    "Best in Category ": [
+{
         category: "Best DS/AI",
         place: 0,
         title: "TA AI",
@@ -51,6 +42,17 @@ export const data = {
         team: "Edge Runners",
         members: ["Daniel Appel", "Jeff Lucena", "Dimpal Shah", "Alvaro Mora"],
         imagePath: bestCyberSec
+      },
+    ],
+    "Best in Category": [
+      {
+        category: "Best UI/UX",
+        place: 0,
+        title: "Thought Garden",
+        description: "Mindfulness journaling app visualizing emotions as gardens",
+        team: "Hack Attack",
+        members: ["Idenia Ayala", "Paulene Mendoza Morrison", "Areesha Imtiaz", "Jeannette Ruiz"],
+        imagePath: bestUIUX
       },
       {
         category: "Best Web Dev",
