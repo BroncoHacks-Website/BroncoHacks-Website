@@ -15,8 +15,26 @@ import winner5 from '../WinnersPhotos/Winner_5.jpg';
 
 
 export const data = {
-    "Best in Category ": [
-{
+    "Best in Category": [
+      {
+        category: "Best UI/UX",
+        place: 0,
+        title: "Thought Garden",
+        description: "Mindfulness journaling app visualizing emotions as gardens",
+        team: "Hack Attack",
+        members: ["Idenia Ayala", "Paulene Mendoza Morrison", "Areesha Imtiaz", "Jeannette Ruiz"],
+        imagePath: bestUIUX
+      },
+      {
+        category: "Best Web Dev",
+        place: 0,
+        title: "MediFind",
+        description: "Medication management, price comparison, and safety app",
+        team: "Irvine Computer Engineers",
+        members: ["Manson Pham", "Joshua Estrada", "Jason Mar","Michael Castillo"],
+        imagePath: bestWebDev
+      },
+            {
         category: "Best DS/AI",
         place: 0,
         title: "TA AI",
@@ -42,35 +60,6 @@ export const data = {
         team: "Edge Runners",
         members: ["Daniel Appel", "Jeff Lucena", "Dimpal Shah", "Alvaro Mora"],
         imagePath: bestCyberSec
-      },
-    ],
-    "Best in Category": [
-      {
-        category: "Best UI/UX",
-        place: 0,
-        title: "Thought Garden",
-        description: "Mindfulness journaling app visualizing emotions as gardens",
-        team: "Hack Attack",
-        members: ["Idenia Ayala", "Paulene Mendoza Morrison", "Areesha Imtiaz", "Jeannette Ruiz"],
-        imagePath: bestUIUX
-      },
-      {
-        category: "Best Web Dev",
-        place: 0,
-        title: "MediFind",
-        description: "Medication management, price comparison, and safety app",
-        team: "Irvine Computer Engineers",
-        members: ["Manson Pham", "Joshua Estrada", "Jason Mar","Michael Castillo"],
-        imagePath: bestWebDev
-      },
-      {
-        category: "Best Team Name",
-        place: 0,
-        title: "Carbon Closet",
-        description: "Interactive thrifting with donations, token rewards, and gacha-style mystery packs",
-        team: "Lebroncos",
-        members: ["Ethan Ngo", "Samuel Araya", "Thanh Dang","Uriah Foley"],
-        imagePath: bestTeamName
       },
     ],
     "Winners": [
