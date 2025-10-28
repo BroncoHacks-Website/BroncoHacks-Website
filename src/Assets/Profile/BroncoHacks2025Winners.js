@@ -1,17 +1,17 @@
 // import webdev1st from '../WinnersPhotos/WebDev1st.jpg';
 import placeholder from '../Profile/icon/placeholder.png';
 
-import bestUIUX from '../WinnersPhotos/Best_UIUX.jpg';
-import bestDSAI from '../WinnersPhotos/Best_DSAI.jpg';
-import bestGameDev from '../WinnersPhotos/Best_Game_Dev.jpg';
-import bestWebDev from '../WinnersPhotos/Best_Web_Dev.jpg';
-import bestCyberSec from '../WinnersPhotos/Best_Cyber_Sec.jpg';
-import bestTeamName from '../WinnersPhotos/Best_Team_Name.jpg';
-import winner1 from '../WinnersPhotos/Winner_1.jpg';
-import winner2 from '../WinnersPhotos/Winner_2.jpg';
-import winner3 from  '../WinnersPhotos/Winner_3.jpg';
-import winner4 from '../WinnersPhotos/Winner_4.jpg';
-import winner5 from '../WinnersPhotos/Winner_5.jpg';
+import bestUIUX from '../WinnersPhotos/Best_UIUX.JPG';
+import bestDSAI from '../WinnersPhotos/BEST_DSAI.JPG';
+import bestGameDev from '../WinnersPhotos/Best_Game_Dev.JPG';
+import bestWebDev from '../WinnersPhotos/Best_Web_Dev.JPG';
+import bestCyberSec from '../WinnersPhotos/Best_Cyber_Sec.JPG';
+import bestTeamName from '../WinnersPhotos/Best_Team_Name.JPG';
+import winner1 from '../WinnersPhotos/Winner_1.JPG';
+import winner2 from '../WinnersPhotos/Winner_2.JPG';
+import winner3 from  '../WinnersPhotos/Winner_3.JPG';
+import winner4 from '../WinnersPhotos/Winner_4.JPG';
+import winner5 from '../WinnersPhotos/Winner_5.JPG';
 
 
 export const data = {
