@@ -5,13 +5,13 @@ import Countdown from "../Components/Countdown";
 import "/src/styles/Home.css";
 import { useState } from "react";
 
-import Overview1 from "../Assets/BroncoHacks2025Photos/overview1.jpg";
-import Overview2 from "../Assets/BroncoHacks2025Photos/overview2.jpg";
-import Overview3 from "../Assets/BroncoHacks2025Photos/overview3.jpg";
-import Overview4 from "../Assets/BroncoHacks2025Photos/overview4.jpg";
+import Overview1 from "../Assets/BroncoHacks2025Photos/overview1.JPG";
+import Overview2 from "../Assets/BroncoHacks2025Photos/overview2.JPG";
+import Overview3 from "../Assets/BroncoHacks2025Photos/overview3.JPG";
+import Overview4 from "../Assets/BroncoHacks2025Photos/overview4.JPG";
 import Overview5 from "../Assets/BroncoHacks2025Photos/overview5.jpg";
 import Overview6 from "../Assets/BroncoHacks2025Photos/overview6.jpg";
-import judges from "../Assets/BroncoHacks2025Photos/judges.jpg";
+import judges from "../Assets/BroncoHacks2025Photos/judges.JPG";
 import Banner from "../Assets/BroncoHacks_Banner_ScreenWidth_2.png";
 import ClickableBanner from "../Assets/ClickableBanner.png";
 
