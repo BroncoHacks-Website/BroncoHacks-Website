@@ -30,16 +30,24 @@ import StephaniePocci from "./team/StephaniePocci.jpeg";
 import JohnnyFok from "./team/JohnnyFok.jpeg";
 import KeerthiSreeram from "./team/KeerthiSreeram.jpg";
 
+// 2025 - 2026 Committee Members
+// import EthanNgo from "./team/EthanNgo.jpg";
+// import CalebChung from "./team/CalebChung.jpg";
+// import Brandon from "./team/Brandon.jpg";
+// import Jade from "./team/Jade.jpg";
+// import AntonioLoyola from "./team/AntonioLoyola.jpg";
+// import Allison from "./team/Allison.jpg";
+
 export const profileData = [
   // Organizers && Project Managers
   {
     id: 0,
     name: "Daniel Pasion",
     role: [
-      "Primary Organizer",
       "BroncoHacks 2023-2024 Committee",
-      "Project Manager",
       "BroncoHacks 2024-2025 Committee",
+      "Former Organizer",
+      "Former PM",
     ],
     picture: DanielPasion,
     linkedin: "https://www.linkedin.com/in/daniel-pasion-9b364a1b7/",
@@ -47,7 +55,10 @@ export const profileData = [
   {
     id: 1,
     name: "Chris Ji-Chek Lo",
-    role: ["BroncoHacks 2023-2024 Committee", "Project Manager"],
+    role: [
+      "BroncoHacks 2023-2024 Committee", 
+      "Former PM"
+    ],
     picture: ChrisJLo,
     linkedin: "https://www.linkedin.com/in/christopher-j-lo/",
   },
@@ -55,10 +66,10 @@ export const profileData = [
     id: 2,
     name: "Justin Nguyen",
     role: [
-      "Primary Organizer",
-      "Project Manager",
       "BroncoHacks 2023-2024 Committee",
       "BroncoHacks 2024-2025 Committee",
+      "Former Organizer",
+      "Former PM",
     ],
     picture: JustinNguyen,
     linkedin: "https://www.linkedin.com/in/justin-mn/",
@@ -82,7 +93,7 @@ export const profileData = [
     name: "Michael Wu",
     role: [
       "Website Developer",
-      "Project Manager",
+      "Primary Organizer",
       "BroncoHacks 2024-2025 Committee",
       "BroncoHacks 2025-2026 Committee",
     ],
@@ -211,6 +222,7 @@ export const profileData = [
     role: [
       "BroncoHacks 2024-2025 Committee",
       "BroncoHacks 2025-2026 Committee",
+      "Primary Organizer",
     ],
     picture: TonyTong,
     linkedin: "https://www.linkedin.com/in/tony-tong-699631240/",
@@ -240,6 +252,8 @@ export const profileData = [
     id: 25,
     name: "Jayden Nguyen",
     role: [
+      "Primary Organizer",
+      "Project Manager",
       "BroncoHacks 2024-2025 Committee",
       "BroncoHacks 2025-2026 Committee",
     ],
@@ -269,6 +283,68 @@ export const profileData = [
     picture: KeerthiSreeram,
     linkedin: "https://www.linkedin.com/in/keerthi-sreeram/",
   },
+  // TODO: Update linkedins and pictures for 2025-2026 Committee Members
+  {
+    id: 29,
+    name: "Ethan Ngo",
+    role: [
+      "BroncoHacks 2025-2026 Committee",
+      "Project Manager",
+    ],
+    picture: user,
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: 30,
+    name: "Caleb Chung",
+    role: [
+      "BroncoHacks 2025-2026 Committee",
+      "Website Developer",
+    ],
+    picture: user,
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: 31,
+    name: "Brandon Tseng",
+    role: [
+      "BroncoHacks 2025-2026 Committee",
+    ],
+    picture: user,
+  },
+  {
+    id: 32,
+    name: "Jade Nguyen",
+    role: [
+      "BroncoHacks 2025-2026 Committee",
+    ],
+    picture: user,
+  },
+  {
+    id: 33,
+    name: "Antonio Loyola",
+    role: [
+      "BroncoHacks 2025-2026 Committee",
+      "Website Developer",
+    ],
+    picture: user,
+  },
+  {
+    id: 34,
+    name: "Allison Nguyen",
+    role: [
+      "BroncoHacks 2025-2026 Committee",
+    ],
+    picture: user,
+  },
+  {
+    id: 35,
+    name: "Julian Kyler Alfonso",
+    role: [
+      "BroncoHacks 2025-2026 Committee",
+    ],
+    picture: user,
+  }
 ];
 
 export default profileData;

@@ -2,16 +2,19 @@ import PropTypes from "prop-types";
 import "../styles/Profile.css"; /* temporary just so it visually looks fine */
 import linkedin from "../Assets/Profile/icon/linkedin-small.png";
 
+import "/src/styles/MeetTheTeam.css";
 function Profile(props) {
 const person = props.person;
 
   return (
     <div className="profile">
-      <img
-        className="profile-picture"
-        src={person.picture}
-        alt={"Picture of " + person.name}
-      />
+      <div className="profile-blob">
+        <img
+          className="profile-picture"
+          src={person.picture}
+          alt={"Picture of " + person.name}
+        />
+      </div>
       <div className="profile-body">
         <div className="name">
           {person.name}
