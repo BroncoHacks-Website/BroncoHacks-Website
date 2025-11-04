@@ -290,6 +290,7 @@ export const profileData = [
     role: [
       "BroncoHacks 2025-2026 Committee",
       "Project Manager",
+      "Primary Organizer"
     ],
     picture: user,
     linkedin: "https://www.linkedin.com/",
