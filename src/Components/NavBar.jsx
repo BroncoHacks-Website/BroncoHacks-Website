@@ -50,14 +50,14 @@ const Navbar = () => {
             <h1>Schedule</h1>
           </Link>
         </li> */}
-        <a
+        {/* <a
           className="apply-button"
           // href="https://www.broncohacksportal.org/"
           href="https://forms.gle/2ZYGJNLVgud5apyX8"
           target="_blank"
         >
           <button>{<h1>APPLY</h1>}</button>
-        </a>
+        </a> */}
       </ul>
 
       <div className="hamburger">
