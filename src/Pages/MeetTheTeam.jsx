@@ -5,6 +5,8 @@ import "/src/styles/MeetTheTeam.css";
 
 function MeetTheTeam() {
   const [selectedRole, setSelectedRole] = useState("Primary Organizer"); // Initially show all profiles
+  const [showPrevious, setShowPrevious] = useState(false);
+  const [previousFilter, setPreviousFilter] = useState("AllPrevious");
 
   const selectTeam = (role) => {
     setSelectedRole(role);
@@ -20,31 +22,55 @@ function MeetTheTeam() {
           </div>
           <div className="role-buttons">
             {/* <button onClick={() => selectTeam("All")}>All</button> */}
-            <button onClick={() => selectTeam("Primary Organizer")}>
+            <button onClick={() => { setShowPrevious(false); selectTeam("Primary Organizer"); }}>
               Primary Organizers
             </button>
-            <button onClick={() => selectTeam("BroncoHacks 2025-2026 Committee")}>
+            <button onClick={() => { setShowPrevious(false); selectTeam("BroncoHacks 2025-2026 Committee"); }}>
               Broncohacks 2025-2026 Committee
             </button>
-            <button onClick={() => selectTeam("BroncoHacks 2024-2025 Committee")}>
-              Broncohacks 2024-2025 Committee
-            </button>
-            <button onClick={() => selectTeam("Project Manager")}>
+            <button onClick={() => { setShowPrevious(false); selectTeam("Project Manager"); }}>
               Project Managers
             </button>
-            <button onClick={() => selectTeam("Website Developer")}>
+            <button onClick={() => { setShowPrevious(false); selectTeam("Website Developer"); }}>
               Website Developers
             </button>
-            <button onClick={() => selectTeam("UI/UX")}>UI/UX</button>
-            <button
-              onClick={() => selectTeam("BroncoHacks 2023-2024 Committee")}
-            >
-              Broncohacks 2023-2024 Committee
-            </button>
+            <button onClick={() => { setShowPrevious(false); selectTeam("UI/UX"); }}>UI/UX</button>
           </div>
 
-          <div className="the-team">
-            {/* Map through profileData to create bubbles for each team member */}
+          <div className="role-select role-select-buttons">
+            <button
+              onClick={() => {
+                setShowPrevious(true);
+                setPreviousFilter("AllPrevious");
+                selectTeam("All");
+              }}
+            >
+              View Previous Committees
+            </button>
+
+            {/* Dropdown appears only when viewing previous committees */}
+            {showPrevious && (
+              <select
+                className="role-dropdown" id="previous-team-select"
+                value={previousFilter}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  setPreviousFilter(val);
+                  selectTeam(val === "AllPrevious" ? "All" : val);
+                }}
+              >
+                <option value="AllPrevious">All Previous Committees</option>
+                <option value="Former Organizer">Former Organizers</option>
+                <option value="Former PM">Former Project Managers</option>
+                <option value="BroncoHacks 2024-2025 Committee">BroncoHacks 2024-2025 Committee</option>
+                <option value="BroncoHacks 2023-2024 Committee">BroncoHacks 2023-2024 Committee</option>
+              </select>
+            )}
+
+          </div>
+
+          {/* Main current-team grid */}
+          <div className={"the-team" + (showPrevious ? " hidden" : "")}>
             {profileData
               .filter(
                 (person) =>
@@ -63,11 +89,34 @@ function MeetTheTeam() {
                 </div>
               ))}
           </div>
+
+          {/* Previous teams grid - shown when showPrevious is true */}
+          <div className={"previous-team" + (showPrevious ? "" : " hidden")}>
+            {profileData
+              .filter((person) => {
+                // If showing all previous, include anyone with any previous-related role
+                if (previousFilter === "AllPrevious") {
+                  return (
+                    person.role.includes("Former Organizer") ||
+                    person.role.includes("Former PM") ||
+                    person.role.includes("BroncoHacks 2024-2025 Committee") ||
+                    person.role.includes("BroncoHacks 2023-2024 Committee")
+                  );
+                }
+                return person.role.includes(previousFilter);
+              })
+              .map((person) => (
+                <div key={person.id} className="profile-wrapper">
+                  <div className="profile-bubble">
+                    <Profile person={{ ...person, role: person.role }} />
+                  </div>
+                </div>
+              ))}
+          </div>
         </div>
         {/* </div> */}
       </div>
     </>
   );
 }
-
 export default MeetTheTeam;

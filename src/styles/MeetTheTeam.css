@@ -69,46 +69,12 @@
 
 .profile-wrapper {
   margin: 25px;
-  margin-bottom: 60px;
+  height: auto ;
 }
 
-.profile-bubble {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 
-.profile-bubble img {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.profile-bubble .linkedin-picture {
-  position: absolute;
-  bottom: 0px;
-  left: 70%;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.profile-bubble .profile-body {
-  width: 150px;
-  height: 150px;
-  margin-top: 10px;
-  align-items: center;
-  text-align: center;
-}
-
-.profile-bubble .profile-body .name {
-  font-size: 1.25rem;
-}
-
-.profile-bubble .profile-body .role {
-  font-size: 1rem;
+.roles{
+  margin-top: 5px;
 }
 
 .role-buttons {
@@ -149,4 +115,58 @@
   background-color: #59b398;
   box-shadow: 0 5x #666;
   transform: translateY(4px);
+}
+
+.previous-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1600px;
+}
+
+.role-select.role-select-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.role-select.role-select-buttons button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #72dbbb;
+  box-shadow: 0 0.3rem #666;
+  transition: background-color 0.2s;
+}
+
+.role-select.role-select-buttons button:hover {
+  background-color: #67bea4;
+}
+
+.role-dropdown {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #72dbbb;
+  box-shadow: 0 0.3rem #666;
+  font-size: 1.05rem;
+  margin: 10px;
+}
+
+.role-dropdown:focus {
+  outline: none;
+  background-color: #67bea4;
+}
+
+.hidden {
+  display: none !important;
 }
