@@ -35,11 +35,11 @@ const Navbar = () => {
             <h1>Meet The Team</h1>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="link" to="/Sponsors">
             <h1>Sponsors</h1>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link className="link" to="/faq">
             <h1>FAQ</h1>
@@ -101,7 +101,7 @@ const Navbar = () => {
             >
               <li className="dropdown-item">Meet The Team</li>
             </Link>
-            <Link
+            {/* <Link
               className="navLinks"
               to="/sponsors"
               onClick={() => {
@@ -109,7 +109,7 @@ const Navbar = () => {
               }}
             >
               <li className="dropdown-item">Sponsors</li>
-            </Link>
+            </Link> */}
             <Link
               className="navLinks"
               to="/faq"
