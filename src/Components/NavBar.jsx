@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link className="link" to="/Team">
-            <h1>Meet The Team</h1>
+            <h1>Team</h1>
           </Link>
         </li>
         {/* <li>
@@ -50,13 +50,14 @@ const Navbar = () => {
             <h1>Schedule</h1>
           </Link>
         </li> */}
-        <a
+        {/* <a
           className="apply-button"
-          href="https://www.broncohacksportal.org/"
+          // href="https://www.broncohacksportal.org/"
+          href="https://forms.gle/2ZYGJNLVgud5apyX8"
           target="_blank"
         >
           <button>{<h1>APPLY</h1>}</button>
-        </a>
+        </a> */}
       </ul>
 
       <div className="hamburger">
@@ -99,7 +100,7 @@ const Navbar = () => {
                 setOpen(!open);
               }}
             >
-              <li className="dropdown-item">Meet The Team</li>
+              <li className="dropdown-item">Team</li>
             </Link>
             {/* <Link
               className="navLinks"
