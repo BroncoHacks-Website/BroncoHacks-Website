@@ -36,7 +36,6 @@ export const profileData = [
     id: 0,
     name: "Daniel Pasion",
     role: [
-      "Primary Organizer",
       "BroncoHacks 2023-2024 Committee",
       "Project Manager",
       "BroncoHacks 2024-2025 Committee",
@@ -55,7 +54,6 @@ export const profileData = [
     id: 2,
     name: "Justin Nguyen",
     role: [
-      "Primary Organizer",
       "Project Manager",
       "BroncoHacks 2023-2024 Committee",
       "BroncoHacks 2024-2025 Committee",
@@ -81,6 +79,7 @@ export const profileData = [
     id: 5,
     name: "Michael Wu",
     role: [
+      "Primary Organizer",
       "Website Developer",
       "Project Manager",
       "BroncoHacks 2024-2025 Committee",
@@ -132,7 +131,12 @@ export const profileData = [
   {
     id: 11,
     name: "Maddie Isaacs",
-    role: ["Website Developer", "UI/UX"],
+    role: [
+      "Primary Organizer",
+      "Website Developer",
+      "UI/UX",
+      "BroncoHacks 2025-2026 Committee",
+    ],
     picture: MaddieIsaacs,
     linkedin: "https://www.linkedin.com/in/mmisaacs/",
   },
@@ -184,8 +188,10 @@ export const profileData = [
     id: 18,
     name: "Aidan Sanders",
     role: [
+      "Primary Organizer",
       "BroncoHacks 2023-2024 Committee",
       "BroncoHacks 2024-2025 Committee",
+      "BroncoHacks 2025-2026 Committee",
     ],
     picture: user,
     linkedin: "https://www.linkedin.com/in/aidan-sanders-756548276/",
@@ -209,6 +215,7 @@ export const profileData = [
     id: 21,
     name: "Tony Tong",
     role: [
+      "Primary Organizer",
       "BroncoHacks 2024-2025 Committee",
       "BroncoHacks 2025-2026 Committee",
     ],
@@ -218,7 +225,10 @@ export const profileData = [
   {
     id: 22,
     name: "Megan Bee",
-    role: ["BroncoHacks 2024-2025 Committee"],
+    role: [
+      "BroncoHacks 2024-2025 Committee",
+      "BroncoHacks 2025-2026 Committee",
+    ],
     picture: MeganBee,
     linkedin: "https://www.linkedin.com/in/megan-bee/",
   },
