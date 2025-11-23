@@ -120,13 +120,13 @@ const Navbar = () => {
             >
               <li className="dropdown-item">FAQ</li>
             </Link>
-            <a
+            {/* <a
               href="https://broncohacksportal.org/"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
               <li className="dropdown-item">Apply</li>
-            </a>
+            </a> */}
             {/* <Link
               className="navLinks"
               to="/schedule"
