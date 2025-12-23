@@ -111,11 +111,11 @@ function Sponsors() {
             ))}
       </div>
 
-      <div className="previous-sponsors-title">
+      {/* <div className="previous-sponsors-title">
         Sponsorship Prospectus       
       </div>
 
-      <iframe src={sponsorProspectus} className="sponsor-packages" />
+      <iframe src={sponsorProspectus} className="sponsor-packages" /> */}
 
       <div className="sponsor-us-container">
         <h1>Interested in Sponsoring?</h1>

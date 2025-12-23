@@ -102,7 +102,7 @@ const Navbar = () => {
             >
               <li className="dropdown-item">Team</li>
             </Link>
-            {/* <Link
+            <Link
               className="navLinks"
               to="/sponsors"
               onClick={() => {
@@ -110,7 +110,7 @@ const Navbar = () => {
               }}
             >
               <li className="dropdown-item">Sponsors</li>
-            </Link> */}
+            </Link>
             <Link
               className="navLinks"
               to="/faq"
