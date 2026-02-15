@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "What is the max/min team size?",
     answer:
-      "Team sizes will range from 2-4 people and hackers can be organized amongst themselves. Additionally, if you would like to join a team but have no one in mind, we will be forming teams the day of for all participants looking for teams.",
+      "Team sizes will range from 1-4 people and hackers can be organized amongst themselves. Additionally, if you would like to join a team but have no one in mind, we will be forming teams the day of for all participants looking for teams.",
   },
   {
     question: "Do I need to have experience in programming?",
@@ -20,22 +20,17 @@ const faqs = [
   },
   {
     question: "Where will BroncoHacks be? Where can I park?",
-    answer: "BroncoHacks will take place at Bldg. TBD, Rm. TBD. Participants can park in Lot TBD."
+    answer: "BroncoHacks will take place at Building 162: College of Business Administration, Room 1001, 1002. Participants can park in Parking Structure 1 or Lot F4."
   },
   {
     question: "Can non-CPP students participate?",
     answer:
-      "BroncoHacks2025 welcomes all schools as long as they are current students. For new grads, only 2024 new grads from CPP are allowed.",
+      "BroncoHacks2025 welcomes all schools as long as they are current students. For new grads, only 2025 new grads from CPP are allowed.",
   },
   {
     question: "Will meals be provided?",
     answer:
       "Food will be completely free! There will be 4 free meals provided for each participant.",
-  },
-  {
-    question: "Can new grads participate?",
-    answer:
-      "Students who graduated specifically in 2024 AND were alumni of CPP are allowed to participate.",
   },
   {
     question: "Will I need to stay there the whole time?",
@@ -45,12 +40,12 @@ const faqs = [
   {
     question: "Will there be accommodations for overnight stay?",
     answer:
-      "The BSC (Bronco Student Center) will be closed at 12 AM and will open up again at 8 AM. From 12 AM to 8 AM, all hackers who would like to continue working overnight on campus will be moved to the 24-hour computer lab.",
+      "The Business Building will close at 10pm and repoen at 8am. Hackers who wish to stay overnight will need to arrange their own accomadations.",
   },
   {
     question: "What should I bring?",
     answer:
-      "Laptop & charger, phone & charger, toiletries & sleeping bag if you plan on sleeping or staying overnight, extra food and water, and your A-Game :)!",
+      "Laptop & charger, phone & charger, deodoarant, extra food and water, and your A-Game :)!",
   },
   {
     question: "When is the deadline to apply?",
