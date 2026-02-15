@@ -21,8 +21,9 @@ function DescriptionBox() {
           <img className="db-mascot" src={BroncoMascot} alt="Bronco Mascot" />
           <span className="db-filler"></span>
           <h4>
-            BroncoHacks 2026 is a 24 hour, in-person hackathon that's coming to
-            Cal Poly Pomona in April! More details will be released in March.
+            BroncoHacks 2026 will take place at the Cal Poly Pomona
+             College of Business Administration, 3801 S University Dr, Pomona, CA 91768 at 9:00am.
+             More details will be released in March.
             Students from all schools are welcome!
           </h4>
         </div>
