@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Can non-CPP students participate?",
     answer:
-      "BroncoHacks2025 welcomes all schools as long as they are current students. For new grads, only 2025 new grads from CPP are allowed.",
+      "Broncohacks 2026 welcomes all schools as long as they are current students. For new grads, only 2025 new grads from CPP are allowed.",
   },
   {
     question: "Will meals be provided?",
