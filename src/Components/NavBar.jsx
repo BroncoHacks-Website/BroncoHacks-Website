@@ -45,6 +45,27 @@ const Navbar = () => {
             <h1>FAQ</h1>
           </Link>
         </li>
+        <li>
+          <a
+            id="mlh-trust-badge"
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "block",
+              paddingTop: "30px",
+              paddingLeft: "10px",
+              width: "80px",
+              zIndex: 10000,
+            }}
+          >
+            <img
+              src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-black.svg"
+              alt="Major League Hacking 2026 Hackathon Season"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </a>
+        </li>
         {/* <li>
           <Link to="/schedule">
             <h1>Schedule</h1>
