@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BroncoHacks 2026</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -14,8 +17,12 @@
     <div id="navbar">
         
         <div class="logo">
-            <img src="logo.png" alt="BroncoHacks Logo" class="logo-img">
-            <div class="logo-text">BRONCO HACKS</div>
+            <img src="logo.png" alt="BroncoHacks Logo" style="height:76px;">
+            <div class="logo-text">
+    <span>BRONCO</span>
+    <span>HACKS</span>
+</div>
+            
         </div>
 
         <div class="nav-buttons">
@@ -27,18 +34,24 @@
         
     </div>
 
-    <!-- ================= MAIN CONTENT ================= -->
-    <div id="main-content">
-        <div class="main-inner">
+    <!-- ================= HERO ================= -->
+    <section id="hero">
 
-            <!-- LEFT -->
-            <div class="left">
-                <img src="images/balloon.png" class="balloon" alt="Balloon">
-            </div>
+        <!-- Clouds -->
+        <img src="images/hcloud.png" class="cloud cloud-left">
+        <img src="images/hcloud2.png" class="cloud cloud-right">
+        <img src="images/fcloud.png" class="cloud cloud-middle">
 
-            <!-- RIGHT -->
-            <div class="right">
+        <!-- Stars -->
+        <img src="images/star1.png" class="star star1">
+        <img src="images/star2.png" class="star star2">
+        <img src="images/star3.png" class="star star3">
 
+        <div class="container">
+
+            <img src="images/Balloon2.png" class="balloon">
+
+            <div class="content">
                 <div class="card">
                     <h1>BRONCOHACKS</h1>
                     <p class="subtitle">Hosted by Cal Poly Pomona</p>
@@ -60,7 +73,8 @@
                             </div>
                             <span>Hours</span>
                         </div>
-                            <div class="group">
+
+                        <div class="group">
                             <div class="digits">
                                 <div class="box">5</div>
                                 <div class="box">6</div>
@@ -70,17 +84,12 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn">REGISTER NOW!</a>
-
+                <a href="#" class="btn">REGISTER NOW !</a>
             </div>
 
         </div>
-    </div>
 
-    <!-- ================= FOOTER ================= -->
-    <div id="footer">
-        <!-- Footer content will be added by another group -->
-    </div>
+    </section>
 
 </body>
 </html>

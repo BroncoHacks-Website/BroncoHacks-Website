@@ -1,48 +1,45 @@
 /* ================= NAVBAR ================= */
 
 #navbar {
-    width: 100%;
-    max-width: 1440px;
-    height: 124px;
-    margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 16px 120px;  /* match hero spacing */
-    box-sizing: border-box;
+    padding: 4px 20px;
+
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-
-/* ================= LOGO ================= */
+/* LOGO */
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 16px;
-
-    padding: 8px 4px;
+    padding: 0px 0px;
+    gap: 10px;
     background: rgba(246, 248, 237, 0.25);
     border-radius: 16px;
-}
-
-.logo-img {
-    height: 76px;
+     transform: translateX(-30px);
 }
 
 .logo-text {
     font-family: 'Nobel', sans-serif;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 28px;
+    letter-spacing: 1px;
     color: #000;
-}
 
-/* ================= NAV BUTTONS ================= */
+    display: flex;
+    flex-direction: column;  /* stack vertically */
+    line-height: 1;          /* reduce spacing between lines */
+}
+/* NAV BUTTONS */
 
 .nav-buttons {
     display: flex;
-    width: 444px;
+    width: clamp(320px, 35vw, 444px);
     height: 39px;
     background: #1F4993;
     border-radius: 999px;
@@ -54,7 +51,7 @@
     justify-content: center;
     align-items: center;
 
-    font-family: 'Nobel', sans-serif;
+    font-family: 'Nobel';
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
@@ -63,12 +60,15 @@
 .nav-button-green {
     background: #98CE83;
     color: #01203F;
-    border-radius: 999px;
 }
 
 .nav-button-blue {
     background: #1F4993;
     color: #F6F8ED;
+}
+
+.button-rounded {
+    border-radius: 999px;
 }
 
 .button-rounded-right {
