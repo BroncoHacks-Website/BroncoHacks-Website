@@ -78,3 +78,187 @@
 .shadow {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
+/* ================= MOBILE ONLY ================= */
+@media (max-width: 900px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    .logo {
+        transform: none;
+        justify-content: center;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        border-radius: 16px;
+    }
+
+    .nav-button {
+        flex: 1 1 50%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    /* ---------- HERO LAYOUT ---------- */
+
+    #hero {
+        padding: 60px 20px 100px 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    /* Card first */
+    .content {
+        order: 1;
+        transform: none;
+    }
+
+    /* Balloon second */
+    .balloon {
+        order: 2;
+        width: 75%;
+        max-width: 420px;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    /* ---------- CARD ---------- */
+
+    .card {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .card h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    /* ---------- TIMER ---------- */
+
+    .timer {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        width: 55px;
+        height: 70px;
+        font-size: 28px;
+    }
+
+    /* ---------- BUTTON ---------- */
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        font-size: 18px;
+    }
+
+    /* ---------- DECORATION (VISIBLE ON MOBILE) ---------- */
+
+    .cloud {
+        opacity: 0.6;
+    }
+
+    .cloud-left {
+        width: 200px;
+        top: 8%;
+        left: -8%;
+    }
+
+    .cloud-right {
+        width: 160px;
+        top: 12%;
+        right: -8%;
+    }
+
+    .cloud-middle {
+        width: 240px;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .star {
+        width: 25px;
+        z-index: 3;
+    }
+
+    .star1 {
+        top: 10%;
+        left: 60%;
+    }
+
+    .star2 {
+        bottom: 28%;
+        left: 20%;
+    }
+
+    .star3 {
+        bottom: 32%;
+        right: 15%;
+    }
+}
+/* ================= MOBILE NAVBAR ================= */
+@media (max-width: 900px) {
+
+    #navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+    }
+
+    /* Move logo more left */
+    .logo {
+        transform: translateX(-10px);  /* slight left shift */
+        gap: 6px;
+    }
+
+    /* Make logo image smaller */
+    .logo img {
+        height: 55px;
+    }
+
+    /* Make text smaller */
+    .logo-text {
+        font-size: 18px;
+    }
+
+    /* Keep nav buttons on right */
+    .nav-buttons {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+
+    .nav-button {
+        font-size: 12px;
+        padding: 6px 6px;
+    }
+}
