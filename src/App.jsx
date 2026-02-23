@@ -1,16 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import "./App.css";
-import Home from "./Pages/Home.jsx";
+import NavBar from "./Components/NavBar";
+import Hero from "./Components/Hero";
 
 function App() {
   return (
-    // <BrowserRouter basename="/BroncoHacks-Website/">
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <NavBar />
+      <Hero />
+    </>
   );
 }
+
 export default App;
