@@ -12,7 +12,10 @@ function NavBar() {
       </div>
 
       <div className="nav-buttons">
-        <a href="#" className="nav-button nav-button-green button-rounded shadow">Home</a>
+        
+    <a href="#" className="nav-button nav-home">
+  Home
+</a>
         <a href="#" className="nav-button nav-button-blue">Team</a>
         <a href="#" className="nav-button nav-button-blue">Sponsors</a>
         <a href="#" className="nav-button nav-button-blue button-rounded-right">FAQ</a>

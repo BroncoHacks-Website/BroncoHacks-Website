@@ -5,6 +5,7 @@ import star3 from "../Assets/star3.png";
 import cloud1 from "../Assets/hcloud.png";
 import cloud2 from "../Assets/hcloud2.png";
 import cloud3 from "../Assets/fcloud.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
