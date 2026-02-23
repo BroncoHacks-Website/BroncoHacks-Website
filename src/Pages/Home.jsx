@@ -29,9 +29,40 @@ function Home() {
             <h1>BRONCOHACKS</h1>
             <p className="subtitle">Hosted by Cal Poly Pomona</p>
             <p className="date">April 25–26</p>
+
+            {/* COUNTDOWN */}
+            <div className="timer">
+
+              <div className="group">
+                <div className="digits">
+                  <div className="box">1</div>
+                  <div className="box">2</div>
+                </div>
+                <span className="timer-label">Days</span>
+              </div>
+
+              <div className="group">
+                <div className="digits">
+                  <div className="box">3</div>
+                  <div className="box">4</div>
+                </div>
+                <span className="timer-label">Hours</span>
+              </div>
+
+              <div className="group">
+                <div className="digits">
+                  <div className="box">5</div>
+                  <div className="box">6</div>
+                </div>
+                <span className="timer-label">Minutes</span>
+              </div>
+
+            </div>
           </div>
 
-          <a href="#" className="btn">REGISTER NOW !</a>
+          <Link to="/register" className="btn">
+            REGISTER NOW !
+          </Link>
         </div>
       </div>
 

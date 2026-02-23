@@ -186,9 +186,15 @@ body {
 /* SUBTEXT */
 
 .subtitle {
-  font-size: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;          /* Medium */
+  font-size: 24px;           /* Exact Figma size */
+  line-height: 100%;
+  letter-spacing: 0;
+
   color: #1F4993;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .date {
@@ -206,6 +212,7 @@ body {
   justify-content: center;
   gap: 40px;
 }
+
 
 .group {
   display: flex;
@@ -229,13 +236,28 @@ body {
   align-items: center;
   justify-content: center;
 
-  font-family: "Nobel", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
+  font-family: "Tektur", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
   color: #1F4993;
 }
 
-
+.timer-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #1F4993 !important;
+}
+.group span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #1F4993;
+}
 /* ================= REGISTER BUTTON ================= */
 
 .btn {
@@ -325,7 +347,7 @@ body {
 }
 
 .star3 {
-  bottom: 50%;
+  bottom: 45%;
   right: 5%;
   transform: rotate(15deg);
 }
