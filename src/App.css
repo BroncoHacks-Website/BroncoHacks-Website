@@ -196,3 +196,105 @@ body {
 .star1 { top:-3%; left:40%; transform:translateX(-50%) rotate(15deg); }
 .star2 { bottom:38%; left:32%; transform:rotate(-20deg); }
 .star3 { bottom:50%; right:5%; transform:rotate(15deg); }
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+
+  /* NAVBAR */
+  #navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .nav-buttons {
+    width: auto;
+    height: auto;
+    background: none;
+    gap: 15px;
+  }
+
+  .nav-button {
+    font-size: 14px;
+    background: none;
+    color: #1F4993;
+  }
+
+  /* HERO */
+  #hero {
+    padding: 60px 20px 80px 20px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  /* Card first */
+  .content {
+    order: 1;
+    transform: none;
+  }
+
+  /* Balloon second */
+  .balloon {
+    order: 2;
+    width: 75%;
+    max-width: 350px;
+    transform: none;
+    margin: 20px auto 0 auto;
+  }
+
+  /* CARD */
+  .card {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .card h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  /* TIMER */
+  .timer {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .box {
+    width: 50px;
+    height: 65px;
+    font-size: 24px;
+  }
+
+  /* BUTTON */
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  /* Hide clouds & stars on mobile */
+  .cloud,
+  .star {
+    display: none;
+  }
+}
