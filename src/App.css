@@ -24,8 +24,11 @@ body {
 
 
 /* ================= NAVBAR ================= */
-
 #navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,6 +37,8 @@ body {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+
+  background: transparent;   /* 🔥 THIS */
 }
 
 .logo {
@@ -162,13 +167,12 @@ body {
 
 .card {
   width: clamp(400px, 45vw, 750px);
-  padding: 40px;
+  padding: 20px 40px;   /* 40px top/bottom, 60px left/right */
   background: #5CBBD4;
   border-radius: 32px;
   text-align: center;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
 }
-
 
 /* HERO TITLE */
 
