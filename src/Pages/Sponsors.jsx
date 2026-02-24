@@ -15,6 +15,8 @@ import sponsorProspectus from "../Assets/Sponsors/BroncoHacks 2025 Sponsorship P
 import netscout from "../Assets/Sponsors/netscout.png";
 import arc from "../Assets/Sponsors/arc.webp";
 import redbull from "../Assets/Sponsors/redbull.jpg"
+import careercenter from "../Assets/Sponsors/careercenter.png"
+import vercel from "../Assets/Sponsors/vercel.svg"
 
 import css_logo from "../Assets/Clubs/cpp_css_logo.png";
 import gdg_logo from "../Assets/Clubs/cpp_gdg_logo.png";
@@ -26,6 +28,7 @@ import shecodes_logo from "../Assets/Clubs/cpp_shecodes_logo.png";
 import sea_logo from "../Assets/Clubs/cpp_sea_logo.png";
 import swift_logo from "../Assets/Clubs/cpp_swift_logo.png";
 import wit_logo from "../Assets/Clubs/cpp_wit_logo.png";
+import ceo_logo from "../Assets/Clubs/cpp_ceo_logo.png"
 
 
 function Sponsors() {
@@ -33,16 +36,15 @@ function Sponsors() {
   const [hoveredSponsor, setHoveredSponsor] = useState(null);
 
   const sponsors = [
+    { name: "Vercel", "website": "https://vercel.com/", img: vercel, description: "Provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web." },
+    { name: "Career Center", "contact": "career@cpp.edu",website: "https://careercenter.cpp.edu/", img: careercenter, description: "Leading, developing, and connecting a diverse community in career readiness and preparing students for the future of work." }
+  ];
+
+  const previusSponsors = [
     { name: "Netscout", "contact": "+1-978-614-4000", "website": "https://www.netscout.com/", img: netscout, description: "A leader in network performance and cybersecurity solutions." },
     { name: "Avanade", "contact": "TA-PR@avanade.com", "website": "https://www.avanade.com/en", img: avanade, description: "Providing digital and cloud services, business solutions, and design-led experiences." },
     { name: "Arc", "website": "https://arc.net/", img: arc, description: "Global employment platform that connects developers with companies." },
     { name: "Redbull", "contact": "customerservice@redbullshopus.com", "website": "https://www.redbullshopus.com/", img: redbull, description: "Red Bull gives you wings! A leader in the energy drink industry." },
-    { name: "MLH", "contact": "hi@mlh.io", "website": "https://mlh.io/", img: mlh, description: "Major League Hacking (MLH) powers 300+ student hackathons yearly, fostering innovation, community, and coding skills worldwide" }
-  ];
-
-  const previusSponsors = [
-    { name: "Avanade", "contact": "TA-PR@avanade.com", "website": "https://www.avanade.com/en", img: avanade, description: "Providing digital and cloud services, business solutions, and design-led experiences." },
-    { name: "MLH", "contact": "hi@mlh.io", "website": "https://mlh.io/", img: mlh, description: "Major League Hacking (MLH) powers 300+ student hackathons yearly, fostering innovation, community, and coding skills worldwide" }
   ]
 
 
@@ -134,6 +136,7 @@ function Sponsors() {
         <a href="https://www.instagram.com/calpolyswift/?hl=en" target="_blank"><img src={swift_logo} className="club-logo"></img></a>
         <a href="https://www.instagram.com/cpp.sea/?hl=en" target="_blank"><img src={sea_logo} className="club-logo"></img></a>
         <a href="https://www.instagram.com/calpolywit/?hl=en" target="_blank"><img src={wit_logo} className="club-logo"></img></a>
+        <a href="https://www.instagram.com/cppceo/?hl=en" target="_blank"><img src={ceo_logo} className="club-logo"></img></a>
         {/* <a href="https://www.instagram.com/cppscript/?hl=en" target="_blank"><img src={script_logo} className="club-logo"></img></a> */}
       </div>
     </div>
