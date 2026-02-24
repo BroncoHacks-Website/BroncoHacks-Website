@@ -18,7 +18,8 @@ function NavBar() {
 </a>
         <a href="#" className="nav-button nav-button-blue">Team</a>
         <a href="#" className="nav-button nav-button-blue">Sponsors</a>
-        <a href="#" className="nav-button nav-button-blue button-rounded-right">FAQ</a>
+        <a href="#" className="nav-button nav-button-blue">Hall of Fame</a>
+        <a href="#" className="nav-button nav-button-blue">FAQ</a>
       </div>
     </div>
   );

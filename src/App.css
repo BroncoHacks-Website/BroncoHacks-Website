@@ -33,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 8px 24px;
+  padding: 16px 24px;
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
@@ -67,7 +67,7 @@ body {
   display: flex;
   align-items: center;
 
-  width: 344px;
+  width: 500px;
   height: 39px;
 
   background: #2F5597;
@@ -148,7 +148,7 @@ body {
 
 .balloon {
   width: clamp(200px, 35vw, 500px);
-  transform: translateY(-160px);
+  transform: translateY(-140px);
   justify-self: center;
 }
 
@@ -315,21 +315,23 @@ body {
 
 .cloud-left {
   width: clamp(250px, 25vw, 420px);
+  transform: translateY(9vw);
   top: 2%;
   left: -3%;
 }
 
 .cloud-right {
   width: clamp(200px, 18vw, 320px);
+  transform: translateX(4vw);
   top: 12%;
   right: 0;
 }
 
 .cloud-middle {
   width: clamp(300px, 28vw, 500px);
+  transform: translate(-14vw, 4vw);
   bottom: 44%;
   left: 47%;
-  transform: translateX(-50%);
 }
 
 .star {
@@ -347,7 +349,7 @@ body {
 .star2 {
   bottom: 38%;
   left: 32%;
-  transform: rotate(-20deg);
+  transform: translateY(100px) rotate(-20deg);
 }
 
 .star3 {
