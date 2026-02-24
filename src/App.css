@@ -148,7 +148,7 @@ body {
 
 .balloon {
   width: clamp(200px, 35vw, 500px);
-  transform: translateY(-140px);
+  transform: translateY(-177px);
   justify-self: center;
 }
 
@@ -316,7 +316,7 @@ body {
 .cloud-left {
   width: clamp(250px, 25vw, 420px);
   transform: translateY(9vw);
-  top: 2%;
+  top: 0%;
   left: -3%;
 }
 
@@ -330,7 +330,7 @@ body {
 .cloud-middle {
   width: clamp(300px, 28vw, 500px);
   transform: translate(-14vw, 4vw);
-  bottom: 44%;
+  bottom: 48%;
   left: 47%;
 }
 
@@ -347,7 +347,7 @@ body {
 }
 
 .star2 {
-  bottom: 38%;
+  bottom: 49%;
   left: 32%;
   transform: translateY(100px) rotate(-20deg);
 }
