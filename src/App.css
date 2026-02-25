@@ -1,4 +1,5 @@
 
+
 html, body {
   overflow-x: hidden;
   width: auto;
@@ -6,4 +7,10 @@ html, body {
 
 body {
   position: relative;
+   margin: 0;
+}
+
+
+.content {
+  flex: 1;
 }
