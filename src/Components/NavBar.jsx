@@ -12,14 +12,14 @@ function NavBar() {
       </div>
 
       <div className="nav-buttons">
-        
+
     <a href="#" className="nav-button nav-home">
-  Home
-</a>
-        <a href="#" className="nav-button nav-button-blue">Team</a>
-        <a href="#" className="nav-button nav-button-blue">Sponsors</a>
-        <a href="#" className="nav-button nav-button-blue">Hall of Fame</a>
-        <a href="#" className="nav-button nav-button-blue">FAQ</a>
+      <span>Home</span>
+    </a>
+        <a href="#" className="nav-button">Team</a>
+        <a href="#" className="nav-button">Sponsors</a>
+        <a href="#" className="nav-button">Hall of Fame</a>
+        <a href="#" className="nav-button">FAQ</a>
       </div>
     </div>
   );

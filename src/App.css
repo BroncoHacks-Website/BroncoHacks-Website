@@ -25,17 +25,16 @@ body {
 
 /* ================= NAVBAR ================= */
 #navbar {
-  position: sticky;
+  position: flex;
   top: 0;
-  z-index: 1000;
+  z-index: 1;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 16px 24px;
-  width: 90%;
-  max-width: 1440px;
+  padding: 0.75rem;
+  width: 100%;
   margin: 0 auto;
 
   background: transparent;   /* 🔥 THIS */
@@ -48,14 +47,19 @@ body {
 }
 
 .logo img {
-  height: 58px;
+  height: 30%;
+  width: 30%;
+  object-fit: contain;
+  overflow: hidden;
+  margin: 0 0.5rem 0 clamp(0.5rem, 1.5vw, 2rem);
 }
 
 .logo-text {
   font-family: "Nobel", sans-serif;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 100%;
+  font-size: clamp(0.9rem, 5vw, 1.9rem);
+  letter-spacing: -0.05em;
+  line-height: 115%;
   display: flex;
   flex-direction: column;
 }
@@ -66,29 +70,32 @@ body {
 .nav-buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  width: 500px;
-  height: 39px;
+  transform: translateX(-7%);
+  width: fit-content;
+  height: auto;
 
-  background: #2F5597;
+  background: #1F4993;
   border-radius: 999px;
-  padding: 4px;
-  gap: 6px;
+  padding: clamp(0.6rem, 2vw, 0.7rem);
 }
 
 
 /* NAV ITEMS */
 
 .nav-button {
-    padding: 6px 18px;
+  padding: clamp(0.6rem, 1.5vw, 1rem) clamp(1rem, 2.5vw, 2.5rem);
 
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 
   font-family: "Nobel", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  white-space: nowrap;
 
   text-decoration: none;
   color: #F6F8ED;
@@ -108,11 +115,22 @@ body {
     #5CBBD4 100%
   );
 
-  color: #1F4993;
+  font-weight: 700;
 
   box-shadow:
     0px 3px 0px #1F4993,
     0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.nav-home span {
+  background: linear-gradient(
+    180deg,
+    #214FA4 0%,
+    #24104C 100%
+  );
+
+  background-clip: text;
+  color: transparent;
 }
 
 .nav-home:hover {
