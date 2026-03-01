@@ -138,7 +138,7 @@ body {
 .timer-label {
   font-weight: 500;
   font-size: 20px;
-  color: #1F4993;
+  color: var(--deep-blue);
 }
 
 /* ================= REGISTER BUTTON ================= */

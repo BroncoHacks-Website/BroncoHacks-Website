@@ -37,7 +37,7 @@ function Landing() {
                   <div className="box">1</div>
                   <div className="box">2</div>
                 </div>
-                <span>Days</span>
+                <span className="timer-label">Days</span>
               </div>
 
               <div className="group">
@@ -45,7 +45,7 @@ function Landing() {
                   <div className="box">3</div>
                   <div className="box">4</div>
                 </div>
-                <span>Hours</span>
+                <span className="timer-label">Hours</span>
               </div>
 
               <div className="group">
@@ -53,7 +53,7 @@ function Landing() {
                   <div className="box">5</div>
                   <div className="box">6</div>
                 </div>
-                <span>Minutes</span>
+               <span className="timer-label">Minutes</span>
               </div>
             </div>
           </div>
