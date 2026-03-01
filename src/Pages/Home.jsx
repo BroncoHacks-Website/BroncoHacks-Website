@@ -1,12 +1,13 @@
 import { useState } from "react";
-import Landing from "../Components/Landing";
+import NavBar from "../Components/NavBar";
 
 function Home() {
 
   return (
     <> 
+      <NavBar />
       <div>
-        <Landing />
+
       </div>
     </>
   );
