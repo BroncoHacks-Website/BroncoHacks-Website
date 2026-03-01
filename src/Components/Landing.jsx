@@ -5,8 +5,9 @@ import star3 from "../assets/star3.png";
 import cloud1 from "../assets/hcloud.png";
 import cloud2 from "../assets/hcloud2.png";
 import cloud3 from "../assets/fcloud.png";
+import '../styles/Landing.css'
 
-function Hero() {
+function Landing() {
   return (
     <section id="hero">
 
@@ -64,4 +65,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Landing;
