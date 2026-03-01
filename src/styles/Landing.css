@@ -192,8 +192,18 @@ position: relative;
 }
 
 .btn:hover {
-  border-color: #D9E74C;
+  border: 3px solid transparent;
+  background-image: 
+    linear-gradient(#1F4993, #1F4993), 
+    linear-gradient(
+      180deg,
+      #D9E74C 0%,
+      #5CBBD4 100%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
+
 
 /* ================= DECORATION ================= */
 
