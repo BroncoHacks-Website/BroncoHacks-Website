@@ -58,7 +58,9 @@ function Landing() {
             </div>
           </div>
 
-          <a href="#" className="btn">REGISTER NOW !</a>
+          <a href="#" className="btn">
+  <span>REGISTER NOW !</span>
+</a>
         </div>
       </div>
     </section>

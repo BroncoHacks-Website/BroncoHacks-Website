@@ -12,7 +12,6 @@
   font-weight: 700;
 }
 
-
 /* ================= GLOBAL ================= */
 
 body {
@@ -21,7 +20,6 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   overflow-x: hidden;
 }
-
 
 /* ================= HERO ================= */
 
@@ -44,7 +42,6 @@ body {
   z-index: -1;
 }
 
-
 /* BALLOON */
 
 .balloon {
@@ -52,7 +49,6 @@ body {
   transform: translateY(-177px);
   justify-self: center;
 }
-
 
 /* CONTENT SIDE */
 
@@ -63,12 +59,11 @@ body {
   transform: translateY(-160px);
 }
 
-
 /* CARD */
 
 .card {
   width: clamp(400px, 45vw, 750px);
-  padding: 20px 40px;   /* 40px top/bottom, 60px left/right */
+  padding: 20px 40px;
   background: #5CBBD4;
   border-radius: 32px;
   text-align: center;
@@ -82,21 +77,16 @@ body {
   font-weight: 900;
   font-size: 64px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #1F4993;
   margin: 0 0 16px 0;
 }
 
-
 /* SUBTEXT */
 
 .subtitle {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;          /* Medium */
-  font-size: 24px;           /* Exact Figma size */
+  font-weight: 500;
+  font-size: 24px;
   line-height: 100%;
-  letter-spacing: 0;
-
   color: #1F4993;
   margin-bottom: 8px;
   text-align: center;
@@ -109,7 +99,6 @@ body {
   margin-bottom: 32px;
 }
 
-
 /* TIMER */
 
 .timer {
@@ -117,7 +106,6 @@ body {
   justify-content: center;
   gap: 40px;
 }
-
 
 .group {
   display: flex;
@@ -144,67 +132,68 @@ body {
   font-family: "Tektur", sans-serif;
   font-weight: 500;
   font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 0%;
-
   color: #1F4993;
 }
 
 .timer-label {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
-  color: #1F4993 !important;
-}
-.group span {
-  font-family: 'Space Grotesk', sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #1F4993;
 }
+
 /* ================= REGISTER BUTTON ================= */
 
 .btn {
   margin-top: 40px;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
+  display: flex;
   padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 999px;
 
+  /* Button background gradient */
   background: linear-gradient(
     180deg,
-    #D9E74C 0%,
-    #8ED28F 40%,
-    #5CBBD4 100%
+    #214FA4 0%,
+    #24104C 100%
   );
 
   font-family: "Nobel", sans-serif;
   font-weight: 700;
   font-size: 32px;
   text-transform: uppercase;
-  line-height: 100%;
-
-  color: #1F4993;
   text-decoration: none;
 
-  box-shadow:
-    0px 6px 0px #1F4993,
-    0px 10px 25px rgba(0, 0, 0, 0.18);
+  /* Bronco Gradient TEXT */
+  background-clip: padding-box;
+  position: relative;
+
+  box-shadow: 2px 2px 2px 0 #01203F;
 
   transition: all 0.2s ease;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0px 9px 0px #1F4993,
-    0px 14px 30px rgba(0, 0, 0, 0.22);
+/* Gradient text layer */
+.btn span {
+  background: var(
+    --broncoGradient,
+    linear-gradient(
+      180deg,
+      var(--lemon-lime, #D9E74C) 0%,
+      var(--sky-blue, #5CBBD4) 100%
+    )
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.btn:hover {
+  transform: translateY(-2px);
+}
 
 /* ================= DECORATION ================= */
 
@@ -258,7 +247,6 @@ body {
   right: 5%;
   transform: rotate(15deg);
 }
-
 
 /* ================= MOBILE ================= */
 
