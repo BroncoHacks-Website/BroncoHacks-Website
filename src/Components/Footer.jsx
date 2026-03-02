@@ -25,7 +25,7 @@ function Footer() {
 
           {/* RIGHT: Socials*/}
           <div className="footer-right">
-            <h4 id="socials-header">Connect with Us</h4>
+            <h4 id="socials-header">Connect with Us!</h4>
             <a href="mailto: cppbroncohacks@gmail.com" id="email_link">cppbroncohacks@gmail.com</a>
             <ul className ="socials-list">
             <li><a href="https://discord.com/invite/aFD3eCVvhR" target="_blank" rel="noopener noreferrer"><img src={Discord} className="socials_img"/></a></li>

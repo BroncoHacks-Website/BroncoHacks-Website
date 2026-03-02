@@ -20,7 +20,7 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-center;
     z-index: 2;
 }
 .footer-bottom-section {
@@ -42,12 +42,13 @@
     font-family: 'NobelFont', sans-serif;
     color: #98CE83;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 1000;
     font-style:black;
+    line-height: 90%;
    
 }
 .footer-right {
-    text-align: right;
+    text-align: left;
     margin-top: 10px;
 }
 
@@ -69,7 +70,7 @@
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     gap: 10px;
     margin-top: 10px;
 }
