@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "../Components/Footer.jsx";
 import NavBar from "../Components/NavBar";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
       <div>
 
       </div>
+      <Footer />
     </>
   );
 }

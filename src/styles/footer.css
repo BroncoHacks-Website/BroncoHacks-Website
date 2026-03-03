@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'NobelFont'; 
+  src: url('src\Assets\fonts\Nobel Bold.otf') format('otf');
+}
+
+.footer-container {
+    background-color: eggshell;
+    position: sticky;
+    width: 100%;
+    padding: 40px 0 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-main-content {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-center;
+    z-index: 2;
+}
+.footer-bottom-section {
+    background-color: #01203F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#title-container {
+    font-family: 'NobelFont', sans-serif;
+    color: #98CE83;
+    font-size: 16px;
+    font-weight: 1000;
+    font-style:black;
+    line-height: 90%;
+   
+}
+.footer-right {
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+#rights_reserved_text {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #F6F8ED;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+}
+
+.broncohackslogo {
+    width: 159.42px;
+    height: 84.61px;
+}
+
+.socials-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#socials-header {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #98CE83;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+}
+
+#email_link {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #98CE83;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+}
+
+#footer_bg {
+    width: 100%;
+    height: auto;
+   display: block;
+   margin-bottom: -30px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255,255, 0.1);
+    background-color: #02072F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+.container {
+    background-color: #F6F8ED;
+    width: 1440px;
+    height: 670px;
+    margin-top: 20px;
+    margin-left: 10px; 
+    padding-top: 128px;
+
+}
+.socials_img {
+    width: 52px;
+    height: 52px;
+    padding: 6px;
+    transition: transform 0.2s;
+}
+.socials_img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
