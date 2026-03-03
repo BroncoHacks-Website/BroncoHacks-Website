@@ -26,7 +26,7 @@ body {
 #hero {
   position: relative;
   padding: 120px 5vw 140px 5vw;
-  margin-top: 12vw;
+  margin-top: 4vw;
 }
 
 .container.landing {
@@ -242,7 +242,7 @@ position: relative;
 }
 
 .star1 {
-  top: -3%;
+  top: 5%;
   left: 40%;
   transform: translateX(-50%) rotate(15deg);
 }
