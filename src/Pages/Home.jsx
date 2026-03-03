@@ -7,9 +7,7 @@ function Home() {
   return (
     <> 
       <NavBar />
-      <div>
 
-      </div>
       <Footer />
     </>
   );
