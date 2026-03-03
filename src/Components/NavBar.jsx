@@ -11,7 +11,7 @@ const NavBar = () => {
             <ul>
               <li className='nav-btn'><NavLink to="/">Home</NavLink></li>
               <li className='nav-btn'><NavLink to="/">Team</NavLink></li>
-              <li className='nav-btn'><NavLink to="/">Sponsors</NavLink></li>
+             <li className='nav-btn'><NavLink to="/sponsors">Sponsors</NavLink></li>
               <li className='nav-btn'><NavLink to="/">Hall of Fame</NavLink></li>
               <li className='nav-btn'><NavLink to="/">FAQ</NavLink></li>
             </ul>

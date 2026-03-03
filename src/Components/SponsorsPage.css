@@ -1,0 +1,145 @@
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.sponsor-page {
+  display: flex;
+  width: 1440px;
+  padding-top: 128px;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--eggshell, #F6F8ED);
+
+  position: relative;
+  margin: 0 auto; /* center page */
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.page-heading {
+  color: var(--deep-blue, #1F4993);
+  font-family: Nobel, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* =========================
+   SPONSORS GRID
+========================= */
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1000px;
+}
+
+.sponsor-card {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 8px;
+  background: #CBE7E6;
+  box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+}
+
+.sponsor-card img {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+/* =========================
+   INFO BOX
+========================= */
+
+.sponsor-info-box {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 8px;
+  background: #CBE7E6;
+  box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+
+  color: var(--deep-blue, #1F4993);
+  text-align: center;
+  max-width: 500px;
+}
+
+/* =========================
+   CLUBS
+========================= */
+
+.clubs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 800px;
+}
+
+.club-circle {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+
+  border-radius: 999px;
+  background: #FFF;
+  box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.club-circle img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* =========================
+   DECORATIONS
+========================= */
+
+.cloud-decoration {
+  position: absolute;
+  right: -90px;
+  top: 276px;
+
+  width: 365px;
+  height: 310px;
+  aspect-ratio: 73/62;
+
+  opacity: 0.6;
+}
+
+.balloon-decoration {
+  position: absolute;
+  left: 64px;
+  top: 560px;
+
+  width: 316px;
+  height: 616px;
+  aspect-ratio: 59/115;
+}
+.sponsor-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
