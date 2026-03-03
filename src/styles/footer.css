@@ -41,7 +41,7 @@
 #title-container {
     font-family: 'NobelFont', sans-serif;
     color: #98CE83;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 1000;
     font-style:black;
     line-height: 90%;
@@ -70,7 +70,7 @@
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 10px;
     margin-top: 10px;
 }
@@ -121,7 +121,7 @@
 .socials_img {
     width: 52px;
     height: 52px;
-    padding: 6px;
+    padding: 0px;
     transition: transform 0.2s;
 }
 .socials_img:hover {
