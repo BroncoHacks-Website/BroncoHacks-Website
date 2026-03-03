@@ -41,6 +41,7 @@ a:visited {
     left: 0;
     right: 0;
     padding: 16px 32px;
+    z-index: 67;
 }
 
 .logo {
@@ -76,7 +77,8 @@ a:visited {
 .nav-btn {
     border-radius: 999px;
     height: auto;
-    width: 100%;
+    /* don’t force each list item to fill the whole nav – they were stacking/overlapping */
+    /* width: 100%; */
     min-width: 116px;
     display: flex;
     justify-content: center;
@@ -88,11 +90,20 @@ a:visited {
     gap: 10px;
 }
 
+/* make the link itself fill the li so hovering the text still counts */
+.nav-btn a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-btn:hover, .nav-btn:active {
     cursor: pointer;
     background: var(--green-gradient);
 }
 
+/* you can also target the link if you prefer – it already spans the li */
 .nav-btn:hover a, .nav-btn:active a {
     background-image: var(--blue-gradient);
     background-clip: text;
