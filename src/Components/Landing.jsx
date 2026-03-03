@@ -21,7 +21,7 @@ function Landing() {
       <img src={star2} className="star star2" alt="" />
       <img src={star3} className="star star3" alt="" />
 
-      <div className="container">
+      <div className="container landing">
 
         <img src={balloon} className="balloon" alt="Balloon" />
 

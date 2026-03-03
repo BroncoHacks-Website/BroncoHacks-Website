@@ -29,7 +29,8 @@ body {
   margin-top: 12vw;
 }
 
-.container {
+.container.landing {
+  background-color: rgba(255, 255, 255, 0);
   max-width: 1400px;
   margin: 0 auto;
 
@@ -154,7 +155,7 @@ body {
 
   border-radius: 999px;
     /* reserve border space */
-  border: 4px solid transparent;
+  border: 3px solid transparent;
 
   /* Button background gradient */
   background: linear-gradient(
@@ -230,7 +231,7 @@ position: relative;
 .cloud-middle {
   width: clamp(300px, 28vw, 500px);
   transform: translate(-14vw, 4vw);
-  bottom: 48%;
+  bottom: 30%;
   left: 52%;
 }
 
