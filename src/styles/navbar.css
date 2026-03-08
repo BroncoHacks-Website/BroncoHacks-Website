@@ -1,18 +1,22 @@
 @font-face {
-  font-family: 'Nobel Bold';
-  src: url('/src/Assets/Fonts/Nobel Bold/Nobel Bold.otf') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Nobel Bold';
+    src: url('/src/Assets/fonts/Nobel Bold/Nobel Bold.otf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
 
 :root {
-    --green-gradient: linear-gradient(180deg, #D9E74C 0%, #5CBBD4 100%);
-    --blue-gradient: linear-gradient(180deg, #214FA4 0%, #24104C 100%);
+    --eggshell: #F6F8ED;
+    --broncoGradient: linear-gradient(180deg, #D9E74C 0%, #5CBBD4 100%);
+    --blueGradient: linear-gradient(180deg, #214FA4 0%, #24104C 100%);
+    --sky-blue: #5CBBD4;
     --deep-blue: #1F4993;
+    --dark-blue: #01203F;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    scrollbar-width: none;
 }
 
 nav ul {
@@ -25,10 +29,9 @@ nav ul {
 
 a {
     text-decoration: none;
-}
-
-a:visited {
     color: inherit;
+    cursor: pointer;
+    outline: none;
 }
 
 .navbar-container {
@@ -54,59 +57,73 @@ a:visited {
     cursor: pointer;
 }
 
-.navbar {
+.navbar ul {
     display: flex;
     flex-direction: row;
     background: var(--deep-blue); 
-    width: 628px;
     min-height: 55px;
     gap: 8px;
     padding: 8px;
     border-radius: 999px;
-    justify-content: space-around;
     color: #F6F8ED;
     font-family: 'Nobel Bold', sans-serif;
     font-weight: 700;    
     font-size: 16px;
     font-weight: 700;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
-    white-space: nowrap;
+    text-align: center;
     line-height: 100%;
+    word-wrap: break-word;
 }
 
 .nav-btn {
     border-radius: 999px;
+    width: auto;
     height: auto;
     /* don’t force each list item to fill the whole nav – they were stacking/overlapping */
-    width: 100%;
+    /* width: 100%; */
     min-width: 116px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+
+    gap: 10px;
+    cursor: pointer;
+
+    border-style: solid;
+    border-radius: 999px;
+    border-width: 2px;
+    border-color: transparent;
+}
+
+.nav-btn a {
     padding-top: 10px;
     padding-right: 16px;
     padding-bottom: 10px;
     padding-left: 16px;
-    gap: 10px;
 }
 
-/* make the link itself fill the li so hovering the text still counts */
-.nav-btn a {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.nav-btn:has(a.active) {
+    background: var(--broncoGradient);
+    color: var(--blueGradient);
+    border-color: var(--deep-blue);
 }
 
-.nav-btn:hover, .nav-btn:active {
-    cursor: pointer;
-    background: var(--green-gradient);
+.nav-btn:hover:active {
+    border-color: var(--dark-blue);
+    background: var(--broncoGradient);
+    color: var(--blueGradient)
+}
+
+.nav-btn:hover {
+    border-color: var(--sky-blue);
+    color: var(--sky-blue);
 }
 
 /* you can also target the link if you prefer – it already spans the li */
-.nav-btn:hover a, .nav-btn:active a {
-    background-image: var(--blue-gradient);
+/* .nav-btn:hover a, .nav-btn:active a {
+    background-image: var(--sky-blue);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-}
+} */
