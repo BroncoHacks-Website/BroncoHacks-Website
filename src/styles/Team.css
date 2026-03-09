@@ -200,7 +200,7 @@ body {
 .profile-text .name {
     color: var(--dark-blue);
     font-weight: 700;
-
+    margin-bottom: 5px;
 }
 
 .profile-text .roles {
