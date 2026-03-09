@@ -5,6 +5,8 @@ import balloonImg from "../assets/img_billyballon.png";
 import sponsorPlaceholder from "../assets/Sponsor.png";
 import clubPlaceholder from "../assets/Sponsor.png"; // replace later
 import cloudImg from "../assets/cloud_left.png";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 /* =========================
    DATA
@@ -44,7 +46,8 @@ const clubs = [
 ];
 
 export default function SponsorsPage() {
-  return (
+  return (<>
+    <NavBar />
     <div className="sponsor-page">
 
       {/* Decorations */}
@@ -88,5 +91,6 @@ export default function SponsorsPage() {
 
       </div>
     </div>
-  );
+    <Footer />
+  </>);
 }
