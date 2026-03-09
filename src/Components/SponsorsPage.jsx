@@ -21,24 +21,27 @@ const sponsors = [
 ];
 
 const clubs = [
-  { id: 1, name: "Robotics Club", logo: sponsorPlaceholder },
-  { id: 2, name: "Coding Club", logo: sponsorPlaceholder },
-  { id: 3, name: "Math Club", logo: sponsorPlaceholder },
-  { id: 4, name: "Art Club", logo: sponsorPlaceholder },
-  { id: 5, name: "Science Club", logo: sponsorPlaceholder },
-  { id: 6, name: "Drama Club", logo: sponsorPlaceholder },
-  { id: 7, name: "Chess Club", logo: sponsorPlaceholder },
-  { id: 8, name: "Business Club", logo: sponsorPlaceholder },
+  { id: 1 },
+  { id: 2 },
+  { id: 3 },
+  { id: 4 },
+  { id: 5 },
+  { id: 6 },
+  { id: 7 },
+  { id: 8 },
 ];
+
 export default function SponsorsPage() {
   return (
     <div className="sponsor-page">
 
+      {/* Decorations anchored to page */}
       <img src={cloudImg} alt="" className="cloud-decoration" />
       <img src={balloonImg} alt="" className="balloon-decoration" />
 
       <div className="section-wrapper">
 
+        {/* Sponsors Section */}
         <h2 className="page-heading">Our Sponsors</h2>
 
         <div className="sponsors-grid">
@@ -49,6 +52,7 @@ export default function SponsorsPage() {
           ))}
         </div>
 
+        {/* Info Box */}
         <div className="sponsor-info-box">
           <strong>Interested in Sponsoring?</strong>
           <p>
@@ -57,14 +61,15 @@ export default function SponsorsPage() {
           </p>
         </div>
 
-        <h2 className="page-heading">School Clubs</h2>
+        {/* Clubs Section */}
+        <div className="clubs-section">
+          <h2 className="page-heading">School Clubs</h2>
 
-        <div className="clubs-grid">
-          {clubs.map((club) => (
-            <div key={club.id} className="club-circle">
-              <img src={club.logo} alt={club.name} />
-            </div>
-          ))}
+          <div className="clubs-grid">
+            {clubs.map((club) => (
+              <div key={club.id} className="club-circle"></div>
+            ))}
+          </div>
         </div>
 
       </div>
