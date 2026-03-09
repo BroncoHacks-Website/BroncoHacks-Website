@@ -105,7 +105,6 @@
   align-items: center;
   gap: 48px;
 }
-
 /* =========================
    CLUBS GRID
 ========================= */
@@ -117,16 +116,35 @@
   justify-content: center;
 }
 
+/* =========================
+   CLUB CIRCLE
+========================= */
+
 .club-circle {
   width: 140px;
   height: 140px;
 
-  border-radius: 50%;
+  border-radius: 50%;          /* 🔥 makes it a circle */
   background: #FFFFFF;
+
+  display: flex;               /* center logo */
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;            /* 🔥 ensures image stays circular */
 
   box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
 }
 
+/* =========================
+   CLUB LOGO
+========================= */
+
+.club-circle img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
 /* =========================
    DECORATIONS
 ========================= */
