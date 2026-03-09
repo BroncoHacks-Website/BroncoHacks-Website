@@ -1,0 +1,168 @@
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.sponsor-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding-top: 160px;
+  padding-bottom: 60px;
+
+  background: #F6F8ED;
+  position: relative;
+}
+
+/* =========================
+   SECTION WRAPPER
+========================= */
+
+.section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.page-heading {
+  color: #1F4993;
+  font-family: Nobel, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+/* =========================
+   SPONSORS GRID
+========================= */
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  gap: 32px 40px;
+  justify-content: center;
+}
+
+.sponsor-card {
+  height: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #FFFFFF;
+  border-radius: 6px;
+
+  box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+}
+
+.sponsor-card img {
+  width: 150px;
+  object-fit: contain;
+}
+
+/* =========================
+   INFO BOX
+========================= */
+
+.sponsor-info-box {
+  max-width: 520px;
+  padding: 24px;
+
+  background: #CBE7E6;
+  border-radius: 8px;
+
+  box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+
+  text-align: center;
+  color: #1F4993;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* =========================
+   CLUBS SECTION (NEW)
+========================= */
+
+.clubs-section {
+  position: relative;   /* 🔥 anchor for balloon */
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+/* =========================
+   CLUBS GRID
+========================= */
+
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 140px);
+  gap: 48px 60px;
+  justify-content: center;
+}
+
+/* =========================
+   CLUB CIRCLE
+========================= */
+
+.club-circle {
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;          /* 🔥 makes it a circle */
+  background: #FFFFFF;
+
+  display: flex;               /* center logo */
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;            /* 🔥 ensures image stays circular */
+
+  box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+}
+
+/* =========================
+   CLUB LOGO
+========================= */
+
+.club-circle img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+/* =========================
+   DECORATIONS
+========================= */
+
+.cloud-decoration {
+  position: absolute;
+  right: -180px;
+  top: 475px;
+  width: 390px; /* fixed typo */
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* 🔥 Balloon now anchored to clubs section */
+.balloon-decoration {
+  position: absolute;
+  left: 4px;
+  bottom: 80px;
+  width: 260px;
+  pointer-events: none;
+}
