@@ -1,91 +1,170 @@
+/* ===================================================== */
+/* ================= ROOT VARIABLES ==================== */
+/* ===================================================== */
+
+:root {
+  --deep-blue: #1F4993;
+  --dark-blue: #01203F;
+  --eggshell: #F6F8ED;
+}
+
+/* ===================================================== */
+/* ================= PAGE LAYOUT ======================= */
+/* ===================================================== */
+
 .hall-of-fame {
+  background: var(--eggshell);
+  padding: 160px 0 120px;   /* large space under navbar */
   display: flex;
   justify-content: center;
-  background: #F6F8ED;
-  padding: 80px 0 120px;
 }
 
 .hall-wrapper {
-  width: 100%;
-  max-width: 1200px;
+  width: 1100px;
   text-align: center;
 }
 
-/* ================= HEADER ================= */
+/* ===================================================== */
+/* ================= HEADINGS ========================== */
+/* ===================================================== */
+
+.section-heading,
+.section-subheading {
+  color: #1F4993 ;   /* force deep blue */
+
+  font-family: "Nobel", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 
 .section-heading {
-  font-family: "Nobel";
-  font-size: 36px;
-  font-weight: 900;
-  color: #1F4993;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+.section-subheading {
+  margin: -150px 0 70px;
+}
+
+/* ===================================================== */
+/* ================= DESCRIPTION ======================= */
+/* ===================================================== */
 
 .section-description {
-  max-width: 1000px;
-  margin: 0 auto 50px;
-  font-family: "Space Grotesk";
-  font-size: 16px;
-  color: #1F4993;
-  line-height: 1.6;
+  width: 1000px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+/* ================= DESCRIPTION TEXT ================= */
+
+.section-description-text {
+  color: var(--deep-blue, #1F4993);
+
+  /* Normal Text */
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-/* ================= WINNER ROW ================= */
+.section-theme-text {
+  color: var(--dark-blue, #01203F);
 
-.winners-row-wrap {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* ===================================================== */
+/* ================= CAROUSEL LAYOUT =================== */
+/* ===================================================== */
+
+.carousel-wrapper {
   position: relative;
-  margin-bottom: 80px;
+  width: 100%;
+  height: 520px;
+  margin-bottom: 100px;
 }
 
-.winners-row {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 48px;
+.carousel {
+  position: relative;
+  height: 100%;
 }
 
-/* ================= CARD ================= */
+/* ===================================================== */
+/* ================= CARDS ============================= */
+/* ===================================================== */
 
-.winner-card {
-  width: 300px;
+.carousel-card {
+  position: absolute;
+  top: 0;
+  width: 280px;
+  background: var(--eggshell);
+  border: 4px solid var(--deep-blue);
   border-radius: 8px;
-  border: 4px solid #1F4993;
-  background: #F6F8ED;
-  box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  opacity: 0;
 }
 
-.winner-card.large {
-  width: 440px;
-  transform: translateY(-20px);
+/* -------- CENTER CARD -------- */
+
+.carousel-card.center {
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  width: 420px;
+  z-index: 3;
+  opacity: 1;
+}
+
+/* -------- LEFT CARD -------- */
+
+.carousel-card.left {
+  left: 2%;
+  transform: scale(0.85);
   z-index: 2;
+  opacity: 1;
 }
 
-/* placement text */
+/* -------- RIGHT CARD -------- */
+
+.carousel-card.right {
+  right: 2%;
+  transform: scale(0.85);
+  z-index: 2;
+  opacity: 1;
+}
+
+/* -------- HIDDEN CARDS -------- */
+
+.carousel-card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===================================================== */
+/* ================= CARD CONTENT ====================== */
+/* ===================================================== */
 
 .placement {
-  font-family: "Nobel";
-  font-size: 42px;
+  font-family: "Nobel", sans-serif;
+  font-size: 36px;
   font-weight: 900;
-  text-transform: uppercase;
-  background: linear-gradient(180deg,#214FA4 0%,#24104C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 3px #1F4993;
+  color: var(--deep-blue);
+  margin-bottom: 16px;
 }
 
-/* image */
-
 .card-image-frame {
-  height: 170px;
+  height: 180px;
+  border: 3px solid var(--deep-blue);
   border-radius: 6px;
   overflow: hidden;
-  border: 6px solid #F6F8ED;
-  box-shadow: inset 0 0 0 2px #1F4993;
+  margin-bottom: 18px;
 }
 
 .card-image-frame img {
@@ -94,29 +173,30 @@
   object-fit: cover;
 }
 
-/* text */
-
 .project-title {
-  font-family: "Nobel";
-  font-size: 24px;
-  font-weight: 700;
-  color: #1F4993;
+  font-family: "Nobel", sans-serif;
+  font-size: 22px;
+  color: var(--deep-blue);
+  margin-bottom: 8px;
 }
 
 .project-description {
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
-  color: #1F4993;
+  color: var(--deep-blue);
+  margin-bottom: 6px;
 }
 
 .team-name {
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #1F4993;
+  color: var(--deep-blue);
 }
 
-/* ================= NAV BUTTONS ================= */
+/* ===================================================== */
+/* ================= NAVIGATION ARROWS ================= */
+/* ===================================================== */
 
 .nav-arrow {
   position: absolute;
@@ -125,27 +205,23 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(180deg,#214FA4 0%,#24104C 100%);
+  background: linear-gradient(180deg, #214FA4 0%, #24104C 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 5;
 }
 
-.nav-arrow.left { left: -25px; }
-.nav-arrow.right { right: -25px; }
+.nav-arrow.left {
+  left: -15px;
+}
+
+.nav-arrow.right {
+  right: -15px;
+}
 
 .nav-arrow img {
-  width: 18px;
-}
-
-/* ================= CATEGORY TITLE ================= */
-
-.section-subheading {
-  font-family: "Nobel";
-  font-size: 28px;
-  font-weight: 900;
-  color: #1F4993;
-  text-transform: uppercase;
-  margin-bottom: 40px;
+  width: 16px;
 }
