@@ -58,7 +58,7 @@ const NavBar = () => {
 
               <li className='nav-btn'>
                 <NavLink 
-                  to="/faq" // update this to the route you want to link to
+                  to="/FAQ" // update this to the route you want to link to
                   className={({ isActive }) => isActive ? 'active' : ''}
                   onClick={scrollToTop}
                 >
