@@ -1,73 +1,151 @@
-@font-face {
-    font-family: 'Nobel';
-    src: url('/src/Assets/fonts/Nobel Bold.otf') format('woff2');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Nobel';
-    src: url('/src/Assets/fonts/Nobel Black.otf') format('woff2');
-    font-weight: 900;
-}
-
-
-/* Page Container */
-
 .hall-of-fame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-
-    padding-top: 160px;
+  display: flex;
+  justify-content: center;
+  background: #F6F8ED;
+  padding: 80px 0 120px;
 }
 
-/* Carousel container */
-
-.carousel-container {
-    display: flex;
-    padding: 32px 128px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
+.hall-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
 }
 
-/* Introductory Section */
+/* ================= HEADER ================= */
 
 .section-heading {
-    color: var(--deep-blue, #1F4993);
-    font-family: "Nobel", sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    text-transform: uppercase;
+  font-family: "Nobel";
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F4993;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .section-description {
-    width:85%;
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  color: #1F4993;
+  line-height: 1.6;
 }
 
-.section-description-text {
-    color: var(--deep-blue, #1F4993);
-    font-family: "Space Grotesk";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+/* ================= WINNER ROW ================= */
+
+.winners-row-wrap {
+  position: relative;
+  margin-bottom: 80px;
 }
 
-.section-theme-text {
-    color: var(--dark-blue, #01203F);
-    font-family: "Space Grotesk";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.winners-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 48px;
+}
+
+/* ================= CARD ================= */
+
+.winner-card {
+  width: 300px;
+  border-radius: 8px;
+  border: 4px solid #1F4993;
+  background: #F6F8ED;
+  box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.winner-card.large {
+  width: 440px;
+  transform: translateY(-20px);
+  z-index: 2;
+}
+
+/* placement text */
+
+.placement {
+  font-family: "Nobel";
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(180deg,#214FA4 0%,#24104C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #1F4993;
+}
+
+/* image */
+
+.card-image-frame {
+  height: 170px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 6px solid #F6F8ED;
+  box-shadow: inset 0 0 0 2px #1F4993;
+}
+
+.card-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* text */
+
+.project-title {
+  font-family: "Nobel";
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F4993;
+}
+
+.project-description {
+  font-family: "Space Grotesk";
+  font-size: 14px;
+  color: #1F4993;
+}
+
+.team-name {
+  font-family: "Space Grotesk";
+  font-size: 13px;
+  font-weight: 600;
+  color: #1F4993;
+}
+
+/* ================= NAV BUTTONS ================= */
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(180deg,#214FA4 0%,#24104C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+
+.nav-arrow.left { left: -25px; }
+.nav-arrow.right { right: -25px; }
+
+.nav-arrow img {
+  width: 18px;
+}
+
+/* ================= CATEGORY TITLE ================= */
+
+.section-subheading {
+  font-family: "Nobel";
+  font-size: 28px;
+  font-weight: 900;
+  color: #1F4993;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
