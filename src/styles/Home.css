@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Nobel Bold';
+  src: url('/src/Assets/Fonts/Nobel Bold/Nobel Bold.otf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/src/Assets/Fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50rem;
+    gap: 10px;
+}
+
+.section-one {
+  position: relative;      /* parent for stacking */
+  width: 100%;
+  max-width: 1400px;       /* optional, keeps section contained */
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.cloud-decor {
+  position: absolute;      /* behind the text */
+  top: -160px;
+  left: -260px;            /* adjust how far left it is */
+  width: 1347px;           /* original width */
+  height: 390px;
+  aspect-ratio: 449/130;
+  background: url('/cloud.png') no-repeat left top;
+  background-size: 100% 100%;
+  z-index: -5;               /* behind text */
+}
+
+.billy-computer-img {
+      position: absolute;      /* absolute so it sits over the cloud */
+  top: 50%;                /* vertically center with text */
+  right: 160px;                /* stick to the right edge of the section */
+  transform: translateY(-50%); /* exact vertical centering */
+  width: 300px;            /* size of the image */
+  height: auto;
+  z-index: 2;  
+}
+
+.sparkle-decor {
+    width: 57px;
+height: 57px;
+aspect-ratio: 1/1;
+position: absolute;
+right: 40px;
+top: 20px;
+}
+
+.what-is-broncohacks {
+  position: relative;       /* sits above cloud */
+  z-index: 2;
+  max-width: 50%;
+  padding-left: 150px;
+  padding-bottom: 100px;
+}
+
+.what-is-broncohacks p {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h2 { 
+    color: var(--deep-blue, #1F4993);
+/* Heading 1 */
+font-family: "Nobel Bold", sans-serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.section-two {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.horse-pic {
+    display: flex;
+    width: 502px;
+    height: 333px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.student-led {
+    max-width: 50%;
+    padding: 20px;
+
+}
+.archive-container {
+     display: flex;              /* child becomes flex container */
+    /* horizontal center */
+  align-items: center;  
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 25px;
+    background-color: aliceblue;
+    margin: 30px;
+    border-radius: 16px;
+background: #CCE7E6;
+box-shadow: 2px 2px 4px 0 rgba(1, 32, 63, 0.25);
+
+}
+
+.archive-container p {
+    font-family: "Space Grotesk", sans-serif;
+    width: 526px;
+    font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.learn-more {
+    display: flex;
+width: 123px;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+    border-radius: 999px;
+border: 2px solid var(--broncoGradient, #D9E74C);
+background: var(--blueGradient, linear-gradient(180deg, #214FA4 0%, #24104C 100%));
+color: var(--broncoGradient, #D9E74C);
+font-family: "Nobel Bold", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+h2 {
+      font-family: 'Nobel Bold', sans-serif;
+}
+
+.archive-container h2, .student-led h2 {
+    padding: 0;
+    margin:0;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--deep-blue, #1F4993);
+
+/* Normal Text */
+font-family: "Space Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-self: stretch;
+}
