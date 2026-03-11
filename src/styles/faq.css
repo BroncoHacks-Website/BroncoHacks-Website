@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Nobel Bold';
+  src: url('src\Assets\fonts\Nobel Bold.otf') format('otf');
+}
+
+.faq-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.faq-main-content {
+  width: 100%;
+  position: relative;
+  padding-top: 220px; 
+  display: flex;
+  padding-bottom: 80px; 
+  overflow: hidden; 
+  flex-direction: column;
+  align-items: center;
+  /*overflow: hidden;*/
+}
+
+#balloons {
+    width: 266.18px;
+    height: auto;
+    position: absolute;
+    top: 260px;
+    left: 85px;
+    z-index: 1;
+
+}
+
+/*positioning for clouds */
+#cloud1 {
+  top: 450px;
+  position: absolute;
+  left: -40px;
+  width: 250px;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+#Cloud2 {
+  position: absolute;
+  top: 150px;
+  right: 5%;
+  width: 300px;
+  z-index: 0;
+}
+
+#title {
+    font-family: 'Nobel Bold', sans-serif;
+    font-size: 32px;
+    line-height: 100%;
+    color: #1F4993;
+    font-weight: 900;
+    font-style: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 5;
+    text-transform: uppercase;
+    
+}
+
+.faq-container {
+    max-width: 655px;
+    width: 100%;
+    position: relative;
+    z-index: 10; 
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+details {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border: 2px solid transparent;
+}
+
+/*matches the design */
+details[open] {
+  background-color: #CBE7E6;
+  border: 2px solid #b2d8d0;
+}
+
+summary {
+    padding: 24px 30px;
+    font-family: 'Nobel Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1F4993;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*creating the dark blue arrow*/
+summary::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-right: 3px solid #1e3a8a;
+  border-bottom: 3px solid #1e3a8a;
+  transform: translateY(-25%) rotate(45deg); /* Points it down */
+  transition: transform 0.2s ease; /* Smooth rotation */
+}
+
+/* Rotates the arrow so it points up when the menu is clicked open */
+details[open] summary::after {
+  transform: translateY(25%) rotate(225deg);
+}
+
+/* The text content that drops down */
+.faq-content {
+  padding: 0 30px 24px 30px;
+  color: #333333;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.faq-content p {
+  margin: 0;
+}
+
