@@ -15,6 +15,7 @@ function App() {
         <Route path="/hallOfFame" element={<HallOfFame />} />
         <Route path="/team" element={<Team />} />
         <Route path="/sponsors" element={<SponsorsPage />} />
+        <Route path="/faq" element={<FAQ />} />
       </Routes>
     </BrowserRouter>
   );
