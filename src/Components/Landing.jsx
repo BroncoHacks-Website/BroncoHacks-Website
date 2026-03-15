@@ -58,7 +58,7 @@ function Landing() {
             </div>
           </div>
 
-         <a href="/register" className="btn">
+         <a href="https://forms.gle/2ZYGJNLVgud5apyX8" className="btn">
   <span>REGISTER NOW !</span>
 
 </a>

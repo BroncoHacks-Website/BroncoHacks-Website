@@ -30,7 +30,7 @@ function Footer() {
             <ul className ="socials-list">
             <li><a href="https://discord.com/invite/aFD3eCVvhR" target="_blank" rel="noopener noreferrer"><img src={Discord} className="socials_img"/></a></li>
             <li><a href="https://www.instagram.com/cppbroncohacks/" target="_blank" rel="noopener noreferrer"><img src={Instagram} className="socials_img"/></a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} className="socials_img"/></a></li>
+            <li><a href="https://www.linkedin.com/company/broncohacks/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><img src={LinkedIn} className="socials_img"/></a></li>
             </ul>
           </div>
 

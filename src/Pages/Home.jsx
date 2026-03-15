@@ -44,7 +44,7 @@ function Home() {
             <h2>Archive</h2>
             <p>Learn more about previous events (Minihack, Avande AI)
                led by the BroncoHacks committee.</p>
-            <button className="learn-more">Learn more</button>
+            <a href="" className="learn-more"><span>Learn more {'>'}</span></a>
           </div>
         </div>
       </div>
