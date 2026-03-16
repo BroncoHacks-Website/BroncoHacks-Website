@@ -77,9 +77,10 @@ const Landing = () => {
 
           </div>
 
-          <a href="/register" className="btn">
-            <span>REGISTER NOW !</span>
-          </a>
+         <a href="https://forms.gle/2ZYGJNLVgud5apyX8" target="_blank" rel="noopener noreferrer" className="btn">
+  <span>REGISTER NOW !</span>
+
+</a>
         </div>
       </div>
     </section>
