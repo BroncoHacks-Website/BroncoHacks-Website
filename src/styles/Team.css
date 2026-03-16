@@ -10,7 +10,6 @@
     font-weight: 900;
 }
 
-
 @font-face {
     font-family: 'Nobel';
     src: url('/src/Assets/fonts/Nobel Regular Italic.otf.otf') format('woff2');
@@ -66,8 +65,6 @@ body {
     min-width: fit-content;
     height: 100%;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 20px;
     display: flex;
 }
@@ -80,19 +77,12 @@ body {
     font-size: 24px;
     font-family: 'Nobel', sans-serif;
     font-weight: 700;
-    word-wrap: break-word;
 
-    align-self: stretch;
     padding: 10px 16px;
     border-radius: 999px;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    display: inline-flex;
     cursor: pointer;
-    
+
     border-style: solid;
-    border-radius: 999px;
     border-width: 2px;
     border-color: var(--eggshell);
 }
@@ -101,26 +91,10 @@ body {
     background: var(--broncoGradient);
 }
 
-.team-navbar button:active span{
-    background: var(--blueGradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.team-navbar button:hover:active {
-    border-color: var(--dark-blue);
-    background: var(--broncoGradient);
-    color: var(--blueGradient);
-}
-
 .team-navbar button:hover {
     border-color: var(--sky-blue);
     color: var(--sky-blue);
-    background: none;
 }
-
-
 
 .team-members-container {
     display: flex;
@@ -133,29 +107,21 @@ body {
     font-size: 36px;
     font-weight: 900;
     font-family: 'Nobel', sans-serif;
-    word-wrap: break-word;
     margin: 0;
-    font-style: normal;
-    line-height: normal;
 }
 
 .team-members {
     width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    align-items: center;
     gap: 32px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
 }
- 
+
 .profile {
     padding: 16px;
     border-radius: 8px;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     gap: 16px;
     display: inline-flex;
@@ -163,126 +129,94 @@ body {
 }
 
 .profile-picture {
-    align-self: stretch;
     max-width: 120px;
-    height: auto;
-
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
     border-radius: 999px;
     outline: 1px var(--dark-blue) solid;
-    outline-offset: -1px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    display: inline-flex;
 }
 
 .profile-body {
     width: 100%;
-    height: 100%;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     gap: 8px;
     display: inline-flex;
 }
 
 .profile-text {
-    align-self: stretch;
     text-align: center;
     font-size: 16px;
     font-family: 'Nobel', sans-serif;
-    word-wrap: break-word;
 }
 
 .profile-text .name {
     color: var(--dark-blue);
     font-weight: 700;
-    margin-bottom: 5px;
 }
 
 .profile-text .roles {
     color: var(--deep-blue);
     font-style: italic;
-    font-weight: 400;
-}
-
-.profile-links {
-    display: inline-flex;
-    flex-direction: row;
-    gap: 16px;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .committee-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    align-self: stretch;
 }
 
 .committee-container h2 {
     color: var(--deep-blue);
-    font-family: 'Nobel', sans-serif;
+    font-family: 'Nobel';
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .year-committee-container {
     display: flex;
-    align-items: center;
-    align-content: center;
     gap: 32px;
-    align-self: stretch;
     flex-wrap: wrap;
-    word-wrap: break-word;
 }
 
+/* Dropdown Filter */
 
+.committee-filter {
+    margin-bottom: 24px;
+}
+
+.committee-filter select {
+    font-family: 'Nobel', sans-serif;
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 2px solid var(--sky-blue);
+    background: white;
+    color: var(--deep-blue);
+    cursor: pointer;
+}
 
 /* KITE */
+
 .kite-container {
     width: 100%;
     height: 440px;
-    padding: 10;
     position: relative;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-    display: inline-flex;
 }
 
 .kite-container img {
     position: absolute;
-
 }
 
-/* bottom right cloud */
 .cloud_point1 {
     top: 254px;
     right: -32px;
-    left: 943px;
-    bottom: -56px;
 }
 
-/* top left cloud */
-.cloud_point2 { 
+.cloud_point2 {
     top: 10px;
     left: -110px;
-    right: 1080px;
 }
 
 .kite {
     top: 84px;
     left: 239px;
-    right: 581px;
-    aspect-ratio: 32/17;
 }
-
