@@ -4,7 +4,18 @@ import "./SponsorsPage.css";
 import balloonImg from "../assets/img_billyballon.png";
 import sponsorPlaceholder from "../assets/Sponsor.png";
 import clubPlaceholder from "../assets/Sponsor.png"; // replace later
+import CSS from "../BroncoHacks2025/2025Assets/Clubs/cpp_css_logo.png";
+import DSAI from "../BroncoHacks2025/2025Assets/Clubs/cpp_ds_ai_logo.png";
+import GDC from "../BroncoHacks2025/2025Assets/Clubs/cpp_gdc_logo.png";
+import sheCodes from "../BroncoHacks2025/2025Assets/Clubs/cpp_shecodes_logo.png";
+import GDG from "../BroncoHacks2025/2025Assets/Clubs/cpp_gdg_logo.png";
+import FAST from "../BroncoHacks2025/2025Assets/Clubs/cpp_fast_logo.png";
+import SWIFT from "../BroncoHacks2025/2025Assets/Clubs/cpp_swift_logo.png";
+import SEA from "../BroncoHacks2025/2025Assets/Clubs/cpp_sea_logo.png";
+import CEO from "../BroncoHacks2025/2025Assets/Clubs/cpp_ceo_logo.png";
 import cloudImg from "../assets/cloud_left.png";
+import Vercel from "../BroncoHacks2025/2025Assets/Sponsors/vercel.png";
+import Career from "../BroncoHacks2025/2025Assets/Sponsors/cpp_career_center.png";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
@@ -19,14 +30,8 @@ import Footer from "./Footer";
 */
 
 const sponsors = [
-  { id: 1, name: "Google", logo: sponsorPlaceholder },
-  { id: 2, name: "Microsoft", logo: sponsorPlaceholder },
-  { id: 3, name: "Amazon", logo: sponsorPlaceholder },
-  { id: 4, name: "Meta", logo: sponsorPlaceholder },
-  { id: 5, name: "Apple", logo: sponsorPlaceholder },
-  { id: 6, name: "Nvidia", logo: sponsorPlaceholder },
-  { id: 7, name: "Intel", logo: sponsorPlaceholder },
-  { id: 8, name: "Tesla", logo: sponsorPlaceholder },
+  { id: 1, name: "Vercel", logo: Vercel },
+  { id: 2, name: "CPP Career Center", logo: Career },
 ];
 
 /*
@@ -35,14 +40,16 @@ const sponsors = [
 */
 
 const clubs = [
-  { id: 1, name: "Robotics Club", logo: clubPlaceholder },
-  { id: 2, name: "Coding Club", logo: clubPlaceholder },
-  { id: 3, name: "Math Club", logo: clubPlaceholder },
-  { id: 4, name: "Science Club", logo: clubPlaceholder },
-  { id: 5, name: "Art Club", logo: clubPlaceholder },
-  { id: 6, name: "Business Club", logo: clubPlaceholder },
-  { id: 7, name: "Engineering Club", logo: clubPlaceholder },
-  { id: 8, name: "Game Dev Club", logo: clubPlaceholder },
+  { id: 1, name: "DSAI", logo: DSAI },
+  { id: 2, name: "GDC", logo: GDC },
+  { id: 3, name: "sheCodes", logo: sheCodes },
+  { id: 4, name: "GDG", logo: GDG },
+  { id: 5, name: "CSS", logo: CSS },
+  { id: 6, name: "FAST", logo: FAST },
+  { id: 7, name: "SWIFT", logo: SWIFT },
+  { id: 8, name: "SEA", logo: SEA },
+  { id: 9, name: "WIT", logo: clubPlaceholder },
+  { id: 10, name: "CEO", logo: CEO },
 ];
 
 export default function SponsorsPage() {
