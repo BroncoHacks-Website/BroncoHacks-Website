@@ -1,23 +1,23 @@
 import React from "react";
-import "./SponsorsPage.css";
+import "../styles/SponsorsPage.css";
 
 import balloonImg from "../assets/img_billyballon.png";
 import sponsorPlaceholder from "../assets/Sponsor.png";
 import clubPlaceholder from "../assets/Sponsor.png"; // replace later
 import CSS from "../BroncoHacks2025/2025Assets/Clubs/cpp_css_logo.png";
 import DSAI from "../BroncoHacks2025/2025Assets/Clubs/cpp_ds_ai_logo.png";
-import GDC from "../BroncoHacks2025/2025Assets/Clubs/cpp_gdc_logo.png";
+import GDC from "../BroncoHacks2025/2025Assets/Clubs/cpp_gdc_logo.jpg";
 import sheCodes from "../BroncoHacks2025/2025Assets/Clubs/cpp_shecodes_logo.png";
 import GDG from "../BroncoHacks2025/2025Assets/Clubs/cpp_gdg_logo.png";
 import FAST from "../BroncoHacks2025/2025Assets/Clubs/cpp_fast_logo.png";
 import SWIFT from "../BroncoHacks2025/2025Assets/Clubs/cpp_swift_logo.png";
-import SEA from "../BroncoHacks2025/2025Assets/Clubs/cpp_sea_logo.png";
-import CEO from "../BroncoHacks2025/2025Assets/Clubs/cpp_ceo_logo.png";
+import SEA from "../BroncoHacks2025/2025Assets/Clubs/cpp_sea_logo.jpg";
+import CEO from "../BroncoHacks2025/2025Assets/Clubs/ceo_logo.png";
 import cloudImg from "../assets/cloud_left.png";
 import Vercel from "../BroncoHacks2025/2025Assets/Sponsors/vercel.png";
 import Career from "../BroncoHacks2025/2025Assets/Sponsors/cpp_career_center.png";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 
 /* =========================
    DATA
