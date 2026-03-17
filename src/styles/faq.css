@@ -26,9 +26,9 @@
     width: 266.18px;
     height: auto;
     position: absolute;
-    top: 260px;
+    top: 100px;
     left: 85px;
-    z-index: 1;
+    z-index: 999;
 
 }
 
@@ -84,6 +84,7 @@ details {
     margin-bottom: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
     border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /*matches the design */
@@ -113,7 +114,7 @@ summary::after {
   border-right: 3px solid #1e3a8a;
   border-bottom: 3px solid #1e3a8a;
   transform: translateY(-25%) rotate(45deg); /* Points it down */
-  transition: transform 0.2s ease; /* Smooth rotation */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth rotation */
 }
 
 /* Rotates the arrow so it points up when the menu is clicked open */
@@ -132,4 +133,17 @@ details[open] summary::after {
 .faq-content p {
   margin: 0;
 }
+details[open] .faq-content {
+    animation: epicReveal 0.4s ease-out forwards;
+}
 
+@keyframes epicReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
