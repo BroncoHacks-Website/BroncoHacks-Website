@@ -23,13 +23,13 @@ const Team = () => {
 
     const [selectedRole, setSelectedRole] = useState("Primary Organizer")
     const [selectedCommittee, setSelectedCommittee] = useState("")
+    const [dropdownOpen, setDropdownOpen] = useState(false)
 
     const selectTeam = (role) => {
         setSelectedRole(role)
         setSelectedCommittee("")
+        setDropdownOpen(false)
     }
-
-    /* Automatically extract committees */
 
     const committees = [
         ...new Set(
@@ -39,6 +39,11 @@ const Team = () => {
         )
     ].sort().reverse()
 
+    const selectCommittee = (committee) => {
+        setSelectedCommittee(committee)
+        setDropdownOpen(false)
+    }
+
     return (
         <div className='team-page'>
 
@@ -47,8 +52,6 @@ const Team = () => {
             <div className="team-content">
 
                 <div className='meet-the-team'>
-
-                    {/* LEFT NAVBAR */}
 
                     <div className="team-navbar">
                         {teams.map((team) => (
@@ -62,8 +65,6 @@ const Team = () => {
                         ))}
                     </div>
 
-                    {/* TEAM MEMBERS */}
-
                     <div className='team-members-container'>
 
                         <h1>MEET THE TEAM</h1>
@@ -74,33 +75,46 @@ const Team = () => {
 
                                 <div>
 
-                                    {/* DROPDOWN FILTER */}
+                                    {/* CUSTOM DROPDOWN */}
 
                                     <div className="committee-filter">
 
-                                        <select
-                                            value={selectedCommittee}
-                                            onChange={(e) => setSelectedCommittee(e.target.value)}
+                                        <div
+                                            className="dropdown-button"
+                                            onClick={() => setDropdownOpen(!dropdownOpen)}
                                         >
+                                            {selectedCommittee || "All Committees"}
+                                            <span className="dropdown-arrow">▼</span>
+                                        </div>
 
-                                            <option value="">
-                                                All Committees
-                                            </option>
+                                        {dropdownOpen && (
 
-                                            {committees.map((committee) => (
-                                                <option
-                                                    key={committee}
-                                                    value={committee}
+                                            <div className="dropdown-menu">
+
+                                                <div
+                                                    className="dropdown-option"
+                                                    onClick={() => selectCommittee("")}
                                                 >
-                                                    {committee}
-                                                </option>
-                                            ))}
+                                                    All Committees
+                                                </div>
 
-                                        </select>
+                                                {committees.map((committee) => (
+
+                                                    <div
+                                                        key={committee}
+                                                        className="dropdown-option"
+                                                        onClick={() => selectCommittee(committee)}
+                                                    >
+                                                        {committee}
+                                                    </div>
+
+                                                ))}
+
+                                            </div>
+
+                                        )}
 
                                     </div>
-
-                                    {/* COMMITTEE LIST */}
 
                                     {(selectedCommittee ? [selectedCommittee] : committees)
                                         .map((committee) => {
@@ -112,6 +126,7 @@ const Team = () => {
                                             if (members.length === 0) return null
 
                                             return (
+
                                                 <div
                                                     className="committee-container"
                                                     key={committee}
@@ -134,6 +149,7 @@ const Team = () => {
                                                     </div>
 
                                                 </div>
+
                                             )
 
                                         })}
@@ -164,24 +180,11 @@ const Team = () => {
 
                 </div>
 
-                {/* KITE SECTION */}
-
                 <div className='kite-container'>
 
-                    <img
-                        className='cloud_point2'
-                        src={cloud_point2}
-                    />
-
-                    <img
-                        className='cloud_point1'
-                        src={cloud_point1}
-                    />
-
-                    <img
-                        className='kite'
-                        src={img_kite2}
-                    />
+                    <img className='cloud_point2' src={cloud_point2} />
+                    <img className='cloud_point1' src={cloud_point1} />
+                    <img className='kite' src={img_kite2} />
 
                 </div>
 
