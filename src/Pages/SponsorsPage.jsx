@@ -14,8 +14,8 @@ import SWIFT from "../BroncoHacks2025/2025Assets/Clubs/cpp_swift_logo.png";
 import SEA from "../BroncoHacks2025/2025Assets/Clubs/cpp_sea_logo.jpg";
 import CEO from "../BroncoHacks2025/2025Assets/Clubs/ceo_logo.png";
 import cloudImg from "../assets/cloud_left.png";
-import Vercel from "../BroncoHacks2025/2025Assets/Sponsors/vercel.png";
-import Career from "../BroncoHacks2025/2025Assets/Sponsors/cpp_career_center.png";
+import Vercel from "../Assets/sponsors/vercel.png";
+import Career from "../Assets/sponsors/cpp_career_center.png";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
@@ -48,7 +48,6 @@ const clubs = [
   { id: 6, name: "FAST", logo: FAST },
   { id: 7, name: "SWIFT", logo: SWIFT },
   { id: 8, name: "SEA", logo: SEA },
-  { id: 9, name: "WIT", logo: clubPlaceholder },
   { id: 10, name: "CEO", logo: CEO },
 ];
 
@@ -78,7 +77,7 @@ export default function SponsorsPage() {
         <div className="sponsor-info-box">
           <strong>Interested in Sponsoring?</strong>
           <p>
-            Email cppbroncohacks@gmail.com for sponsorship opportunities
+            Email <a href="mailto:cppbroncohacks@gmail.com">cppbroncohacks@gmail.com</a> for sponsorship opportunities
             or reach out to any of these clubs below!
           </p>
         </div>

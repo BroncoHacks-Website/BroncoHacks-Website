@@ -62,10 +62,10 @@
   align-items: center;
   justify-content: center;
 
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
   border-radius: 6px;
 
-  box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+  /* box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25); */
 }
 
 .sponsor-card img {
@@ -110,8 +110,13 @@
 ========================= */
 
 .clubs-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 140px);
+  /* display: grid;
+  grid-template-columns: repeat(4, 140px); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
   gap: 48px 60px;
   justify-content: center;
 }
@@ -134,6 +139,12 @@
   overflow: hidden;            /* 🔥 ensures image stays circular */
 
   box-shadow: 2px 2px 4px rgba(1, 32, 63, 0.25);
+  transition: transform .2s ease-in-out;
+  transform: scale(1);
+}
+
+.club-circle:hover {
+  transform: scale(1.05);
 }
 
 /* =========================
