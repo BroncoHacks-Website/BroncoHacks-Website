@@ -49,15 +49,11 @@
 ========================= */
 
 .sponsors-grid {
-  /* display: grid; */
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   width: 70%;
-  /* grid-template-columns: repeat(4, 180px); */
   gap: 32px 40px;
-  /* justify-content: center; */
 }
 
 .sponsor-card {

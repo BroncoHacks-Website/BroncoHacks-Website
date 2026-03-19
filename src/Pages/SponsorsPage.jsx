@@ -13,6 +13,7 @@ import FAST from "../BroncoHacks2025/2025Assets/Clubs/cpp_fast_logo.png";
 import SWIFT from "../BroncoHacks2025/2025Assets/Clubs/cpp_swift_logo.png";
 import SEA from "../BroncoHacks2025/2025Assets/Clubs/cpp_sea_logo.jpg";
 import CEO from "../BroncoHacks2025/2025Assets/Clubs/ceo_logo.png";
+import MISSA from "../Assets/clubs/missa.png";
 import cloudImg from "../assets/cloud_left.png";
 import Vercel from "../Assets/sponsors/vercel.png";
 import Career from "../Assets/sponsors/cpp_career_center.png";
@@ -30,8 +31,8 @@ import Footer from "../Components/Footer";
 */
 
 const sponsors = [
-  { id: 1, name: "Vercel", logo: Vercel },
-  { id: 2, name: "CPP Career Center", logo: Career },
+  { id: 1, name: "Vercel", logo: Vercel, url: "" },
+  { id: 2, name: "CPP Career Center", logo: Career, url: "" },
 ];
 
 /*
@@ -40,15 +41,16 @@ const sponsors = [
 */
 
 const clubs = [
-  { id: 1, name: "DSAI", logo: DSAI },
-  { id: 2, name: "GDC", logo: GDC },
-  { id: 3, name: "sheCodes", logo: sheCodes },
-  { id: 4, name: "GDG", logo: GDG },
-  { id: 5, name: "CSS", logo: CSS },
-  { id: 6, name: "FAST", logo: FAST },
-  { id: 7, name: "SWIFT", logo: SWIFT },
-  { id: 8, name: "SEA", logo: SEA },
-  { id: 10, name: "CEO", logo: CEO },
+  { id: 1, name: "DSAI", logo: DSAI, url: "https://www.cppdsai.com/" },
+  { id: 2, name: "GDC", logo: GDC, url: "https://www.cppgamedev.com/" },
+  { id: 3, name: "sheCodes", logo: sheCodes, url: "https://www.cppshecodes.com/" },
+  { id: 4, name: "GDG", logo: GDG, url: "https://gdg.community.dev/gdg-on-campus-california-state-polytechnic-university-pomona-united-states/" },
+  { id: 5, name: "CSS", logo: CSS, url: "https://cppcss.club/" },
+  { id: 6, name: "FAST", logo: FAST, url: "https://www.cppfast.org/" },
+  { id: 7, name: "SWIFT", logo: SWIFT, url: "https://www.calpolyswift.org/" },
+  { id: 8, name: "SEA", logo: SEA, url: "https://cppsea.com/" },
+  { id: 10, name: "CEO", logo: CEO, url: "https://sites.cpp.edu/ceo/index.shtml" },
+  {id: 11, name: "MISSA", logo: MISSA, url: "https://www.calpolymissa.org/" },
 ];
 
 export default function SponsorsPage() {
@@ -88,9 +90,9 @@ export default function SponsorsPage() {
 
           <div className="clubs-grid">
             {clubs.map((club) => (
-              <div key={club.id} className="club-circle">
+              <a key={club.id} className="club-circle" href={club.url} target="_blank" rel="noopener noreferrer">
                 <img src={club.logo} alt={club.name} />
-              </div>
+              </a>
             ))}
           </div>
         </div>
