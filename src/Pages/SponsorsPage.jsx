@@ -2,8 +2,9 @@ import React from "react";
 import "../styles/SponsorsPage.css";
 
 import balloonImg from "../assets/img_billyballon.png";
-import sponsorPlaceholder from "../assets/Sponsor.png";
-import clubPlaceholder from "../assets/Sponsor.png"; // replace later
+import cloudImg from "../assets/cloud_left.png";
+
+// Club Imports
 import CSS from "../BroncoHacks2025/2025Assets/Clubs/cpp_css_logo.png";
 import DSAI from "../BroncoHacks2025/2025Assets/Clubs/cpp_ds_ai_logo.png";
 import GDC from "../BroncoHacks2025/2025Assets/Clubs/cpp_gdc_logo.jpg";
@@ -14,9 +15,14 @@ import SWIFT from "../BroncoHacks2025/2025Assets/Clubs/cpp_swift_logo.png";
 import SEA from "../BroncoHacks2025/2025Assets/Clubs/cpp_sea_logo.jpg";
 import CEO from "../BroncoHacks2025/2025Assets/Clubs/ceo_logo.png";
 import MISSA from "../Assets/clubs/missa.png";
-import cloudImg from "../assets/cloud_left.png";
+import MTSAC from "../Assets/clubs/cs_seal.webp";
+
+// Sponsor Imports
 import Vercel from "../Assets/sponsors/vercel.png";
-import Career from "../Assets/sponsors/cpp_career_center.png";
+import Career from "../Assets/sponsors/cpp-career-center2.png";
+import PureButtons from "../Assets/sponsors/pure-buttons.png";
+
+// Component Imports
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
@@ -31,8 +37,9 @@ import Footer from "../Components/Footer";
 */
 
 const sponsors = [
-  { id: 1, name: "Vercel", logo: Vercel, url: "" },
-  { id: 2, name: "CPP Career Center", logo: Career, url: "" },
+  { id: 1, name: "Vercel", logo: Vercel, url: "https://vercel.com/" },
+  { id: 2, name: "CPP Career Center", logo: Career, url: "https://careercenter.cpp.edu/" },
+  { id: 3, name: "Pure Buttons", logo: PureButtons, url: "https://www.purebuttons.com/" },
 ];
 
 /*
@@ -50,7 +57,8 @@ const clubs = [
   { id: 7, name: "SWIFT", logo: SWIFT, url: "https://www.calpolyswift.org/" },
   { id: 8, name: "SEA", logo: SEA, url: "https://cppsea.com/" },
   { id: 10, name: "CEO", logo: CEO, url: "https://sites.cpp.edu/ceo/index.shtml" },
-  {id: 11, name: "MISSA", logo: MISSA, url: "https://www.calpolymissa.org/" },
+  { id: 11, name: "MISSA", logo: MISSA, url: "https://www.calpolymissa.org/" },
+  { id: 12, name: "MTSAC", logo: MTSAC, url: "https://www.mtsaccs.org/" },
 ];
 
 export default function SponsorsPage() {
@@ -69,9 +77,9 @@ export default function SponsorsPage() {
 
         <div className="sponsors-grid">
           {sponsors.map((sponsor) => (
-            <div key={sponsor.id} className="sponsor-card">
+            <a key={sponsor.id} className="sponsor-card" href={sponsor.url} target="_blank" rel="noopener noreferrer">
               <img src={sponsor.logo} alt={sponsor.name} />
-            </div>
+            </a>
           ))}
         </div>
 
