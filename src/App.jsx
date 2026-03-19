@@ -5,7 +5,7 @@ import "./App.css";
 import Home from "./Pages/Home.jsx";
 import HallOfFame from "./Pages/HallOfFame.jsx";
 import Team from "./Pages/Team.jsx";
-import SponsorsPage from "./Components/SponsorsPage.jsx";
+import SponsorsPage from "./Pages/SponsorsPage.jsx";
 import FAQ from './Pages/FAQ.jsx'
 function App() {
   return (
