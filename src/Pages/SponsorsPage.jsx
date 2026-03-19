@@ -4,9 +4,6 @@ import "../styles/SponsorsPage.css";
 import balloonImg from "../assets/img_billyballon.png";
 import sponsorPlaceholder from "../assets/Sponsor.png";
 import clubPlaceholder from "../assets/Sponsor.png"; // replace later
-<<<<<<< HEAD
-import cloudImg from "../assets/cloud_left.png";
-=======
 import CSS from "../BroncoHacks2025/2025Assets/Clubs/cpp_css_logo.png";
 import DSAI from "../BroncoHacks2025/2025Assets/Clubs/cpp_ds_ai_logo.png";
 import GDC from "../BroncoHacks2025/2025Assets/Clubs/cpp_gdc_logo.jpg";
@@ -20,7 +17,6 @@ import MISSA from "../Assets/clubs/missa.png";
 import cloudImg from "../assets/cloud_left.png";
 import Vercel from "../Assets/sponsors/vercel.png";
 import Career from "../Assets/sponsors/cpp_career_center.png";
->>>>>>> SponsersPage
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
@@ -35,19 +31,8 @@ import Footer from "../Components/Footer";
 */
 
 const sponsors = [
-<<<<<<< HEAD
-  { id: 1, name: "Google", logo: sponsorPlaceholder },
-  { id: 2, name: "Microsoft", logo: sponsorPlaceholder },
-  { id: 3, name: "Amazon", logo: sponsorPlaceholder },
-  { id: 4, name: "Meta", logo: sponsorPlaceholder },
-  { id: 5, name: "Apple", logo: sponsorPlaceholder },
-  { id: 6, name: "Nvidia", logo: sponsorPlaceholder },
-  { id: 7, name: "Intel", logo: sponsorPlaceholder },
-  { id: 8, name: "Tesla", logo: sponsorPlaceholder },
-=======
   { id: 1, name: "Vercel", logo: Vercel, url: "" },
   { id: 2, name: "CPP Career Center", logo: Career, url: "" },
->>>>>>> SponsersPage
 ];
 
 /*
@@ -56,16 +41,6 @@ const sponsors = [
 */
 
 const clubs = [
-<<<<<<< HEAD
-  { id: 1, name: "Robotics Club", logo: clubPlaceholder },
-  { id: 2, name: "Coding Club", logo: clubPlaceholder },
-  { id: 3, name: "Math Club", logo: clubPlaceholder },
-  { id: 4, name: "Science Club", logo: clubPlaceholder },
-  { id: 5, name: "Art Club", logo: clubPlaceholder },
-  { id: 6, name: "Business Club", logo: clubPlaceholder },
-  { id: 7, name: "Engineering Club", logo: clubPlaceholder },
-  { id: 8, name: "Game Dev Club", logo: clubPlaceholder },
-=======
   { id: 1, name: "DSAI", logo: DSAI, url: "https://www.cppdsai.com/" },
   { id: 2, name: "GDC", logo: GDC, url: "https://www.cppgamedev.com/" },
   { id: 3, name: "sheCodes", logo: sheCodes, url: "https://www.cppshecodes.com/" },
@@ -76,7 +51,6 @@ const clubs = [
   { id: 8, name: "SEA", logo: SEA, url: "https://cppsea.com/" },
   { id: 10, name: "CEO", logo: CEO, url: "https://sites.cpp.edu/ceo/index.shtml" },
   {id: 11, name: "MISSA", logo: MISSA, url: "https://www.calpolymissa.org/" },
->>>>>>> SponsersPage
 ];
 
 export default function SponsorsPage() {
@@ -105,11 +79,7 @@ export default function SponsorsPage() {
         <div className="sponsor-info-box">
           <strong>Interested in Sponsoring?</strong>
           <p>
-<<<<<<< HEAD
-            Email cppbroncohacks@gmail.com for sponsorship opportunities
-=======
             Email <a href="mailto:cppbroncohacks@gmail.com">cppbroncohacks@gmail.com</a> for sponsorship opportunities
->>>>>>> SponsersPage
             or reach out to any of these clubs below!
           </p>
         </div>
@@ -120,15 +90,9 @@ export default function SponsorsPage() {
 
           <div className="clubs-grid">
             {clubs.map((club) => (
-<<<<<<< HEAD
-              <div key={club.id} className="club-circle">
-                <img src={club.logo} alt={club.name} />
-              </div>
-=======
               <a key={club.id} className="club-circle" href={club.url} target="_blank" rel="noopener noreferrer">
                 <img src={club.logo} alt={club.name} />
               </a>
->>>>>>> SponsersPage
             ))}
           </div>
         </div>
