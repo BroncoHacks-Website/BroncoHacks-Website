@@ -1,12 +1,12 @@
 import React from "react";
-import "./SponsorsPage.css";
+import "../styles/SponsorsPage.css";
 
 import balloonImg from "../assets/img_billyballon.png";
 import sponsorPlaceholder from "../assets/Sponsor.png";
 import clubPlaceholder from "../assets/Sponsor.png"; // replace later
 import cloudImg from "../assets/cloud_left.png";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 
 /* =========================
    DATA
