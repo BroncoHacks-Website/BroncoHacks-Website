@@ -1,129 +1,167 @@
 @font-face {
-    font-family: 'Nobel Bold';
-    src: url('/src/Assets/fonts/Nobel Bold/Nobel Bold.otf') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Nobel Bold";
+  src: url("/src/Assets/fonts/Nobel Bold/Nobel Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 :root {
-    --eggshell: #F6F8ED;
-    --broncoGradient: linear-gradient(180deg, #D9E74C 0%, #5CBBD4 100%);
-    --blueGradient: linear-gradient(180deg, #214FA4 0%, #24104C 100%);
-    --sky-blue: #5CBBD4;
-    --deep-blue: #1F4993;
-    --dark-blue: #01203F;
+  --eggshell: #f6f8ed;
+  --broncoGradient: linear-gradient(180deg, #d9e74c 0%, #5cbbd4 100%);
+  --blueGradient: linear-gradient(180deg, #214fa4 0%, #24104c 100%);
+  --sky-blue: #5cbbd4;
+  --deep-blue: #1f4993;
+  --dark-blue: #01203f;
 }
 
 * {
-    box-sizing: border-box;
-    scrollbar-width: none;
+  box-sizing: border-box;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    outline: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar-container {
-    display: flex;
-    min-height: 156px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 16px 32px;
-    z-index: 67;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px 32px;
+  z-index: 100;
+  background: transparent;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .logo {
-    width: 216px;
-    height: auto;
-    border-radius: 16px;
+  width: 216px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.logo:hover {
-    cursor: pointer;
+.menu-toggle {
+  display: none;
+  background: var(--deep-blue);
+  color: #f6f8ed;
+  border: none;
+  border-radius: 20px;
+  width: 68px;
+  height: 68px;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    background: var(--deep-blue); 
-    min-height: 55px;
-    gap: 8px;
-    padding: 8px;
-    border-radius: 999px;
-    color: #F6F8ED;
-    font-family: 'Nobel Bold', sans-serif;
-    font-weight: 700;    
-    font-size: 16px;
-    font-weight: 700;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
-    text-align: center;
-    line-height: 100%;
-    word-wrap: break-word;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  gap: 8px;
+  background: var(--deep-blue);
+  border-radius: 999px;
+  color: #f6f8ed;
+  font-family: "Nobel Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 }
 
 .nav-btn {
-    border-radius: 999px;
-    width: auto;
-    height: auto;
-    /* don’t force each list item to fill the whole nav – they were stacking/overlapping */
-    /* width: 100%; */
-    min-width: 116px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 10px;
-    cursor: pointer;
-
-    border-style: solid;
-    border-radius: 999px;
-    border-width: 2px;
-    border-color: transparent;
+  min-width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  transition: 0.2s ease;
 }
 
 .nav-btn a {
-    padding-top: 10px;
-    padding-right: 16px;
-    padding-bottom: 10px;
-    padding-left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 18px;
 }
 
 .nav-btn:has(a.active) {
-    background: var(--broncoGradient);
-    color: var(--blueGradient);
-    border-color: var(--deep-blue);
-}
-
-.nav-btn:hover:active {
-    border-color: var(--dark-blue);
-    background: var(--broncoGradient);
-    color: var(--blueGradient)
+  background: var(--broncoGradient);
+  color: var(--deep-blue);
+  border-color: var(--deep-blue);
 }
 
 .nav-btn:hover {
-    border-color: var(--sky-blue);
-    color: var(--sky-blue);
+  border-color: var(--sky-blue);
+  color: var(--sky-blue);
 }
 
-/* you can also target the link if you prefer – it already spans the li */
-/* .nav-btn:hover a, .nav-btn:active a {
-    background-image: var(--sky-blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-} */
+@media (max-width: 640px) {
+  .navbar-container {
+    padding: 16px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 165px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    display: none;
+    margin-top: 14px;
+  }
+
+  .navbar.open {
+    display: block;
+  }
+
+  .navbar ul {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 24px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .nav-btn a {
+    width: 100%;
+    padding: 14px 16px;
+  }
+}

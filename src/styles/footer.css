@@ -1,138 +1,175 @@
 @font-face {
-  font-family: 'NobelFont'; 
-  src: url('src\Assets\fonts\Nobel Bold.otf') format('otf');
+  font-family: "NobelFont";
+  src: url("/src/Assets/fonts/Nobel Bold.otf") format("opentype");
 }
 
 .footer-container {
-    background-color: eggshell;
-    position: sticky;
-    width: 100%;
-    padding: 40px 0 0 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  width: 100%;
+  background-color: #f6f8ed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-main-content {
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-center;
-    z-index: 2;
-}
-.footer-bottom-section {
-    background-color: #01203F;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0;
-    
+  width: min(1200px, calc(100% - 32px));
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  z-index: 2;
 }
 
 .footer-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-#title-container {
-    font-family: 'NobelFont', sans-serif;
-    color: #98CE83;
-    font-size: 14px;
-    font-weight: 1000;
-    font-style:black;
-    line-height: 90%;
-   
-}
-.footer-right {
-    text-align: left;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
+#title-container {
+  font-family: "NobelFont", sans-serif;
+  color: #98ce83;
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 0.9;
+}
+
+.footer-right {
+  text-align: left;
+  margin-top: 10px;
+}
 
 #rights_reserved_text {
-    font-family: 'Space Grotesk', sans-serif;
-    color: #F6F8ED;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #f6f8ed;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .broncohackslogo {
-    width: 159.42px;
-    height: 84.61px;
+  width: 159px;
+  height: auto;
 }
 
 .socials-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 #socials-header {
-    font-family: 'Space Grotesk', sans-serif;
-    color: #98CE83;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #98ce83;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
 }
 
 #email_link {
-    font-family: 'Space Grotesk', sans-serif;
-    color: #98CE83;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #98ce83;
+  font-weight: 700;
+  font-size: 16px;
+  overflow-wrap: anywhere;
 }
 
 #footer_bg {
-    width: 100%;
-    height: auto;
-   display: block;
-   margin-bottom: -30px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: -2px;
+}
+
+.footer-bottom-section {
+  background-color: #01203f;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-bottom {
-    margin-top: 40px;
-    border-top: 1px solid rgba(255, 255,255, 0.1);
-    background-color: #02072F;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0;
-
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #02072f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 18px 16px;
 }
+
 .container {
-    background-color: #F6F8ED;
-    width: 1440px;
-    height: 670px;
-    margin-top: 20px;
-    margin-left: 10px; 
-    padding-top: 128px;
-
+  background-color: #f6f8ed;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 128px;
 }
+
 .socials_img {
-    width: 52px;
-    height: 52px;
-    padding: 0px;
-    transition: transform 0.2s;
+  width: 52px;
+  height: 52px;
+  transition: transform 0.2s;
 }
+
 .socials_img:hover {
-    transform: scale(1.1);
+  transform: scale(1.08);
 }
 
+@media (max-width: 640px) {
+  .footer-main-content {
+    width: calc(100% - 24px);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 0;
+  }
 
+  .footer-left {
+    gap: 12px;
+    align-items: center;
+  }
 
+  .broncohackslogo {
+    width: 120px;
+  }
 
+  #title-container {
+    font-size: 12px;
+  }
 
+  .footer-right {
+    text-align: right;
+    margin-top: 0;
+    min-width: 0;
+  }
 
+  #socials-header {
+    font-size: 14px;
+  }
 
+  #email_link {
+    font-size: 11px;
+  }
 
+  .socials-list {
+    justify-content: flex-end;
+    gap: 8px;
+  }
 
+  .socials_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #rights_reserved_text {
+    text-align: center;
+    font-size: 13px;
+  }
+}

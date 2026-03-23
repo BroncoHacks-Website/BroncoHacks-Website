@@ -9,8 +9,8 @@ function Home() {
       <NavBar />
       <Landing />
 
-      <div className="info-section">
-        <div className="section-one">
+      <main className="info-section">
+        <section className="section-one">
           <div className="what-is-broncohacks">
             <div className="cloud-decor"></div>
             <h2>What is BroncoHacks?</h2>
@@ -30,11 +30,11 @@ function Home() {
           <img
             className="sparkle-decor"
             src="/sparkle.png"
-            alt="decor"
+            alt="Decorative sparkle"
           />
-        </div>
+        </section>
 
-        <div className="section-two">
+        <section className="section-two">
           <img
             className="horse-pic"
             src="/Horse.png"
@@ -53,9 +53,9 @@ function Home() {
               is open to all colleges and is completely free of entry!
             </p>
           </div>
-        </div>
+        </section>
 
-        <div className="archive-container">
+        <section className="archive-container">
           <h2>Archive</h2>
           <p>
             Learn more about previous events (MiniHack, Avande AI) led by the
@@ -64,8 +64,8 @@ function Home() {
           <a href="" className="learn-more">
             <span>Learn more {">"}</span>
           </a>
-        </div>
-      </div>
+        </section>
+      </main>
 
       <Footer />
     </>
