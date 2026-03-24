@@ -15,32 +15,38 @@ const Team = () => {
 
     const teams = [
         { id: 1, name: "Primary Organizers", role: "Primary Organizer" },
-        { id: 2, name: "Project Managers", role: "Project Manager" },
-        { id: 3, name: "Website Developers", role: "Website Developer" },
-        { id: 4, name: "UI/UX", role: "UI/UX" },
-        { id: 5, name: "Past Committees", role: "Past Committee" },
+        { id: 2, name: "Current Team", role: "Current Team" },
+        { id: 3, name: "Past Committees", role: "Past Committee" },
     ]
 
     const [selectedRole, setSelectedRole] = useState("Primary Organizer")
     const [selectedCommittee, setSelectedCommittee] = useState("")
+    const [selectedCurrentRole, setSelectedCurrentRole] = useState("")
     const [dropdownOpen, setDropdownOpen] = useState(false)
 
     const selectTeam = (role) => {
         setSelectedRole(role)
         setSelectedCommittee("")
+        setSelectedCurrentRole("")
         setDropdownOpen(false)
     }
 
     const committees = [
         ...new Set(
             profileData
-                .filter(person => person.committee)
-                .map(person => person.committee)
+                .flatMap(person => person.role.filter(r => r.includes("BroncoHacks Committee")))
         )
     ].sort().reverse()
 
+    const currentRoles = ["Project Manager", "Website Developer", "Design", "Marketing", "Finance", "Operations"]
+
     const selectCommittee = (committee) => {
         setSelectedCommittee(committee)
+        setDropdownOpen(false)
+    }
+
+    const selectCurrentRole = (role) => {
+        setSelectedCurrentRole(role)
         setDropdownOpen(false)
     }
 
@@ -120,9 +126,9 @@ const Team = () => {
                                         .map((committee) => {
 
                                             const members = profileData.filter(
-                                                person => person.committee === committee
+                                                person => person.role.includes(committee)
                                             )
-
+                                            
                                             if (members.length === 0) return null
 
                                             return (
@@ -156,11 +162,96 @@ const Team = () => {
 
                                 </div>
 
+                            ) : selectedRole === "Current Team" ? (
+
+                                <div>
+
+                                    {/* CUSTOM DROPDOWN */}
+
+                                    <div className="committee-filter">
+
+                                        <div
+                                            className="dropdown-button"
+                                            onClick={() => setDropdownOpen(!dropdownOpen)}
+                                        >
+                                            {selectedCurrentRole || "All Roles"}
+                                            <span className="dropdown-arrow">▼</span>
+                                        </div>
+
+                                        {dropdownOpen && (
+
+                                            <div className="dropdown-menu">
+
+                                                <div
+                                                    className="dropdown-option"
+                                                    onClick={() => selectCurrentRole("")}
+                                                >
+                                                    All Roles
+                                                </div>
+
+                                                {currentRoles.map((role) => (
+
+                                                    <div
+                                                        key={role}
+                                                        className="dropdown-option"
+                                                        onClick={() => selectCurrentRole(role)}
+                                                    >
+                                                        {role}
+                                                    </div>
+
+                                                ))}
+
+                                            </div>
+
+                                        )}
+
+                                    </div>
+
+                                    {(selectedCurrentRole ? [selectedCurrentRole] : currentRoles)
+                                        .map((role) => {
+
+                                            const members = profileData.filter(
+                                                person => person.role.includes(role)
+                                            )
+                                            
+                                            if (members.length === 0) return null
+
+                                            return (
+
+                                                <div
+                                                    className="committee-container"
+                                                    key={role}
+                                                >
+
+                                                    <h2>{role}</h2>
+
+                                                    <div className='year-committee-container'>
+
+                                                        {members.map((person) => (
+                                                            <Profile
+                                                                key={person.id}
+                                                                person={{
+                                                                    ...person,
+                                                                    role: [role]
+                                                                }}
+                                                            />
+                                                        ))}
+
+                                                    </div>
+
+                                                </div>
+
+                                            )
+
+                                        })}
+
+                                </div>
+
                             ) : (
 
                                 profileData
                                     .filter(person =>
-                                        person.role.includes(selectedRole)
+                                        person.role.includes("Primary Organizer")
                                     )
                                     .map((person) => (
                                         <Profile
