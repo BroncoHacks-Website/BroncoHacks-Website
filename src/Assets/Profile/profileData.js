@@ -117,7 +117,6 @@ export const profileData = [
         name: "Koen So",
         role: [
             "Website Developer",
-            "Finance"
         ],
         picture: KoenSo,
         linkedin: "https://www.linkedin.com/in/koenso/",
@@ -169,6 +168,15 @@ export const profileData = [
         picture: RachelLam,
         linkedin: "http://www.linkedin.com/in/rachel-lam-64452a325",
         portfolio: "http://rachelplam.com"
+    },
+    {
+        id: 15,
+        name: "Joseline Ly",
+        role: [
+            "Finance"
+        ],
+        picture: Default,
+        linkedin: "https://www.linkedin.com/in/joseline-ly/"
     }
   
 ];
