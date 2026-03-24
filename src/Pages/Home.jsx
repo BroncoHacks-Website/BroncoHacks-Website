@@ -3,6 +3,7 @@ import Landing from "../Components/Landing";
 import { useState } from "react";
 import Footer from "../Components/Footer.jsx";
 import "../styles/Home.css";
+import Schedule from "../Assets/schedule/schedule_2026.jpg";
 
 function Home() {
   return (
@@ -38,6 +39,12 @@ function Home() {
                 to all colleges and is completely free of entry!
               </p>
             </div>
+          </div>
+
+          {/* Schedule */}
+          <div className="schedule-container">
+            <h1 id="schedule-title">Schedule</h1>
+            <img src={Schedule}></img>
           </div>
 
           <div className="archive-container">

@@ -37,14 +37,18 @@ a {
 .navbar-container {
     display: flex;
     min-height: 156px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 16px 32px;
+    padding: 16px 16px 16px 32px;
     z-index: 67;
+}
+
+#navbar-logo-container {
+    margin-right: auto;
 }
 
 .logo {
@@ -122,41 +126,67 @@ a {
 
 /** MOBILE NAV */
 .navbar-mobile-container {
-    color: var(--deep-blue);
     height: auto;
     cursor: pointer;
+    position: fixed;
+    right: 32px;
+    margin-top: 14px;
 }
 
-.navbar-mobile {
-    display: none;
+.navbar-mobile { 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    right: 32px;
+    margin-top: 14px;
 }
 
 .navbar-mobile.active {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    margin: 12px auto;
     padding: 12px;
-    width: 60px;
+    width: 160px;
     height: auto;
     align-items: center;
     gap: 8px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
-    border-radius: 999px;
-    background-color: var(--eggshell);
+    border-radius: 8px;
+    background-color: var(--deep-blue);
+    
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s;
 }
 
 .navbar-mobile.active span {
-    font-size: 38px;
+    font-size: 16px;
 }
 
-.navbar-mobile a.active {
-    color: var(--sky-blue);
+.navbar-mobile li {
+    justify-content: left;
+    width: 100%;
+    height: auto;
+    padding: 4px;
+    color: var(--eggshell);
 }
 
-.bar-menu {
-    width: 60px;
-    height: 38px;
+.navbar-mobile a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center; /* center the icon with the text */
+}
+
+.navbar-mobile li:has(a.active) {
+    background: var(--broncoGradient);
+    border-radius: 8px;
+}
+
+.bar-menu { /* hamburger icon */
+    width: 26px;
+    height: 30px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -174,9 +204,21 @@ a {
     border-radius: 1px;
     transition: all 0.3s ease-in-out;
 }
+/* 
+.bar-menu.active > * {
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
 
+.bar-menu.active {
+    font-size: 26px;
+} */
+
+/* BARS ANIMATION TO ANGLE DOWN */
 .bar-menu.active .bar-top {
-    transform: translateY(13px) rotate(45deg);
+    transform: translateX(-15px) translateY(8px) rotate(50deg);
 }
 
 .bar-menu.active .bar-middle {
@@ -187,7 +229,7 @@ a {
 }
 
 .bar-menu.active .bar-bottom {
-    transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-12px) rotate(-50deg);
 }
 
 @media (min-width: 640px) {
@@ -206,5 +248,21 @@ a {
     .navbar-mobile-container {
         display: block;
     }
+    #mlh-trust-badge {
+        display: none;
+    }
 }
 
+/* you can also target the link if you prefer – it already spans the li */
+/* .nav-btn:hover a, .nav-btn:active a {
+    background-image: var(--sky-blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+#mlh-trust-badge {
+    width: 80px;
+    transform: translateY(-16px);
+    margin-left: 8px;
+}
