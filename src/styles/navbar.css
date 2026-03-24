@@ -37,14 +37,18 @@ a {
 .navbar-container {
     display: flex;
     min-height: 156px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 16px 32px;
+    padding: 16px 16px 16px 32px;
     z-index: 67;
+}
+
+#navbar-logo-container {
+    margin-right: auto;
 }
 
 .logo {
@@ -127,3 +131,9 @@ a {
     -webkit-background-clip: text;
     color: transparent;
 } */
+
+#mlh-trust-badge {
+    width: 80px;
+    transform: translateY(-16px);
+    margin-left: 8px;
+}
