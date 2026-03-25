@@ -47,12 +47,12 @@ function Home() {
             <img src={Schedule}></img>
           </div>
 
-          <div className="archive-container">
+          {/* <div className="archive-container">
             <h2>Archive</h2>
             <p>Learn more about previous events (Minihack, Avande AI)
                led by the BroncoHacks committee.</p>
             <a href="" className="learn-more"><span>Learn more {'>'}</span></a>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
