@@ -17,17 +17,15 @@ function Home() {
             <div className="what-is-broncohacks">
               <div className="cloud-decor"></div>
               <h2>What is BroncoHacks?</h2>
-              <p>BroncoHacks 2026 is a 24 Hour, in-person hackathon that's coming to 
-                Cal Poly Pomona in April! More details will be released in March. 
-                Students from all schools are welcome!
+              <p>BroncoHacks is a 24-hour event where students come together in teams of 1 to 4 members to develop projects that align with our event themes. Whether you're just starting or already an experienced coder, we welcome you to join our community of passionate hackers!
               </p>
             </div>
             <img className="billy-computer-img" src="/Billy.png" alt="Billy using a laptop"></img>
              <img className="sparkle-decor" src="/sparkle.png" alt="decor"></img>
           </div>
           <div className="section-two">
-            <img className="horse-pic" src="/Horse.png" alt="Horse in the rain"></img>
-           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3145818285593!2d-117.82258092443325!3d34.061449217244395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32eae2ef62b11%3A0xffa7175307e0705c!2sCal%20Poly%20Pomona%20College%20of%20Business%20Administration!5e0!3m2!1sen!2sus!4v1774402900074!5m2!1sen!2sus" width="35%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
             <div className="student-led">
               
               <h2>Cal Poly Pomona's Student-Led Hackathon Committee</h2>
@@ -35,8 +33,7 @@ function Home() {
                 hackathon culture to CPP and the surrounding area. Since its establishment
                 in 2023, Broncohacks has held "MiniHack", a 6 hour hackathon intended for beginners
                 every fall, as well as BroncoHacks, a 24-hour in-person hackathon every spring.
-                Our upcoming event is BroncoHacks 2026, another 24 hour hackathon that is open 
-                to all colleges and is completely free of entry!
+                Our upcoming event, BroncoHacks 2026, is open to all colleges and is completely free of entry!
               </p>
             </div>
           </div>
