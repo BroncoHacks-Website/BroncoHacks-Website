@@ -24,7 +24,7 @@ function Home() {
              <img className="sparkle-decor" src="/sparkle.png" alt="decor"></img>
           </div>
           <div className="section-two">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3145818285593!2d-117.82258092443325!3d34.061449217244395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32eae2ef62b11%3A0xffa7175307e0705c!2sCal%20Poly%20Pomona%20College%20of%20Business%20Administration!5e0!3m2!1sen!2sus!4v1774402900074!5m2!1sen!2sus" width="35%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe style={{ border: "2px solid #1F4993", borderRadius: "3px" }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3145818285593!2d-117.82258092443325!3d34.061449217244395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32eae2ef62b11%3A0xffa7175307e0705c!2sCal%20Poly%20Pomona%20College%20of%20Business%20Administration!5e0!3m2!1sen!2sus!4v1774402900074!5m2!1sen!2sus" width="35%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
             <div className="student-led">
               
