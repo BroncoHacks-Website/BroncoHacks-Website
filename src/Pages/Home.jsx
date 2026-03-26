@@ -33,7 +33,8 @@ function Home() {
                 hackathon culture to CPP and the surrounding area. Since its establishment
                 in 2023, Broncohacks has held "MiniHack", a 6 hour hackathon intended for beginners
                 every fall, as well as BroncoHacks, a 24-hour in-person hackathon every spring.
-                Our upcoming event, BroncoHacks 2026, is open to all colleges and is completely free of entry!
+                Our upcoming event, BroncoHacks 2026, will be held at the College of Business Administration
+                and is open to students from all colleges, completely free of entry!
               </p>
             </div>
           </div>
