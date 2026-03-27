@@ -1,13 +1,25 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import '../styles/NavBar.css'
+
 import navbar_logo from '../Assets/Icons/navbar_logo.svg'
 
 const NavBar = () => {
 
+  const [isOpen, setIsOpen] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const openHamburger = () => {
+    setIsOpen(!isOpen);
+    const navMobile = document.querySelector('.navbar-mobile');
+    navMobile.classList.toggle('active');
+
+    const bars = document.querySelector('.bar-menu');
+    bars.classList.toggle('active');
+  }
 
   return (
     <div className='navbar-container'>
@@ -67,6 +79,22 @@ const NavBar = () => {
               </li>
 
             </ul>
+        </nav>
+
+        {/* MOBILE NAVBAR */}
+        <nav className='navbar-mobile-container'>
+          <div className='bar-menu' onClick={openHamburger}>
+            <span className='bar bar-top'></span>
+            <span className='bar bar-middle'></span>
+            <span className='bar bar-bottom'></span>
+          </div>
+          <ul className='navbar-mobile'>
+            <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={scrollToTop}><span className="fa-solid fa-house"></span><span>Home</span></NavLink></li>
+            <li><NavLink to="/team" className={({ isActive }) => isActive ? 'active' : ''} onClick={scrollToTop}><span className="fa-solid fa-people-group"></span><span>Team</span></NavLink></li>
+            <li><NavLink to="/sponsors" className={({ isActive }) => isActive ? 'active' : ''} onClick={scrollToTop}><span className="fa-solid fa-handshake"></span><span>Sponsors</span></NavLink></li>
+            <li><NavLink to="/hallOfFame" className={({ isActive }) => isActive ? 'active' : ''} onClick={scrollToTop}><span className="fa-solid fa-trophy"></span><span>Hall of Fame</span></NavLink></li>
+            <li><NavLink to="/FAQ" className={({ isActive }) => isActive ? 'active' : ''} onClick={scrollToTop}><span className="fa-solid fa-circle-question"></span><span>FAQ</span></NavLink></li>
+          </ul>
         </nav>
         <a id="mlh-trust-badge"
           href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black"

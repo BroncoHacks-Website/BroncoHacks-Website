@@ -124,6 +124,135 @@ a {
     color: var(--sky-blue);
 }
 
+/** MOBILE NAV */
+.navbar-mobile-container {
+    height: auto;
+    cursor: pointer;
+    position: fixed;
+    right: 32px;
+    margin-top: 14px;
+}
+
+.navbar-mobile { 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    right: 32px;
+    margin-top: 14px;
+}
+
+.navbar-mobile.active {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    width: 160px;
+    height: auto;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    background-color: var(--deep-blue);
+    
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s;
+}
+
+.navbar-mobile.active span {
+    font-size: 16px;
+}
+
+.navbar-mobile li {
+    justify-content: left;
+    width: 100%;
+    height: auto;
+    padding: 4px;
+    color: var(--eggshell);
+}
+
+.navbar-mobile a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center; /* center the icon with the text */
+}
+
+.navbar-mobile li:has(a.active) {
+    background: var(--broncoGradient);
+    border-radius: 8px;
+}
+
+.bar-menu { /* hamburger icon */
+    width: 26px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--deep-blue);
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+/* 
+.bar-menu.active > * {
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.bar-menu.active {
+    font-size: 26px;
+} */
+
+/* BARS ANIMATION TO ANGLE DOWN */
+.bar-menu.active .bar-top {
+    transform: translateX(-15px) translateY(8px) rotate(50deg);
+}
+
+.bar-menu.active .bar-middle {
+    transform: translateX(-60px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+
+.bar-menu.active .bar-bottom {
+    transform: translateY(-12px) rotate(-50deg);
+}
+
+@media (min-width: 640px) {
+    .navbar {
+        display: block;
+    }
+    .navbar-mobile-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+    .navbar-mobile-container {
+        display: block;
+    }
+    #mlh-trust-badge {
+        display: none;
+    }
+}
+
 /* you can also target the link if you prefer – it already spans the li */
 /* .nav-btn:hover a, .nav-btn:active a {
     background-image: var(--sky-blue);
