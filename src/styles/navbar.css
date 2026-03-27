@@ -31,22 +31,20 @@ a {
 }
 
 .navbar-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 16px 32px;
-  z-index: 100;
-  background: transparent;
+    display: flex;
+    min-height: 156px;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 16px 16px 32px;
+    z-index: 67;
 }
 
-.logo-link {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+#navbar-logo-container {
+    margin-right: auto;
 }
 
 .logo {
@@ -119,49 +117,145 @@ a {
   color: var(--sky-blue);
 }
 
-@media (max-width: 640px) {
-  .navbar-container {
-    padding: 16px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    width: 165px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-  }
-
-  .navbar {
-    width: 100%;
-    display: none;
+/** MOBILE NAV */
+.navbar-mobile-container {
+    height: auto;
+    cursor: pointer;
+    position: fixed;
+    right: 32px;
     margin-top: 14px;
-  }
+}
 
-  .navbar.open {
-    display: block;
-  }
+.navbar-mobile { 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    right: 32px;
+    margin-top: 14px;
+}
 
-  .navbar ul {
-    width: 100%;
+.navbar-mobile.active {
+    display: flex;
     flex-direction: column;
-    border-radius: 24px;
     padding: 12px;
-    gap: 10px;
-  }
+    width: 160px;
+    height: auto;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    background-color: var(--deep-blue);
+    
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s;
+}
 
-  .nav-btn {
-    width: 100%;
-    min-width: 0;
-  }
+.navbar-mobile.active span {
+    font-size: 16px;
+}
 
-  .nav-btn a {
+.navbar-mobile li {
+    justify-content: left;
     width: 100%;
-    padding: 14px 16px;
-  }
+    height: auto;
+    padding: 4px;
+    color: var(--eggshell);
+}
+
+.navbar-mobile a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center; /* center the icon with the text */
+}
+
+.navbar-mobile li:has(a.active) {
+    background: var(--broncoGradient);
+    border-radius: 8px;
+}
+
+.bar-menu { /* hamburger icon */
+    width: 26px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--deep-blue);
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+/* 
+.bar-menu.active > * {
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.bar-menu.active {
+    font-size: 26px;
+} */
+
+/* BARS ANIMATION TO ANGLE DOWN */
+.bar-menu.active .bar-top {
+    transform: translateX(-15px) translateY(8px) rotate(50deg);
+}
+
+.bar-menu.active .bar-middle {
+    transform: translateX(-60px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+
+.bar-menu.active .bar-bottom {
+    transform: translateY(-12px) rotate(-50deg);
+}
+
+@media (min-width: 640px) {
+    .navbar {
+        display: block;
+    }
+    .navbar-mobile-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+    .navbar-mobile-container {
+        display: block;
+    }
+    #mlh-trust-badge {
+        display: none;
+    }
+}
+
+/* you can also target the link if you prefer – it already spans the li */
+/* .nav-btn:hover a, .nav-btn:active a {
+    background-image: var(--sky-blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+#mlh-trust-badge {
+    width: 80px;
+    transform: translateY(-16px);
+    margin-left: 8px;
 }

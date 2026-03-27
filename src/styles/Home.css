@@ -120,6 +120,27 @@ p {
   width: min(520px, 100%);
 }
 
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: .5rem;
+}
+
+#schedule-title {
+  color: var(--deep-blue);
+  font-size: 67px;
+}
+
+.schedule-container img {
+  width: 50%;
+  object-fit: contain;
+  border: 5px solid rgb(36, 52, 142);
+  border-radius: 5px;
+}
+
 .archive-container {
   width: min(900px, calc(100% - 48px));
   margin: 0 auto;

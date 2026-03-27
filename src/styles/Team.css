@@ -129,8 +129,12 @@ body {
 }
 
 .profile-picture {
+    min-width: 120px;
     max-width: 120px;
-    border-radius: 999px;
+    min-height: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
     outline: 1px var(--dark-blue) solid;
 }
 
@@ -287,5 +291,43 @@ body {
 .dropdown-option:hover {
 
     background: var(--broncoGradient);
+
+}
+
+/* mobile layout */
+
+@media (max-width: 640px) {
+    
+    .team-content {
+        padding-top: 16px;
+        gap: 32px;
+    }
+
+    .meet-the-team {
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 32px;
+    }
+    
+    .team-navbar {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        padding: 0 0 8px 0;
+        min-width: auto;
+        width: 100%;
+        scrollbar-width: thin;
+    }
+    
+    .team-navbar button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    
+    .team-members-container {
+        gap: 48px;
+        width: 100%;
+    }
 
 }
