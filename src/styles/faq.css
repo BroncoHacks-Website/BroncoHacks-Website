@@ -179,9 +179,9 @@ details[open] .faq-content {
 
   /* Drop the balloons BEHIND the text and shift them slightly */
   #balloons {
-    width: 140px; 
+    width: 180px; 
     top: 160px;   /* Pushed down slightly to sit nicely behind the title/box */
-    left: -20px;  /* Pulled slightly off the left edge */
+    left: 60px;  /* Pulled slightly off the left edge */
     z-index: 1;   /* Crucial: Drops it behind the title (z-index: 5) and boxes (z-index: 10) */
     opacity: 0.9; /* Slightly faded so the text on top is even easier to read */
   }
@@ -199,7 +199,7 @@ details[open] .faq-content {
   /* Slightly scale down the question text and padding for mobile */
   summary {
     font-size: 14=3px;
-    padding: 12px 16px;
+    padding: 16px 16px;
   }
 
   /* Scale down the clouds a bit so they don't overwhelm the background */
