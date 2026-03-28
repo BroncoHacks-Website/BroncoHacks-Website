@@ -41,10 +41,19 @@ const Carousel = ({ items }) => {
         {items.map((item, index) => {
           const position = getPosition(index);
 
+          const handleClick =
+            position === "left" ? prev :
+              position === "right" ? next :
+                undefined;
+
           return (
             <div
               key={index}
               className={`carousel-card ${position}`}
+              onClick={handleClick}
+              style={{ cursor: handleClick ? "pointer" : "default" }}
+              role={handleClick ? "button" : undefined}
+              tabIndex={handleClick ? 0 : undefined}
             >
               <div className="placement">{item.placement}</div>
 
@@ -102,16 +111,16 @@ const HallOfFame = () => {
             BRONCOHACKS 2025 WINNERS
           </h1>
 
-         <p className="section-description-text">
-  BroncoHacks 2025 took place from April 18 2025 - April 19 2025.
-  There were over 200 participants across six categories:
-  Best Web Development, Best Cybersecurity, Best Data Science/AI,
-  Best Game Development, Best UI/UX, Best Team Name, and Overall Placements.
-  Participants spent 24 hours hacking together on a project with the theme of{" "}
-  <span className="section-theme-text">
-    “Create a project for a problem in a community.”
-  </span>
-</p>
+          <p className="section-description-text">
+            BroncoHacks 2025 took place from April 18 2025 - April 19 2025.
+            There were over 200 participants across six categories:
+            Best Web Development, Best Cybersecurity, Best Data Science/AI,
+            Best Game Development, Best UI/UX, Best Team Name, and Overall Placements.
+            Participants spent 24 hours hacking together on a project with the theme of{" "}
+            <span className="section-theme-text">
+              “Create a project for a problem in a community.”
+            </span>
+          </p>
 
           <Carousel items={overallWinners} />
 

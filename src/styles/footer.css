@@ -70,8 +70,8 @@
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: flex-start;
+    gap: 20px;
     margin-top: 10px;
 }
 
