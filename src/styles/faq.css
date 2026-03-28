@@ -173,8 +173,8 @@ details[open] .faq-content {
   .faq-container {
     width: 75%; 
     position: relative;
-    left: 8%;
-    margin-top: 30px;
+    /* left: 8%; */
+    margin: 30px auto;
   }
 
   /* Drop the balloons BEHIND the text and shift them slightly */
