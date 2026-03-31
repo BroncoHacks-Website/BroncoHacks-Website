@@ -33,6 +33,8 @@ import JonahMokhtarzadeh from "../../BroncoHacks2025/2025Assets/Profile/team/Jon
 import LeslyIbarra from "../../BroncoHacks2025/2025Assets/Profile/team/LeslyIbarra.jpg";
 import GiselleAvila from "../../BroncoHacks2025/2025Assets/Profile/team/GiselleAvila.png";
 import AmandaChang from "./Team/AmandaChang.webp";
+import KeniaVelasco from "./Team/KeniaVelasco.png";
+import AlexLeang from "./Team/AlexLeang.png";
 
 export const profileData = [
     {
@@ -414,6 +416,34 @@ export const profileData = [
         ],
         picture: AmandaChang,
         linkedin: "http://www.linkedin.com/in/amanda-changg"
+    },
+    {
+        id: 39,
+        name: "Danica Jacutin",
+        role: [
+            "Operations"
+        ],
+        picture: Default,
+        linkedin: "http://www.linkedin.com/in/danicajacutin"
+    },
+    {
+        id: 40,
+        name: "Kenia Velasco",
+        role: [
+            "Design"
+        ],
+        picture: KeniaVelasco,
+        linkedin: "https://www.linkedin.com/in/keniavelasco/",
+        github: "https://github.com/qennya"
+    },
+    {
+        id: 41,
+        name: "Alexander Leang",
+        role: [
+            "Operations"
+        ],
+        picture: AlexLeang,
+        linkedin: "https://www.linkedin.com/in/alexander-l-7994b9335"
     }
 ];
 
