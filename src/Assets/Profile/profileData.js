@@ -35,6 +35,7 @@ import GiselleAvila from "../../BroncoHacks2025/2025Assets/Profile/team/GiselleA
 import AmandaChang from "./Team/AmandaChang.webp";
 import KeniaVelasco from "./Team/KeniaVelasco.png";
 import AlexLeang from "./Team/AlexLeang.png";
+import StephenHiggins from "./Team/StephenHiggins.jpeg";
 
 export const profileData = [
     {
@@ -444,6 +445,15 @@ export const profileData = [
         ],
         picture: AlexLeang,
         linkedin: "https://www.linkedin.com/in/alexander-l-7994b9335"
+    },
+    {
+        id: 42,
+        name: "Stephen Higgins",
+        role: [
+            "Operations"
+        ],
+        picture: StephenHiggins,
+        linkedin: "https://www.linkedin.com/in/stephen-higginsjr/"
     }
 ];
 
