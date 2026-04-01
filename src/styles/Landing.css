@@ -296,6 +296,14 @@ position: relative;
     gap: 40px;
   }
 
+  .container.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+  }
+
   .content {
     order: 1;
     transform: none;
@@ -306,8 +314,11 @@ position: relative;
     order: 2;
     width: 75%;
     max-width: 350px;
-    transform: none;
+    transform: translate(20%, 20%);
     margin: 0 auto;
+    position: absolute;
+    z-index: -3;
+    bottom: 0;
   }
 
   .card {
@@ -338,5 +349,23 @@ position: relative;
   .cloud,
   .star {
     display: none;
+  }
+
+  .cloud-middle {
+    display: block;
+    top: 7%;
+    left: 23%;
+  }
+
+  .cloud-right {
+    display: block;
+    top: 25%;
+  }
+}
+
+@media (max-width: 472px) {
+  .box {
+    width: 45px;
+    height: 55px;
   }
 }

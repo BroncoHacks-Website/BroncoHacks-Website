@@ -19,6 +19,7 @@
     width: 90%;
     max-width: 1200px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-center;
     z-index: 2;
@@ -126,6 +127,25 @@
 }
 .socials_img:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .footer-main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-right > * {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 

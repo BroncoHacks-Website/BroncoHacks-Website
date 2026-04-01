@@ -40,7 +40,7 @@
 }
 
 .billy-computer-img {
-      position: absolute;      /* absolute so it sits over the cloud */
+  position: absolute;      /* absolute so it sits over the cloud */
   top: 50%;                /* vertically center with text */
   right: 160px;                /* stick to the right edge of the section */
   transform: translateY(-50%); /* exact vertical centering */
@@ -82,9 +82,14 @@ line-height: normal;
 
 .section-two {
     display: flex;
+    flex-direction: row; 
     gap: 40px;
     justify-content: center;
     margin-bottom: 100px;
+}
+
+#gmap {
+  width: 35%;
 }
 
 .horse-pic {
@@ -217,4 +222,68 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 align-self: stretch;
+}
+
+@media (max-width: 900px) {
+
+  .section-one {
+    display: flex;
+    justify-content: center;
+  }
+
+  .what-is-broncohacks {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 80%;
+  }
+
+  .billy-computer-img {
+    display: none;
+  }
+
+  .what-is-broncohacks h2, p {
+    text-align: center;
+  }
+
+  .cloud-decor {
+    width: 120vw;
+    height: auto;
+    left: -25%;
+  }
+  
+
+  .section-two {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gmap {
+    width: 80%;
+    height: 300px;
+  }
+
+  .student-led {
+    max-width: 80%;
+    padding: 0;
+  }
+
+  .student-led h2 {
+    text-align: center;
+  }
+
+  .schedule-container img {
+    width: 70%;
+  }
+
+  #schedule-title {
+    font-size: 63px;
+  }
+}
+
+@media (max-width: 750px) {
+  .cloud-decor {
+    top: -45%;
+  }
 }
