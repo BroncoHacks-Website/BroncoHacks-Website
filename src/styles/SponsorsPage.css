@@ -78,7 +78,7 @@
 ========================= */
 
 .sponsor-info-box {
-  max-width: 520px;
+  width: 520px;
   padding: 24px;
 
   background: #CBE7E6;
@@ -176,4 +176,19 @@
   bottom: 80px;
   width: 260px;
   pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .sponsor-info-box {
+    max-width: 80%;
+  }
+
+  .sponsors-grid {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .sponsor-card {
+    height: 100px;
+  }
 }

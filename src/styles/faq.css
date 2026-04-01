@@ -166,7 +166,6 @@ details[open] .faq-content {
     margin-top: 80px;
     margin-bottom: 0px;
     position: relative;
-    left: 8%;
   }
 
   /* Make boxes a teeny bit smaller than the screen width */
@@ -180,8 +179,8 @@ details[open] .faq-content {
   /* Drop the balloons BEHIND the text and shift them slightly */
   #balloons {
     width: 180px; 
-    top: 160px;   /* Pushed down slightly to sit nicely behind the title/box */
-    left: 60px;  /* Pulled slightly off the left edge */
+    top: 120px;   /* Pushed down slightly to sit nicely behind the title/box */
+    left: 20px;  /* Pulled slightly off the left edge */
     z-index: 1;   /* Crucial: Drops it behind the title (z-index: 5) and boxes (z-index: 10) */
     opacity: 0.9; /* Slightly faded so the text on top is even easier to read */
   }
@@ -205,7 +204,7 @@ details[open] .faq-content {
   /* Scale down the clouds a bit so they don't overwhelm the background */
   #cloud1 {
     width: 150px;
-    top: 350px;
+    top: 450px;
   }
 
   #Cloud2 {
