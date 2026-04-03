@@ -21,6 +21,7 @@ import MTSAC from "../Assets/clubs/cs_seal.webp";
 import Vercel from "../Assets/sponsors/vercel.png";
 import Career from "../Assets/sponsors/cpp-career-center2.png";
 import PureButtons from "../Assets/sponsors/pure-buttons.png";
+import Stridan from "../Assets/sponsors/stridan.png";
 
 // Component Imports
 import NavBar from "../Components/NavBar";
@@ -40,6 +41,7 @@ const sponsors = [
   { id: 1, name: "Vercel", logo: Vercel, url: "https://vercel.com/" },
   { id: 2, name: "CPP Career Center", logo: Career, url: "https://careercenter.cpp.edu/" },
   { id: 3, name: "Pure Buttons", logo: PureButtons, url: "https://www.purebuttons.com/" },
+  { id: 4, name: "Stridan", logo: Stridan, url: "https://stridan.co/" },
 ];
 
 /*
