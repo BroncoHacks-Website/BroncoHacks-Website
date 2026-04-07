@@ -96,6 +96,7 @@
 
 .carousel {
   position: relative;
+  width: auto;
   height: 100%;
 }
 
@@ -246,5 +247,25 @@
 
   .nav-arrow.right {
     right: -35px;
+  }
+
+  .carousel-card {
+    width: 230px;
+    height: 410px;
+  }
+
+  .carousel-card.center {
+    width: 300px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-card {
+    width: 220px;
+  }
+
+  .carousel-card.center {
+    width: 280px;
   }
 }

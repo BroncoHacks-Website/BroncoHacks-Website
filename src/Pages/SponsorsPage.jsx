@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/SponsorsPage.css";
 
-import balloonImg from "../assets/img_billyballon.png";
-import cloudImg from "../assets/cloud_left.png";
+import balloonImg from "../assets/decor/img_billyballoon.png";
+import cloudImg from "../Assets/decor/cloud_left.png";
 
 // Club Imports
 import CSS from "../BroncoHacks2025/2025Assets/Clubs/cpp_css_logo.png";

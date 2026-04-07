@@ -330,4 +330,22 @@ body {
         width: 100%;
     }
 
+    .cloud_point1 {
+        display: none;
+    }
+
+    .cloud_point2 {
+        top: 10px;
+        left: -250px;
+        width: 440px;
+        height: auto;
+    }
+
+    .kite {
+        top: 130px;
+        left: -80px;
+        width: 450px;
+        height: auto;
+    }
+
 }

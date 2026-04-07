@@ -196,4 +196,8 @@
   .sponsor-card {
     height: 100px;
   }
+
+  .clubs-grid {
+    gap: 48px 30px;
+  }
 }

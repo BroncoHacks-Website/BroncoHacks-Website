@@ -1,11 +1,11 @@
-import Balloons from "../assets/Balloon3.png";
-import Cloud1 from "../assets/hcloud.png";
-import Cloud2 from "../assets/fcloud.png";
+import Balloons from "../Assets/decor/Balloon3.png";
+import Cloud1 from "../assets/decor/hcloud.png";
+import Cloud2 from "../assets/decor/fcloud.png";
 import '../styles/Landing.css';
 import Footer from "../Components/Footer.jsx";
 import NavBar from "../Components/NavBar";
 import '../styles/faq.css';
-import FAQData from '../Assets/faq_data/FAQdata.jsx';
+import FAQData from '../Assets/data/FAQdata.jsx';
 
 function FAQ() {
   return (

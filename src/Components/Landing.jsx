@@ -1,10 +1,10 @@
-import balloon from "../assets/Balloon2.png";
-import star1 from "../assets/star1.png";
-import star2 from "../assets/star2.png";
-import star3 from "../assets/star3.png";
-import cloud1 from "../assets/hcloud.png";
-import cloud2 from "../assets/hcloud2.png";
-import cloud3 from "../assets/fcloud.png";
+import balloon from "../Assets/decor/Balloon2.png";
+import star1 from "../assets/decor/star1.png";
+import star2 from "../assets/decor/star2.png";
+import star3 from "../assets/decor/star3.png";
+import cloud1 from "../assets/decor/hcloud.png";
+import cloud2 from "../assets/decor/hcloud2.png";
+import cloud3 from "../assets/decor/fcloud.png";
 import '../styles/Landing.css'
 
 import React, { useState, useEffect } from 'react'

@@ -4,9 +4,9 @@ import '../styles/Team.css'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 
-import img_kite2 from '../Assets/img_kite2.svg'
-import cloud_point1 from '../Assets/cloud_point1.svg'
-import cloud_point2 from '../Assets/cloud_point2.svg'
+import img_kite2 from '../Assets/decor/img_kite2.svg';
+import cloud_point1 from '../Assets/decor/cloud_point1.svg';
+import cloud_point2 from '../Assets/decor/cloud_point2.svg';
 
 import Profile from '../Components/Profile'
 import profileData from '../Assets/Profile/profileData.js'

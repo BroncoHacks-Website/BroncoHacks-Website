@@ -4,9 +4,12 @@ import "../styles/HallOfFame.css";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
-import ArrowLeft from "../assets/Vector (2).svg";
-import ArrowRight from "../assets/Vector (1).svg";
-import WinnerPhoto from "../assets/image.png";
+import ArrowLeft from "../assets/decor/carousel_left.svg";
+import ArrowRight from "../assets/decor/carousel_right.svg";
+import WinnerPhoto from "../assets/decor/image.png";
+
+// data imports
+import Winners_2025 from "../Assets/data/HOF2025.jsx";
 
 /* ================= CAROUSEL COMPONENT ================= */
 
@@ -84,14 +87,6 @@ const Carousel = ({ items }) => {
 
 const HallOfFame = () => {
 
-  const overallWinners = [
-    { placement: "1ST", title: "MediFind", description: "Medication management, price comparison, and safety app." },
-    { placement: "2ND", title: "QuishThis", description: "Protect yourself from malicious QR codes." },
-    { placement: "3RD", title: "Carbon Closet", description: "Interactive thrifting with token rewards." },
-    { placement: "4TH", title: "Honey Hack", description: "N/A" },
-    { placement: "5TH", title: "TA AI", description: "AI-powered teaching assistant." }
-  ];
-
   const categoryWinners = [
     { placement: "WEB DEV", title: "Carbon Closet", description: "AI-powered teaching assistant..." },
     { placement: "DS/AI", title: "MediFind", description: "Medication management, price comparison, and safety app." },
@@ -122,7 +117,7 @@ const HallOfFame = () => {
             </span>
           </p>
 
-          <Carousel items={overallWinners} />
+          <Carousel items={Winners_2025 } />
 
           <h2 className="section-subheading">
             BEST IN [CATEGORY]
