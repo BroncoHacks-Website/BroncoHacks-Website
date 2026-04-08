@@ -1,5 +1,5 @@
 import "../styles/Footer.css";
-import BroncoHacks_Logo from "../Assets/Profile/Icons/bronco_hacks.png";
+import BroncoHacks_Logo from "../Assets/Icons/revised_bh_logo.svg";
 import BroncoHacks_Bg from "../Assets/Profile/Icons/footer_mountains_lessmargin.png";
 import Discord from "../Assets/Profile/Icons/icon_discord.png";
 import Instagram from "../Assets/Profile/Icons/icon_insta.png";

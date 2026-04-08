@@ -59,7 +59,7 @@ export const profileData = [
         ],
         picture: CalebChung,
         linkedin: "https://www.linkedin.com/in/calebkchung/",
-        github: "https://github.com/",
+        github: "https://github.com/thebigtig24",
     },
     {
         id: 2,

@@ -128,6 +128,11 @@ body {
     width: 156px;
 }
 
+.profile img {
+    image-rendering: -webkit-optimze-contrast;
+    image-rendering: crisp-edges;
+}
+
 .profile-picture {
     min-width: 120px;
     max-width: 120px;
@@ -160,6 +165,27 @@ body {
 .profile-text .roles {
     color: var(--deep-blue);
     font-style: italic;
+}
+
+.profile-links a {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F4993;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(46, 72, 95, 0.5);
+    margin-right: 3px;
+    margin-left: 3px;
+    image-rendering: pixelated;
+    transform: translateY(2px);
+}
+
+.profile-links i {
+    color: white;
+    display: inline-block;
 }
 
 .committee-container {
