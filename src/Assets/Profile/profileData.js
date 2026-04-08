@@ -37,6 +37,7 @@ import KeniaVelasco from "./Team/KeniaVelasco.png";
 import AlexLeang from "./Team/AlexLeang.png";
 import StephenHiggins from "./Team/StephenHiggins.jpeg";
 import MaddieIsaacs from "./Team/MaddieIsaacs.png";
+import JeannetteRuiz from "./Team/JeannetteRuiz.png";
 
 export const profileData = [
   {
@@ -387,6 +388,14 @@ export const profileData = [
     role: ["Marketing"],
     picture: Default,
     linkedin: "https://www.linkedin.com/in/marissalee22/"
+  },
+  {
+    id: 45,
+    name: "Jeannette Ruiz",
+    role: ["Design"],
+    picture: JeannetteRuiz,
+    linkedin: "https://www.linkedin.com/in/jeannetteruiz",
+    github: "https://github.com/jeanrnette"
   }
 ];
 
