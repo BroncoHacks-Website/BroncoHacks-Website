@@ -1,99 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/HallOfFame.css";
 
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
-import ArrowLeft from "../assets/decor/carousel_left.svg";
-import ArrowRight from "../assets/decor/carousel_right.svg";
-import WinnerPhoto from "../assets/decor/image.png";
+import Carousel from "../Components/Carousel.jsx";
 
 // data imports
 import Winners_2025 from "../Assets/data/HOF2025.jsx";
-
-/* ================= CAROUSEL COMPONENT ================= */
-
-const Carousel = ({ items }) => {
-  const [current, setCurrent] = useState(0);
-
-  const next = () => {
-    setCurrent((prev) => (prev + 1) % items.length);
-  };
-
-  const prev = () => {
-    setCurrent((prev) =>
-      prev === 0 ? items.length - 1 : prev - 1
-    );
-  };
-
-  const getPosition = (index) => {
-    if (index === current) return "center";
-    if (index === (current - 1 + items.length) % items.length) return "left";
-    if (index === (current + 1) % items.length) return "right";
-    return "hidden";
-  };
-
-  return (
-    <div className="carousel-wrapper">
-
-      <button className="nav-arrow left" onClick={prev}>
-        <img src={ArrowLeft} alt="prev" />
-      </button>
-
-      <div className="carousel">
-        {items.map((item, index) => {
-          const position = getPosition(index);
-
-          const handleClick =
-            position === "left" ? prev :
-              position === "right" ? next :
-                undefined;
-
-          return (
-            <div
-              key={index}
-              className={`carousel-card ${position}`}
-              onClick={handleClick}
-              style={{ cursor: handleClick ? "pointer" : "default" }}
-              role={handleClick ? "button" : undefined}
-              tabIndex={handleClick ? 0 : undefined}
-            >
-              <div className="placement">{item.placement}</div>
-
-              <div className="card-image-frame">
-                <img src={WinnerPhoto} alt="" />
-              </div>
-
-              <h3 className="project-title">{item.title}</h3>
-              <p className="project-description">{item.description}</p>
-
-              {item.names && (
-                <div className="team-name">{item.names}</div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-
-      <button className="nav-arrow right" onClick={next}>
-        <img src={ArrowRight} alt="next" />
-      </button>
-
-    </div>
-  );
-};
+import CatWinners_2025 from "../Assets/data/HOF2025_cat.jsx";
 
 /* ================= MAIN PAGE ================= */
 
 const HallOfFame = () => {
 
-  const categoryWinners = [
-    { placement: "WEB DEV", title: "Carbon Closet", description: "AI-powered teaching assistant..." },
-    { placement: "DS/AI", title: "MediFind", description: "Medication management, price comparison, and safety app." },
-    { placement: "GAME DEV", title: "QuishThis", description: "Protect yourself from malicious QR codes." },
-    { placement: "UI/UX", title: "Honey Hack", description: "N/A" },
-    { placement: "CYBER", title: "TA AI", description: "AI-powered teaching assistant." }
-  ];
+  const [category2025, setCategory2025] = useState("WEB DEV");
 
   return (
     <>
@@ -117,13 +38,15 @@ const HallOfFame = () => {
             </span>
           </p>
 
-          <Carousel items={Winners_2025 } />
+          <Carousel items={Winners_2025} />
 
           <h2 className="section-subheading">
-            BEST IN [CATEGORY]
+            BEST IN <span>{category2025}</span>
           </h2>
 
-          <Carousel items={categoryWinners} />
+          <Carousel items={CatWinners_2025} 
+            onCarouselSwitch={(catName) => setCategory2025(catName)}
+          />
 
         </div>
       </div>

@@ -129,8 +129,8 @@ body {
 }
 
 .profile img {
-    image-rendering: -webkit-optimze-contrast;
-    image-rendering: crisp-edges;
+    /* image-rendering: crisp-edges; */
+    /* image-rendering: optimizeQuality; */
 }
 
 .profile-picture {

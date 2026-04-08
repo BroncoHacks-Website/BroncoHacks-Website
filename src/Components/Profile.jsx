@@ -9,6 +9,7 @@ const person = props.person;
             className="profile-picture"
             src={person.picture}
             alt={"Picture of " + person.name}
+            loading="lazy"
         />
         <div className="profile-body">
             <div className="profile-text">
