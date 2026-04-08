@@ -54,7 +54,7 @@ export const profileData = [
   {
     id: 1,
     name: "Caleb Chung",
-    role: ["Project Manager", "Website Developer"],
+    role: ["Project Manager", "Website Lead"],
     picture: CalebChung,
     linkedin: "https://www.linkedin.com/in/calebkchung/",
     github: "https://github.com/thebigtig24",
@@ -62,7 +62,7 @@ export const profileData = [
   {
     id: 2,
     name: "Pearl Chan",
-    role: ["Project Manager", "Design"],
+    role: ["Project Manager", "Design Lead"],
     picture: PearlChan,
     linkedin: "https://www.linkedin.com/in/pearl-chan-77a43829b/",
     portfolio: "https://pearlchan24.myportfolio.com/",
@@ -70,7 +70,7 @@ export const profileData = [
   {
     id: 3,
     name: "Michelle Paino",
-    role: ["Primary Organizer", "Project Manager", "Marketing"],
+    role: ["Primary Organizer", "Project Manager", "Marketing Lead"],
     picture: MichellePaino,
     linkedin: "https://www.linkedin.com/in/michelle-paino-18a899377/",
   },
@@ -143,7 +143,7 @@ export const profileData = [
   {
     id: 12,
     name: "Jessica Pinto",
-    role: ["Operations"],
+    role: ["Operations Lead"],
     picture: JessicaPinto,
     linkedin: "http://www.linkedin.com/in/jessica-pinto-92667a342",
   },
@@ -381,6 +381,13 @@ export const profileData = [
     linkedin: "https://www.linkedin.com/in/mmisaacs/",
     github: "https://www.github.com/mmisaacs/",
   },
+  {
+    id: 44,
+    name: "Marissa Lee",
+    role: ["Marketing"],
+    picture: Default,
+    linkedin: "https://www.linkedin.com/in/marissalee22/"
+  }
 ];
 
 export default profileData;

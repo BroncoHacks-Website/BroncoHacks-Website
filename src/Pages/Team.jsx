@@ -38,7 +38,7 @@ const Team = () => {
         )
     ].sort().reverse()
 
-    const currentRoles = ["Project Manager", "Website Developer", "Design", "Marketing", "Finance", "Operations"]
+    const currentRoles = ["Website", "Design", "Marketing", "Finance", "Operations"];
 
     const selectCommittee = (committee) => {
         setSelectedCommittee(committee)
@@ -211,7 +211,7 @@ const Team = () => {
                                         .map((role) => {
 
                                             const members = profileData.filter(
-                                                person => person.role.includes(role)
+                                                person => person.role.some(indRole => indRole.includes(role))
                                             )
                                             
                                             if (members.length === 0) return null
@@ -227,15 +227,20 @@ const Team = () => {
 
                                                     <div className='year-committee-container'>
 
-                                                        {members.map((person) => (
-                                                            <Profile
-                                                                key={person.id}
-                                                                person={{
-                                                                    ...person,
-                                                                    role: [role]
-                                                                }}
-                                                            />
-                                                        ))}
+                                                        {members.map((person) => {
+
+                                                            const specificRole = person.role.find(r => r.includes(role));
+
+                                                            return (
+                                                                <Profile
+                                                                    key={person.id}
+                                                                    person={{
+                                                                        ...person,
+                                                                        role: [specificRole || role]
+                                                                    }}
+                                                                />
+                                                            );
+                                                        })}
 
                                                     </div>
 
