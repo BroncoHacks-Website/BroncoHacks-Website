@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 import "./App.css";
 
@@ -9,7 +9,7 @@ import SponsorsPage from "./Pages/SponsorsPage.jsx";
 import FAQ from './Pages/FAQ.jsx'
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hallOfFame" element={<HallOfFame />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/sponsors" element={<SponsorsPage />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
