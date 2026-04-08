@@ -181,6 +181,11 @@ body {
     margin-left: 3px;
     image-rendering: pixelated;
     transform: translateY(2px);
+    transition: transform .2s ease-in-out;
+}
+
+.profile-links a:hover {
+    transform: scale(1.01);
 }
 
 .profile-links i {
