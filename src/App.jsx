@@ -9,7 +9,7 @@ import SponsorsPage from "./Pages/SponsorsPage.jsx";
 import FAQ from './Pages/FAQ.jsx'
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hallOfFame" element={<HallOfFame />} />
