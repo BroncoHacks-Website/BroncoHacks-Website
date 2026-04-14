@@ -354,17 +354,6 @@ position: relative;
   .star {
     display: none;
   }
-
-  .cloud-middle {
-    display: block;
-    top: 7%;
-    left: 23%;
-  }
-
-  .cloud-right {
-    display: block;
-    top: 25%;
-  }
 }
 
 @media (max-width: 472px) {
@@ -374,7 +363,7 @@ position: relative;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 442px) {
   .box {
     width: 38px;
     height: 48px;
