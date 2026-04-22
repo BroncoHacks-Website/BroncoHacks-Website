@@ -23,6 +23,7 @@ import Career from "../Assets/sponsors/cpp-career-center2.png";
 import PureButtons from "../Assets/sponsors/pure-buttons.png";
 import Stridan from "../Assets/sponsors/stridan.png";
 import ASI from "../Assets/sponsors/asi.png";
+import Google from "../Assets/sponsors/google.png";
 
 // Component Imports
 import NavBar from "../Components/NavBar";
@@ -40,10 +41,11 @@ import Footer from "../Components/Footer";
 
 const sponsors = [
   { id: 1, name: "Vercel", logo: Vercel, url: "https://vercel.com/" },
-  { id: 2, name: "CPP Career Center", logo: Career, url: "https://careercenter.cpp.edu/" },
-  { id: 3, name: "Pure Buttons", logo: PureButtons, url: "https://www.purebuttons.com/" },
-  { id: 4, name: "Stridan", logo: Stridan, url: "https://stridan.co/" },
-  { id: 5, name: "ASI", logo: ASI, url: "https://asi.cpp.edu/" },
+  { id: 2, name: "Google", logo: Google, url: "https://about.google/"},
+  { id: 3, name: "CPP Career Center", logo: Career, url: "https://careercenter.cpp.edu/" },
+  { id: 4, name: "Pure Buttons", logo: PureButtons, url: "https://www.purebuttons.com/" },
+  { id: 5, name: "Stridan", logo: Stridan, url: "https://stridan.co/" },
+  { id: 6, name: "ASI", logo: ASI, url: "https://asi.cpp.edu/" },
 ];
 
 /*
