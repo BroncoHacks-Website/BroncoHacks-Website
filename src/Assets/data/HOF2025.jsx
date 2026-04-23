@@ -2,19 +2,19 @@ const winners = [
     {
         placement: "1ST",
         title: "MediFind",
-        description: "Medication management, price comparison, and safety app.",
+        description: "Medication management, price comparison, and safety app",
         img: "https://res.cloudinary.com/dtknolvtz/image/upload/f_auto,q_auto,w_800/Winner_1_jmnoh5",
     },
     {
         placement: "2ND",
         title: "QuishThis",
-        description: "Protect yourself from malicious QR codes.",
+        description: "Protects users from malicious QR codes",
         img: "https://res.cloudinary.com/dtknolvtz/image/upload/f_auto,q_auto,w_800/Winner_2_l0wvmv.jpg",
     },
     {
         placement: "3RD",
         title: "Carbon Closet",
-        description: "Interactive thrifting with token rewards.",
+        description: "Interactive thrifting with token rewards",
         img: "https://res.cloudinary.com/dtknolvtz/image/upload/f_auto,q_auto,w_800/Winner_3_vyfqdc.jpg",
     },
     {
@@ -26,7 +26,7 @@ const winners = [
     {
         placement: "5TH",
         title: "TA AI",
-        description: "AI-powered teaching assistant.",
+        description: "AI-powered teaching assistant that analyzes student questions and generates study guides",
         img: "https://res.cloudinary.com/dtknolvtz/image/upload/f_auto,q_auto,w_800/Winner_5_rnusdo.jpg",
     }
   ];
