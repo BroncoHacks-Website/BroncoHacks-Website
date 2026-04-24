@@ -41,7 +41,7 @@ import Footer from "../Components/Footer";
 
 const sponsors = [
   { id: 1, name: "Vercel", logo: Vercel, url: "https://vercel.com/" },
-  { id: 2, name: "Google", logo: Google, url: "https://about.google/"},
+  { id: 2, name: "Google", logo: Google, url: "https://gdg.community.dev/gdg-on-campus-california-state-polytechnic-university-pomona-united-states/"},
   { id: 3, name: "CPP Career Center", logo: Career, url: "https://careercenter.cpp.edu/" },
   { id: 4, name: "Pure Buttons", logo: PureButtons, url: "https://www.purebuttons.com/" },
   { id: 5, name: "Stridan", logo: Stridan, url: "https://stridan.co/" },
