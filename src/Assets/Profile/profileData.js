@@ -38,6 +38,7 @@ import AlexLeang from "./Team/AlexLeang.png";
 import StephenHiggins from "./Team/StephenHiggins.jpeg";
 import MaddieIsaacs from "./Team/MaddieIsaacs.png";
 import JeannetteRuiz from "./Team/JeannetteRuiz.png";
+import BrandonTseng from "./Team/BrandonTseng.png";
 
 export const profileData = [
   {
@@ -396,6 +397,18 @@ export const profileData = [
     picture: JeannetteRuiz,
     linkedin: "https://www.linkedin.com/in/jeannetteruiz",
     github: "https://github.com/jeanrnette"
+  },
+  {
+    id: 46,
+    name: "Brandon Tseng",
+    role: [
+      "Primary Organizer",
+      "BroncoHacks Committee 2024-2025",
+      "BroncoHacks Committee 2023-2024"
+    ],
+    picture: BrandonTseng,
+    linkedin: "https://www.linkedin.com/in/bt7274/",
+    github: "https://github.com/PlainOlSoapBar"
   }
 ];
 
