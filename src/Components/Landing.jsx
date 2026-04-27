@@ -63,18 +63,22 @@ const Landing = () => {
             <p className="subtitle">Hosted by Cal Poly Pomona</p>
             <p className="date">April 25–26</p>
 
-            <div className="timer">
-              {timerLabels.map((label, labelIndex) => (
-                <div className="group" key={labelIndex}>
-                  <div className="digits">
-                    <div className="box">{digitPairs[labelIndex][0]}</div>
-                    <div className="box">{digitPairs[labelIndex][1]}</div>
-                  </div>
-                  <span className="timer-label">{label}</span>
+            {  (countDown < 0)
+              ? <div className="post-timer">
+                  <h1>COME BACK NEXT YEAR!</h1>
                 </div>
-              ))}
-            </div>
-
+              : <div className="timer">
+                {timerLabels.map((label, labelIndex) => (
+                  <div className="group" key={labelIndex}>
+                    <div className="digits">
+                      <div className="box">{digitPairs[labelIndex][0]}</div>
+                      <div className="box">{digitPairs[labelIndex][1]}</div>
+                    </div>
+                    <span className="timer-label">{label}</span>
+                  </div>
+                ))}
+              </div>
+}
           </div>
 
          <a href="https://forms.gle/2ZYGJNLVgud5apyX8" target="_blank" rel="noopener noreferrer" className="btn">

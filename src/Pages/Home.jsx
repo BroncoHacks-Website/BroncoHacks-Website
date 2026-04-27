@@ -49,6 +49,7 @@ function Home() {
             <h2>Archive</h2>
             <p>Learn more about previous events (Minihack, Avande AI)
                led by the BroncoHacks committee.</p>
+              <p>Take a look at pictures from events hosted by the BroncoHacks Committee!</p>
             <a href="" className="learn-more"><span>Learn more {'>'}</span></a>
           </div> */}
         </div>
