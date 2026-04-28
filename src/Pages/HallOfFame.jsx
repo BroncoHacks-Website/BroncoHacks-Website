@@ -4,6 +4,7 @@ import "../styles/HallOfFame.css";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
+import HoF26 from "../Components/HoF2026.jsx";
 import Carousel from "../Components/Carousel.jsx";
 
 // data imports
@@ -22,6 +23,8 @@ const HallOfFame = () => {
 
       <div className="hall-of-fame">
         <div className="hall-wrapper">
+
+          <HoF26 />
 
           <h1 className="section-heading">
             BRONCOHACKS 2025 WINNERS
