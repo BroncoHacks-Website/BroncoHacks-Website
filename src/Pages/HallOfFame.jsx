@@ -21,10 +21,10 @@ const HallOfFame = () => {
     <>
       <NavBar />
 
+      <HoF26 />
+
       <div className="hall-of-fame">
         <div className="hall-wrapper">
-
-          <HoF26 />
 
           <h1 className="section-heading">
             BRONCOHACKS 2025 WINNERS

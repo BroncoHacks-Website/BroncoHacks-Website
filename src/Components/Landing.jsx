@@ -81,10 +81,18 @@ const Landing = () => {
 }
           </div>
 
-         <a href="https://forms.gle/2ZYGJNLVgud5apyX8" target="_blank" rel="noopener noreferrer" className="btn">
-  <span>REGISTER NOW !</span>
+          {/* Register Button */}
+          {(countDown < 0)
+            ?
+            <a href="https://broncohacks-2026.devpost.com/" target="_blank" rel="noopener noreferrer" className="btn">
+              <span>Check out this year's projects!</span>
+            </a>
+            :
+            <a href="https://forms.gle/2ZYGJNLVgud5apyX8" target="_blank" rel="noopener noreferrer" className="btn">
+              <span>REGISTER NOW !</span>
+            </a>
+          }
 
-</a>
         </div>
       </div>
     </section>

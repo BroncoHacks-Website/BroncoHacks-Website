@@ -133,6 +133,7 @@
 .carousel-card.left {
   left: 2%;
   transform: scale(0.85);
+  width: 360px;
   z-index: 2;
   opacity: 1;
 }
@@ -142,6 +143,7 @@
 .carousel-card.right {
   right: 2%;
   transform: scale(0.85);
+  width: 360px;
   z-index: 2;
   opacity: 1;
 }

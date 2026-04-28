@@ -40,10 +40,10 @@ function Home() {
           </div>
 
           {/* Schedule */}
-          <div className="schedule-container">
+          {/* <div className="schedule-container">
             <h1 id="schedule-title">Schedule</h1>
             <img src={Schedule}></img>
-          </div>
+          </div> */}
 
           {/* <div className="archive-container">
             <h2>Archive</h2>
