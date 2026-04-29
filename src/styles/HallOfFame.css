@@ -14,9 +14,18 @@
 
 .hall-of-fame {
   background: var(--eggshell);
-  padding: 160px 0 120px;   /* large space under navbar */
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   justify-content: center;
+}
+
+.hall-of-fame:nth-child(1 of .hall-of-fame) {
+  padding-top: 160px;
+}
+
+.hall-of-fame:nth-last-child(1 of .hall-of-fame) {
+  padding-bottom: 120px;
 }
 
 .hall-wrapper {
@@ -124,6 +133,7 @@
   left: 50%;
   transform: translateX(-50%) scale(1);
   width: 420px;
+  height: 430px;
   z-index: 3;
   opacity: 1;
 }
