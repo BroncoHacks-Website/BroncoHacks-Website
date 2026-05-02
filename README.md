@@ -1,7 +1,7 @@
 <div align="left">
   <h2 align="left">Bronco Hacks Website</h2>
 
-Welcome to the source code for the Bronco Hacks Website! The website is used to display info about the upcoming hackathons @ California State Polytechnic University, Pomona as well as some info about previous hackathons.
+Welcome to the source code for the Bronco Hacks Website! The current code can be found in the dev branch of this repository. The website is used to display info about the upcoming hackathons @ California State Polytechnic University, Pomona as well as some info about previous hackathons.
 
 <a href="https://broncohacks.org"><strong>broncohacks.org</strong></a>
 
