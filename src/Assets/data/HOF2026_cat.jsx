@@ -32,7 +32,7 @@ const winners = [
     {
         placement: "CYBERSECURITY",
         title: "CyberLearn",
-        description: "CyberLearn is an AI-powered cybersecurity training platform that helps people and developers learn how to recognize and avoid common online threats through simple lessons, quizzes, and AI tools.",
+        description: "An AI-powered cybersecurity training platform that helps teach how to recognize/avoid common online threats via simple lessons, quizzes, and AI tools.",
         img: "https://res.cloudinary.com/dtknolvtz/image/upload/f_auto,q_auto,w_800/Best_Cyber_BH2026_rx4fnc.jpg"
     }
 ];

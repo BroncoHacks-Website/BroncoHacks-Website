@@ -45,10 +45,12 @@ a {
     right: 0;
     padding: 16px 16px 16px 32px;
     z-index: 67;
+    pointer-events: none;
 }
 
 #navbar-logo-container {
     margin-right: auto;
+    pointer-events: all;
 }
 
 .logo {
@@ -59,6 +61,10 @@ a {
 
 .logo:hover {
     cursor: pointer;
+}
+
+.navbar {
+    pointer-events: all;
 }
 
 .navbar ul {
@@ -109,7 +115,8 @@ a {
 
 .nav-btn:has(a.active) {
     background: var(--broncoGradient);
-    color: var(--blueGradient);
+    /* color: var(--blueGradient); */
+    color: var(--dark-blue);
     border-color: var(--deep-blue);
 }
 
@@ -131,6 +138,7 @@ a {
     position: fixed;
     right: 32px;
     margin-top: 14px;
+    pointer-events: all;
 }
 
 .navbar-mobile { 
@@ -265,4 +273,5 @@ a {
     width: 80px;
     transform: translateY(-16px);
     margin-left: 8px;
+    pointer-events: all;
 }

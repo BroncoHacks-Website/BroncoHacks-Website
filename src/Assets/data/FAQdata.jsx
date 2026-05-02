@@ -45,7 +45,7 @@ const faqs = [
   {
     question: "What should I bring?",
     answer:
-      "Laptop & charger, phone & charger, deodoarant, extra food and water, and your A-Game :)!",
+      "Laptop & charger, phone & charger, deodorant, extra food and water, and your A-Game :)!",
   },
   {
     question: "When is the deadline to apply?",

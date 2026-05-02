@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import '../styles/Team.css'
 
 import NavBar from '../Components/NavBar'
@@ -19,10 +19,13 @@ const Team = () => {
         { id: 3, name: "Past Committees", role: "Past Committee" },
     ]
 
-    const [selectedRole, setSelectedRole] = useState("Primary Organizer")
-    const [selectedCommittee, setSelectedCommittee] = useState("")
-    const [selectedCurrentRole, setSelectedCurrentRole] = useState("")
-    const [dropdownOpen, setDropdownOpen] = useState(false)
+    const [selectedRole, setSelectedRole] = useState("Primary Organizer");
+    const [selectedCommittee, setSelectedCommittee] = useState("");
+    const [selectedCurrentRole, setSelectedCurrentRole] = useState("");
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const dropdownRef = useRef(null);
+    const dropdownMenuRef = useRef(null);
 
     const selectTeam = (role) => {
         setSelectedRole(role)
@@ -49,6 +52,24 @@ const Team = () => {
         setSelectedCurrentRole(role)
         setDropdownOpen(false)
     }
+
+    useEffect(() => {
+        function handleClick(event) {
+            if (
+                dropdownMenuRef.current && dropdownRef.current &&
+                !dropdownMenuRef.current.contains(event.target) &&
+                !dropdownRef.current.contains(event.target)
+            ) {
+                setDropdownOpen(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClick);
+        };
+    }, []);
 
     return (
         <div className='team-page'>
@@ -88,6 +109,7 @@ const Team = () => {
                                         <div
                                             className="dropdown-button"
                                             onClick={() => setDropdownOpen(!dropdownOpen)}
+                                            ref={dropdownRef}
                                         >
                                             {selectedCommittee || "All Committees"}
                                             <span className="dropdown-arrow">▼</span>
@@ -95,7 +117,7 @@ const Team = () => {
 
                                         {dropdownOpen && (
 
-                                            <div className="dropdown-menu">
+                                            <div className="dropdown-menu" ref={dropdownMenuRef}>
 
                                                 <div
                                                     className="dropdown-option"
@@ -173,6 +195,7 @@ const Team = () => {
                                         <div
                                             className="dropdown-button"
                                             onClick={() => setDropdownOpen(!dropdownOpen)}
+                                            ref={dropdownRef}
                                         >
                                             {selectedCurrentRole || "All Roles"}
                                             <span className="dropdown-arrow">▼</span>
@@ -180,7 +203,7 @@ const Team = () => {
 
                                         {dropdownOpen && (
 
-                                            <div className="dropdown-menu">
+                                            <div className="dropdown-menu" ref={dropdownMenuRef}>
 
                                                 <div
                                                     className="dropdown-option"

@@ -279,6 +279,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    user-select: none;
 }
 
 .dropdown-arrow {
@@ -303,6 +305,8 @@ body {
     padding: 8px;
 
     z-index: 10;
+
+    user-select: none;
 }
 
 /* dropdown options */

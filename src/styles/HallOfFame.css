@@ -6,6 +6,57 @@
   --deep-blue: #1F4993;
   --dark-blue: #01203F;
   --eggshell: #F6F8ED;
+  --sky-blue: #5CBBD4;
+  --broncoGradient: linear-gradient(180deg, #D9E74C 0%, #5CBBD4 100%);
+}
+
+.hof-dd-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  position: relative;
+}
+
+.hof-dropdown {
+  font-family: 'Nobel', sans-serif;
+  font-size: 16px;
+  padding: 12px 16px;
+
+  border-radius: 999px;
+  border: 2px solid var(--sky-blue);
+  background: white;
+  color: var(--deep-blue);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.hof-menu {
+  position: absolute;
+  margin-top: 8px;
+  top: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  padding: 8px;
+  user-select: none;
+}
+
+.hof-option {
+  padding: 10px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: 'Nobel', sans-serif;
+  color: var(--deep-blue);
+}
+
+.hof-option:hover {
+  background: var(--broncoGradient);
 }
 
 /* ===================================================== */
@@ -20,9 +71,9 @@
   justify-content: center;
 }
 
-.hall-of-fame:nth-child(1 of .hall-of-fame) {
+/* .hall-of-fame:nth-child(1 of .hall-of-fame) {
   padding-top: 160px;
-}
+} */
 
 .hall-of-fame:nth-last-child(1 of .hall-of-fame) {
   padding-bottom: 120px;
@@ -56,7 +107,7 @@
 }
 
 .section-subheading {
-  margin: -150px 0 70px;
+  margin: -120px 0 50px;
 }
 
 /* ===================================================== */
@@ -100,6 +151,7 @@
   position: relative;
   width: 100%;
   height: 520px;
+  min-height: 520px;
   margin-bottom: 100px;
 }
 
@@ -133,7 +185,7 @@
   left: 50%;
   transform: translateX(-50%) scale(1);
   width: 420px;
-  height: 430px;
+  height: 440px;
   z-index: 3;
   opacity: 1;
 }
@@ -144,6 +196,7 @@
   left: 2%;
   transform: scale(0.85);
   width: 360px;
+  /* min-height: 405px; */
   z-index: 2;
   opacity: 1;
 }
@@ -154,6 +207,7 @@
   right: 2%;
   transform: scale(0.85);
   width: 360px;
+  /* min-height: 405px; */
   z-index: 2;
   opacity: 1;
 }
@@ -171,7 +225,7 @@
 
 .placement {
   font-family: "Nobel", sans-serif;
-  font-size: 36px;
+  font-size: clamp(27px, 2cqw, 36px);
   font-weight: 900;
   color: var(--deep-blue);
   margin-bottom: 16px;
@@ -194,14 +248,14 @@
 
 .project-title {
   font-family: "Nobel", sans-serif;
-  font-size: 22px;
+  font-size: clamp(18px, 8cqw, 22px);
   color: var(--deep-blue);
   margin-bottom: 8px;
 }
 
 .project-description {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 14px;
+  font-size: clamp(12px, 2cqw, 16px);
   color: var(--deep-blue);
   margin-bottom: 6px;
 }
@@ -219,7 +273,8 @@
 
 .nav-arrow {
   position: absolute;
-  top: 35%;
+  /* top: 35%; */
+  top: 200px;
   transform: translateY(-50%);
   width: 44px;
   height: 44px;
@@ -243,11 +298,16 @@
 
 .nav-arrow img {
   width: 16px;
+  height: 27px;
 }
 
 @media (max-width: 600px) {
   .hall-of-fame .section-heading {
     max-width: 80%;
+  }
+
+  .section-subheading {
+    min-height: 77px;
   }
 
   .section-description-text {
@@ -270,6 +330,11 @@
   .carousel-card.center {
     width: 300px;
     height: 420px;
+  }
+
+  .carousel-card.left,
+  .carousel-card.right {
+    min-height: 440px;
   }
 }
 

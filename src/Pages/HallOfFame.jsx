@@ -1,58 +1,122 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "../styles/HallOfFame.css";
 
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
-import HoF26 from "../Components/HoF2026.jsx";
 import Carousel from "../Components/Carousel.jsx";
-
-// data imports
-import Winners_2025 from "../Assets/data/HOF2025.jsx";
-import CatWinners_2025 from "../Assets/data/HOF2025_cat.jsx";
-
-/* ================= MAIN PAGE ================= */
+import hof from "../Assets/data/HOFdata.jsx";
 
 const HallOfFame = () => {
 
-  const [category2025, setCategory2025] = useState("WEB DEV");
+  const [hofYear, setHofYear] = useState(null);
+  const [yearObj, setYearObj] = useState(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const dropdownMenuRef = useRef(null);
+  const dropdownRef = useRef(null);
+
+  const [category, setCategory] = useState("");
+
+  useEffect(() => {
+    if (hof && hof.length > 0) {
+      const latestYear = Math.max(...hof.map(item => item.year));
+      setHofYear(latestYear);
+    }
+
+    // closes dropdown when clicked elsewhere
+    function handleClick(event) {
+      if (
+        dropdownMenuRef.current && dropdownRef.current &&
+        !dropdownMenuRef.current.contains(event.target) &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    const obj = hof.find((item) => item.year === hofYear);
+    setYearObj(obj);
+  }, [hofYear]);
+
+  const selectYear = (year) => {
+    setHofYear(year);
+    setDropdownOpen(false);
+  };
 
   return (
     <>
       <NavBar />
+      <div className="hof-dd-cont">
+        <div style={{position: 'relative', width: '200px'}}>
+          <div 
+            className="hof-dropdown"
+            ref={dropdownRef}
+            onClick={() =>setDropdownOpen(!dropdownOpen)}
+          >
+            Select Year: {hofYear}
+            <span className="dropdown-arrow">▼</span>
+          </div>
 
-      <HoF26 />
 
-      <div className="hall-of-fame">
-        <div className="hall-wrapper">
-
-          <h1 className="section-heading">
-            BRONCOHACKS 2025 WINNERS
-          </h1>
-
-          <p className="section-description-text">
-            BroncoHacks 2025 took place from April 18 2025 - April 19 2025.
-            There were over 200 participants across six categories:
-            Best Web Development, Best Cybersecurity, Best Data Science/AI,
-            Best Game Development, Best UI/UX, Best Team Name, and Overall Placements.
-            Participants spent 24 hours hacking together on a project with the theme of{" "}
-            <span className="section-theme-text">
-              “Create a project for a problem in a community.”
-            </span>
-          </p>
-
-          <Carousel items={Winners_2025} />
-
-          <h2 className="section-subheading">
-            BEST IN <span>{category2025}</span>
-          </h2>
-
-          <Carousel items={CatWinners_2025} 
-            onCarouselSwitch={(catName) => setCategory2025(catName)}
-          />
-
-        </div>
+          {dropdownOpen && (
+            <div className="hof-menu" ref={dropdownMenuRef}>
+              {hof.map((el) => el.year).toReversed().map((yr) => {
+                return (
+                  <div 
+                    key={yr}
+                    className="hof-option"
+                    onClick={() => selectYear(yr)}
+                  >
+                    {yr}
+                  </div>
+                )
+              })
+              }
+            </div>
+          )}
+          </div>
       </div>
+
+      {yearObj ? 
+        <div className="hall-of-fame" key={yearObj.year}>
+          <div className="hall-wrapper">
+            <h1 className="section-heading">
+              BRONCOHACKS {yearObj.year} WINNERS
+            </h1>
+
+            <p className="section-description-text">
+              {yearObj.description}
+            </p>
+
+            <Carousel items={yearObj.mainWinners} />
+
+            <h2 className="section-subheading">
+              BEST IN <span>{category}</span>
+            </h2>
+
+            <Carousel items={yearObj.categoryWinners}
+              onCarouselSwitch={(element) => setCategory(element)} />
+
+            {yearObj.mlhWinners
+            ?
+            <></>
+            :
+            null
+            }
+
+          </div>
+        </div>
+      : null
+      }
 
       <Footer />
     </>
